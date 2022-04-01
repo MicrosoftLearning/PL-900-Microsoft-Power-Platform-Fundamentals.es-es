@@ -1,18 +1,18 @@
 ---
 lab:
-    title: 'Laboratorio 4: Creación de una aplicación basada en modelo'
-    module: 'Módulo 3: Comience con Power Apps'
+  title: 'Laboratorio 4: Cómo crear una aplicación basada en modelo'
+  module: 'Module 3: Get started with Power Apps'
+ms.openlocfilehash: e0fcc3a12bb54b7fca08e41599d999b3e38eee23
+ms.sourcegitcommit: ef58c858463b890e923ef808b1d43405423943fd
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137899089"
 ---
+# <a name="module-3-get-started-with-power-apps"></a>Módulo 3: Introducción a Power Apps
+## <a name="lab-3-how-to-build-a-model-driven-app"></a>Laboratorio 3: Cómo crear una aplicación basada en modelo
 
-# Módulo 3: Introducción a Power Apps
-## Laboratorio 3: Cómo crear una aplicación basada en modelo
-
-### Aviso importante (noviembre de 2020):
-Desde noviembre de 2020, Common Data Service se llama Microsoft Dataverse. Algunos de los términos de Microsoft Dataverse se han modificado. Por ejemplo, entidad (a partir de ahora **tabla**), campo (a partir de ahora **columna**) y registro (a partir de ahora **fila**) pueden estar desactualizados. Tenga esto en cuenta a la hora de utilizar los laboratorios. Esperamos actualizar todo el contenido lo antes posible.
-
-Si quiere obtener más información o quiere ver una lista de los términos modificados, consulte [¿Qué es Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
-
-# Escenario
+# <a name="scenario"></a>Escenario
 
 Bellows College es una institución educativa que tiene un campus con varios edificios. Los visitantes del campus están actualmente registrados en revistas en papel. La información no se recaba de manera uniforme y no hay forma de recopilar y analizar los datos sobre las visitas de todo el campus. 
 
@@ -22,7 +22,7 @@ A lo largo de este curso, creará aplicaciones y realizará la automatización p
 
 En este laboratorio, creará una aplicación impulsada por el modelo de Power Apps para permitir que el personal del campus administrativo administre los registros de visitas en todo el campus.
 
-# Pasos de alto nivel del laboratorio
+# <a name="high-level-lab-steps"></a>Pasos de alto nivel del laboratorio
 
 Como parte de la creación de la aplicación basada en modelo, completará lo siguiente:
 
@@ -40,12 +40,12 @@ Trabajaremos con los siguientes componentes:
 
 Ambos se integrarán a la aplicación basada en modelo para una mejor experiencia de usuario.
 
-## Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 * Finalización del **Módulo 0 Laboratorio 0: Validación del entorno de laboratorio**
 * Finalización del **Módulo 2 Laboratorio 1: Introducción a Microsoft Dataverse**
 
-## Cuestiones que tener en cuenta antes de comenzar
+## <a name="things-to-consider-before-you-begin"></a>Cuestiones que tener en cuenta antes de comenzar
 
 -   ¿Qué cambios debemos hacer para mejorar la experiencia del usuario?
 
@@ -54,13 +54,13 @@ Ambos se integrarán a la aplicación basada en modelo para una mejor experienci
 -   ¿Qué personalizaciones se pueden hacer en el mapa del sitio de una aplicación basada en modelos?
 
 
-# Ejercicio 1: Personalice vistas y formularios
+# <a name="exercise-1-customize-views-and-forms"></a>Ejercicio \#1: Personalizar las vistas y formularios
 
 **Objetivo:** En este ejercicio, personalizará las vistas y formularios de las tablas creadas de manera personalizada que se utilizarán en la aplicación basada en modelo.
 
-## Tarea 1: Edite el formulario de visita
+## <a name="task-1-edit-visit-form"></a>Tarea \#1: Editar el formulario de visita
 
-1.  Regístrese en <https://make.powerapps.com> si aún no lo ha hecho.
+1.  Haga clic en <https://make.powerapps.com> si no ha iniciado sesión aún.
 
 2.  Seleccione su **entorno.**
 
@@ -70,7 +70,7 @@ Ambos se integrarán a la aplicación basada en modelo para una mejor experienci
 
 5.  Haga clic para abrir la entidad **Visita**.
 
-6.  Seleccione la pestaña **Formularios** y seleccione para abrir el tipo de formulario **Principal**. 
+6.  Seleccione la pestaña **Formularios**, seleccione el tipo de formulario **Principal** y haga clic en **Editar formulario**.
 
     > Por defecto, el formulario tiene dos campos: Nombre (campo principal) y Propietario.
     
@@ -81,7 +81,7 @@ Ambos se integrarán a la aplicación basada en modelo para una mejor experienci
     * **Inicio programado**
     * **Final programado**
     * **Inicio real**
-    * **Final real** 
+    * **Finalización real** 
     
 8.  Arrastre la columna **Código** y suéltela en el encabezado del formulario. 
 
@@ -95,10 +95,9 @@ Ambos se integrarán a la aplicación basada en modelo para una mejor experienci
 
 12.  Haga clic en **Publicar** en la parte superior derecha y espere hasta que se complete la publicación.
 
-13.  Haga clic en **Atrás** en la parte superior izquierda de la pantalla. Debería estar de vuelta en la
-     entidad Visita de la pestaña Forms.
+13.  Si la vista de edición se abre en una nueva pestaña, cierre la pestaña. De lo contrario, haga clic en **Atrás** en la parte superior izquierda de la pantalla. Ahora debe volver a la pestaña Formularios de entidad de visitas.
 
-## Tarea 2: Edite las vistas de visita
+## <a name="task-2-edit-visit-views"></a>Tarea \#2: Editar las vistas de visita
 
 En esta tarea, modificaremos la vista predeterminada de Visitas activas y crearemos una nueva vista para las visitas de hoy.
 
@@ -126,19 +125,19 @@ En esta tarea, modificaremos la vista predeterminada de Visitas activas y creare
 
 Ahora clonaremos la vista para crear una nueva vista para las visitas de hoy.
 
-9.  Presione el enlace **Editar filtros** en el panel Propiedades.
+9.  Presione el vínculo **Editar filtros** en el panel Propiedades.
 
-10.  Haga clic en **Añadir**, seleccione **Añadir fila**.
+10.  Haga clic en **Agregar**, seleccione **Agregar fila**.
 
 11.  Seleccione **Inicio programado** como campo y, luego, **Hoy** como condición en el menú desplegable. 
 
-12.  Haga clic en **[...]** en la fila **Estado** y haga clic en **Eliminar**. 
+12.  Haga clic en **...** en la fila **Estado** y haga clic en **Eliminar**. 
 
 13.  Presione **Aceptar** para guardar la condición. La vista ahora está filtrada para mostrar solo los registros donde la fecha de inicio programada es hoy.
 
 14.  Agregue los campos **Comienzo real** y **Final real** a la vista. 
 
-> **Nota:** Como ya no filtramos el estado de la vista, obtendremos todas las visitas de hoy, incluidas las completadas. Estos campos ayudarán a diferenciar visitas completadas y visitas en curso.
+    > **Nota:** Como ya no filtramos el estado de la vista, obtendremos todas las visitas de hoy, incluidas las completadas. Estos campos ayudarán a diferenciar visitas completadas y visitas en curso.
 
 15.  Haga clic en la **flecha desplegable** situada junto al botón Guardar (tenga cuidado de no presionar el botón) y seleccione **Guardar como**.
 
@@ -146,23 +145,25 @@ Ahora clonaremos la vista para crear una nueva vista para las visitas de hoy.
 
 17.  Haga clic en **Publicar** y espere a que se complete la publicación.
 
-# Ejercicio 2: Cree una aplicación basada en modelos
+# <a name="exercise-2-create-model-driven-application"></a>Ejercicio \#2: Crear una aplicación basada en modelos
 
 **Objetivo:** En este ejercicio, creará la aplicación basada en modelos, personalizará el mapa del sitio y probará la aplicación.
 
-> Verá varios campos que no se abordan a medida que desarrolla su aplicación, particularmente en los pasos del mapa del sitio. Hemos tomado algunos atajos para hacer los laboratorios. En una implementación real, le daría a estos elementos nombres lógicos.
+> Verá varios campos que no se abordan a medida que desarrolla su aplicación, particularmente en los pasos del mapa del sitio. Hemos tomado algunos atajos para hacer los laboratorios. En una implementación real, les daría a estos elementos nombres lógicos.
 
-## Tarea 1: Crear una aplicación
+## <a name="task-1-create-application"></a>Tarea \#1: Crear una aplicación
 
 1.  Abra la solución Administración del campus si aún no está en ella.
 
-    -   Inicie sesión en <https://make.powerapps.com>
+    -   Inicie sesión en <https://make.powerapps.com>.
 
     -   Mientras esté en su entorno, haga clic para abrir la solución de **Administración del campus**.
     
 2.  Crear una aplicación basada en modelos
 
-    -   Haga clic en **Nuevo**, seleccione **Aplicación** y luego **Aplicación basada en modelo**. Esta acción abrirá una nueva ventana.
+    -   Haga clic en **Nuevo**, seleccione **Aplicación** y luego **Aplicación basada en modelo**.
+    
+    -   En la aplicación basada en modelo de la pantalla en blanco, haga clic en **Crear**.
     
     -   Escriba **[Su apellido] Administración del campus** como Nombre.
 
@@ -190,8 +191,7 @@ Ahora clonaremos la vista para crear una nueva vista para las visitas de hoy.
 
     -   Seleccione **Nueva subárea**.
 
-    -   En el panel **Propiedades**, seleccione **Entidad** del menú desplegable.
-        para **Tipo**.
+    -   En el panel **Propiedades**, seleccione **Entidad** del menú desplegable para **Tipo**.
 
     -   Busque la tabla **Contacto** del menú desplegable para **Entidad**.
     
@@ -203,8 +203,7 @@ Ahora clonaremos la vista para crear una nueva vista para las visitas de hoy.
 
     -   Vaya al panel **Propiedades**.
 
-    -   Seleccione **Entidad** del menú desplegable para **Tipo** y busque
-        la tabla **Visita** del menú desplegable en **Entidad**.
+    -   Seleccione **Entidad** del menú desplegable para **Tipo** y busque la tabla **Visita** del menú desplegable para **Entidad**.
     
 7.  Agregar la tabla Edificio al mapa del sitio
 
@@ -214,7 +213,7 @@ Ahora clonaremos la vista para crear una nueva vista para las visitas de hoy.
     
     -   Entre **Configuraciones** para **Título** en el panel **Propiedades**.
     
-    -   Con el grupo **Configuración** seleccionado, haga clic en **Agregar**.
+    -   Con el grupo **Configuración** seleccionada, haga clic en **Agregar**.
     
     -   Seleccione **Subárea**.
     
@@ -222,7 +221,7 @@ Ahora clonaremos la vista para crear una nueva vista para las visitas de hoy.
     
     -   Seleccione **Entidad** del menú desplegable para **Tipo** y busque la tabla **Edificio** del menú desplegable para **Entidad**.
 
-8.  Haga clic en **Guardar**. Esto mostrará la pantalla de carga mientras se guardan los cambios.
+8.  Haga clic en **Save**(Guardar). Esto mostrará la pantalla de carga mientras se guardan los cambios.
 
 9.  Haga clic en **Publicar** todas las personalizaciones y espere a que se complete la publicación.
 
@@ -234,21 +233,21 @@ Ahora clonaremos la vista para crear una nueva vista para las visitas de hoy.
 
 12.  Haga clic en **Validar** para validar los cambios realizados en la aplicación. 
 
->  Esto mostrará algunas advertencias, pero podemos ignorarlas, ya que no hemos hecho referencia a una Vista y un Formulario específicos para las entidades, y los usuarios tendrán acceso a todas las Vistas y Formularios para las entidades **Visitar** y **Edificio**.
+    >  Esto mostrará algunas advertencias, pero podemos ignorarlas, ya que no hemos hecho referencia a una Vista y un Formulario específicos para las entidades, y los usuarios tendrán acceso a todas las Vistas y Formularios para las entidades **Visitar** y **Edificio**.
      
 13. Haga clic en **Publicar**.
 
 14.  Haga clic en **Guardar y cerrar** para cerrar el diseñador de la aplicación.
 
-15.  Haga clic en **Listo**.
+15.  Haga clic en **Done**(Listo).
 
 16.  Seleccione **Soluciones** y luego **Publicar todas las personalizaciones.**
 
 17.  Seleccione **Aplicaciones** y su aplicación ahora debería estar en la lista.
 
-## Tarea 2: Aplicación de prueba
+## <a name="task-2-test-application"></a>Tarea \#2: Probar la aplicación
 
-1.  Inicie la aplicación
+1.  Inicio de la aplicación
 
     -   Seleccione **Aplicaciones** y haga clic en su aplicación **Administración del campus**. (Si no ve su aplicación, es posible que deba actualizar el explorador).
 
@@ -260,7 +259,7 @@ Ahora clonaremos la vista para crear una nueva vista para las visitas de hoy.
 
     -   Haga clic en **Nuevo** en el menú superior.
 
-    -   Establezca el **Nombre** como `John` y el **Apellido** como `Doe`.
+    -   Proporcione el **Nombre de pila** como `John` y **Apellido** como `Doe`.
 
     -   Proporcione su correo electrónico personal como **Correo electrónico**. Esto se utilizará en un laboratorio futuro. 
     
@@ -272,29 +271,27 @@ Ahora clonaremos la vista para crear una nueva vista para las visitas de hoy.
 
     -   Seleccione **Edificios** en el mapa del sitio.
 
-    -   Haga clic en **Nuevo**.
+    -   Haga clic en **Nueva**.
 
-    -   Escriba el **Nombre** como `Microsoft Building`.
+    -   Escriba el **nombre** como `Microsoft Building`.
         
-    -   Haga clic en **Guardar y cerrar**. Esto mostrará en nuevo registro que acaba de crear en
-        la vista de Edificios activos.
+    -   Haga clic en **Guardar y cerrar**. Se mostrará el registro recién creado en la vista Edificios activos.
     
 4.  Crear una nueva visita
 
     -   Seleccione **Visitas** del mapa del sitio.
     
-    -   Haga clic en **Nuevo**.
+    -   Haga clic en **Nueva**.
     
     -   Especifique los campos de la siguiente forma 
     
-        -   **Nombre**:  `New test visit`
-        -   **Edificio**: seleccione Edificio de Microsoft
+        -   **Nombre**: `New test visit`
+        -   **Edificio**: Alpine Ski House
         -   **Visitante**: seleccione John Doe
         -   **Inicio programado**: seleccione la fecha de mañana y las 02:00 como hora de inicio.
         -   **Final programado**: seleccione la fecha de mañana y las 03:30 como hora de finalización.
         
-    -   Haga clic en **Guardar y cerrar**. Esto creará el registro de la vista y debería poder verlo en la
-        Vista de visitas activas.
+    -   Haga clic en **Guardar y cerrar**. Esto creará el registro de la visita y debería poder verlo en la vista Visitas activas.
         
     -   Cambie la vista a **Visitas de hoy**. Ya no debería ver la nueva visita en la vista, ya que está programada para mañana.
     
@@ -304,7 +301,7 @@ Ahora clonaremos la vista para crear una nueva vista para las visitas de hoy.
 
 ![Muestra de una aplicación basada en modelo](media/3-model-app.png)
 
-# Desafíos
+# <a name="challenges"></a>Desafíos
 
 * Seleccione vistas y formularios específicos para Visitas y Edificios
 * El personal de seguridad generalmente trabaja en un solo edificio. ¿Cómo les proporcionaría una manera fácil de mostrar visitas solo para un edificio seleccionado?

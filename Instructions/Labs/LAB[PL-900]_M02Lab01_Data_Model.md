@@ -1,12 +1,17 @@
 ---
 lab:
-    title: 'Laboratorio 1: Modelar datos'
-    module: 'Módulo 2: Introducción a Microsoft Dataverse'
+  title: 'Laboratorio 1: Modelado de datos'
+  module: 'Module 2: Introduction to Microsoft Dataverse'
+ms.openlocfilehash: 05d0f0656ae0d93f5666f7c14602c3976a9a9ac9
+ms.sourcegitcommit: ef58c858463b890e923ef808b1d43405423943fd
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137899015"
 ---
+# <a name="module-2-introduction-to-microsoft-dataverse"></a>Módulo 2: Introducción a Microsoft Dataverse
 
-# Módulo 2: Introducción a Microsoft Dataverse
-
-# Escenario
+# <a name="scenario"></a>Escenario
 
 Bellows College es una institución educativa que tiene un campus con varios edificios. Actualmente se guarda un registro físico de las visitas al campus. La información no se recaba de manera uniforme y no hay forma de recopilar y analizar los datos sobre las visitas de todo el campus. 
 
@@ -22,24 +27,24 @@ En este laboratorio, accederá a su ambiente, creará una base de datos de Micro
 
 Por último, importará los datos de ejemplo en Microsoft Dataverse.
 
-# Pasos de alto nivel del laboratorio
+# <a name="high-level-lab-steps"></a>Pasos de alto nivel del laboratorio
 
 Para preparar sus entornos de aprendizaje tendrá que:
 
 * crear una solución y un publicador
-* añadir los componentes nuevos y existentes que se necesitan para cumplir con los requisitos de la aplicación. Consulte la descripción de los metadatos (tablas y relaciones) en el [documento del modelo de datos](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png). Puede mantener presionada la tecla CTRL y hacer clic o hacer clic con el botón derecho en el vínculo para abrir el documento del modelo de datos en una nueva ventana.
+* agregar los componentes nuevos y existentes que se necesitan para cumplir con los requisitos de la aplicación. Consulte la descripción de los metadatos (tablas y relaciones) en el [documento del modelo de datos](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png). Puede mantener presionada la tecla CTRL y hacer clic o hacer clic con el botón derecho en el vínculo para abrir el documento del modelo de datos en una nueva ventana.
 
 Su solución contendrá varias tablas al completar todas las personalizaciones:
 
 -   Contacto
--   Edificio
--   Visita
+-   Compilación
+-   Visite
 
-## Requisitos previos:
+## <a name="prerequisites"></a>Requisitos previos:
 
 * Finalización del **Módulo 0 Laboratorio 0: Validación del entorno de laboratorio**
 
-## Cuestiones a tener en cuenta antes de comenzar:
+## <a name="things-to-consider-before-you-begin"></a>Cuestiones a tener en cuenta antes de comenzar:
 
 * Convención de nomenclatura
 
@@ -47,11 +52,11 @@ Su solución contendrá varias tablas al completar todas las personalizaciones:
 
 * Formato de datetime para facilitar la localización
 
-# Ejercicio 1: Creación de la solución
+# <a name="exercise-1-create-solution"></a>Ejercicio \#1: Crear la solución
 
-## Tarea 1: Creación de la solución y el publicador
+## <a name="task-1-create-solution-and-publisher"></a>Tarea \#1: Crear la solución y el publicador
 
-1.  Creación de la solución
+1.  Crear solución
 
     -   Vaya a <https://make.powerapps.com>. Es posible que deba volver a autenticarse: haga clic en **Iniciar sesión** y siga las instrucciones si es necesario.
 
@@ -61,9 +66,9 @@ Su solución contendrá varias tablas al completar todas las personalizaciones:
 
     -   Escriba **[Su apellido] Administración del campus** en **Nombre para mostrar**.
 
-2.  Cree un publicador
+2.  Crear publicador
 
-    -   En la sección **Editor**, seleccione **+ Editor**
+    -   En la sección **Publicador**, seleccione **+ Publicador**.
 
     -   En la ventana emergente, escriba **Bellows College** en **Nombre para mostrar**. 
 
@@ -77,18 +82,17 @@ Su solución contendrá varias tablas al completar todas las personalizaciones:
 
 3.  Complete la creación de la solución.
 
-    -   Luego, haga clic en el menú desplegable **Publicador** y seleccione el publicador **Bellows College**
-        que acaba de crear.
+    -   Luego, haga clic en el menú desplegable **Publicador** y seleccione el publicador **Bellows College** que acaba de crear.
 
     -   Compruebe que la **Versión** está establecida en **1.0.0.0** 
     
     -   Haga clic en **Crear**.
 
-# Ejercicio 2: Crear nuevas tablas y agregar tablas existentes
+# <a name="exercise-2-add-existing-and-create-new-tables"></a>Ejercicio \#2: Agregar tablas existentes y crear tablas nuevas
 
 **Objetivo:** En este ejercicio, agregará la tabla estándar Contacto y creará nuevas tablas personalizadas para Edificios y Visitas en la solución. 
 
-## Tarea 1: Agregar una tabla existente
+## <a name="task-1-add-existing-table"></a>Tarea \#1: Agregar una tabla existente
 
 1.  Haga clic para abrir la solución **Administración del campus** que acaba de crear.
 
@@ -96,12 +100,11 @@ Su solución contendrá varias tablas al completar todas las personalizaciones:
 
 3.  Localice **Contacto** y selecciónelo.
 
-4.  Haga clic en **Siguiente**.
+4.  Haga clic en **Next**.
 
 5.  Haga clic en **Seleccionar componentes** debajo de Contacto.
 
-6.  Seleccione la pestaña **Vistas** y elija la vista **Contactos activos**. Haga clic en
-    **Añadir**:
+6.  Seleccione la pestaña **Vistas** y elija la vista **Contactos activos**. Haga clic en **Agregar**.
     
 7.  Haga clic nuevamente en **Seleccionar componentes**.
 
@@ -111,18 +114,17 @@ Su solución contendrá varias tablas al completar todas las personalizaciones:
 
     > Debería tener **1 vista** y **1 formulario** seleccionados. 
     
-10.  Vuelva a hacer clic en **Añadir**. Esto agregará la tabla Contacto con la vista y el formulario seleccionados a la solución que acaba de crear.
+10.  Vuelva a hacer clic en **Agregar**. Esto agregará la tabla Contacto con la vista y el formulario seleccionados a la solución que acaba de crear.
 
 > Ahora su solución debería tener una tabla: Contacto.
     
-## Tarea 2: Crear la tabla Edificio
+## <a name="task-2-create-building-table"></a>Tarea n.°2: Crear la tabla Edificio
 
 1.  Debe mantener su explorador abierto en su solución Administración del campus. De lo contrario, abra la solución Administración del campus siguiendo estos pasos:
 
-    * Regístrese en <https://make.powerapps.com> (si aún no lo ha hecho)
+    * Haga clic en <https://make.powerapps.com> (si aún no ha iniciado sesión).
     
-    * Seleccione **Soluciones** y haga clic para abrir la solución **[su apellido] Administración del campus**
-          que acaba de crear.
+    * Seleccione **Soluciones** y haga clic para abrir la solución **[Su apellido] Administración del campus** que acaba de crear.
           
 2.  Crear la tabla Edificio
 
@@ -130,9 +132,9 @@ Su solución contendrá varias tablas al completar todas las personalizaciones:
     
     -   Escriba **Edificio** en **Nombre para mostrar**. 
     
-    -   Haga clic en **Guardar**. Esto iniciará el aprovisionamiento de la tabla en segundo plano, y podrá comenzar a agregar otras tablas y columnas.
+    -   Haga clic en **Save**(Guardar). Esto iniciará el aprovisionamiento de la tabla en segundo plano, y podrá comenzar a agregar otras tablas y columnas.
 
-## Tarea 3: Crear la tabla y las columnas Visita
+## <a name="task-3-create-visit-table-and-columns"></a>Tarea n.° 3: Crear la tabla y las columnas Visita
 
 La tabla **Visita** contendrá información sobre las visitas al campus, incluidos el edificio, el visitante, la hora programada y la hora real de cada visita. 
 
@@ -142,10 +144,9 @@ Nos gustaría asignar a cada visita un número único que el visitante pueda ing
 
 1.  Debe mantener su explorador abierto en su solución Administración del campus. De lo contrario, abra la solución Administración del campus siguiendo estos pasos:
 
-    * Regístrese en <https://make.powerapps.com> (si aún no lo ha hecho)
+    * Haga clic en <https://make.powerapps.com> (si aún no ha iniciado sesión).
     
-    * Seleccione **Soluciones** y haga clic para abrir la solución **[su apellido] Administración del campus**
-          que acaba de crear.
+    * Seleccione **Soluciones** y haga clic para abrir la solución **[Su apellido] Administración del campus** que acaba de crear.
 
 2. Crear la tabla Visita
 
@@ -153,7 +154,7 @@ Nos gustaría asignar a cada visita un número único que el visitante pueda ing
    
    * Escriba **Visita** en **Nombre para mostrar**. 
    
-   * Haga clic en **Guardar**. Esto iniciará el aprovisionamiento de la tabla en segundo plano, y podrá comenzar a agregar otras columnas.
+   * Haga clic en **Save**(Guardar). Esto iniciará el aprovisionamiento de la tabla en segundo plano, y podrá comenzar a agregar otras columnas.
 
 3. Crear la columna Inicio programado
 
@@ -171,7 +172,7 @@ Nos gustaría asignar a cada visita un número único que el visitante pueda ing
    
    * En **Comportamiento**, seleccione **Independiente de la zona horaria**.
    
-   * Haga clic en **Listo**.
+   * Haga clic en **Done**(Listo).
 
 4.  Crear la columna Fin programado
 
@@ -187,7 +188,7 @@ Nos gustaría asignar a cada visita un número único que el visitante pueda ing
     
     * En **Comportamiento**, seleccione **Independiente de la zona horaria**.
     
-    * Haga clic en **Listo**.
+    * Haga clic en **Done**(Listo).
     
 5.  Crear la columna Inicio real
 
@@ -203,7 +204,7 @@ Nos gustaría asignar a cada visita un número único que el visitante pueda ing
     
     * En **Comportamiento**, seleccione **Independiente de la zona horaria**.
     
-    * Haga clic en **Listo**.
+    * Haga clic en **Done**(Listo).
     
 6.  Crear la columna Fin real
 
@@ -219,7 +220,7 @@ Nos gustaría asignar a cada visita un número único que el visitante pueda ing
     
     * En **Comportamiento**, seleccione **Independiente de la zona horaria**.
     
-    * Haga clic en **Listo**.
+    * Haga clic en **Done**(Listo).
     
 7.  Crear la columna Código
 
@@ -231,15 +232,15 @@ Nos gustaría asignar a cada visita un número único que el visitante pueda ing
     
     * Seleccione **Número prefijado de fecha** para **Tipo de autonumeración**.
     
-    * Haga clic en **Listo**.
+    * Haga clic en **Done**(Listo).
     
 8.  Haga clic en **Guardar tabla**.
 
-# Ejercicio 3: Crear relaciones
+# <a name="exercise-3-create-relationships"></a>Ejercicio \#3: Crear relaciones
 
 **Objetivo:** En este ejercicio, agregará relaciones entre las tablas.
 
-## Tarea 1: Crear relaciones
+## <a name="task-1-create-relationships"></a>Tarea n.° 1: Crear relaciones
 
 1.  Asegúrese de que todavía está viendo la tabla **Visita** de su solución de **Administración del campus**. De lo contrario, vaya hacia allí.
 
@@ -247,21 +248,21 @@ Nos gustaría asignar a cada visita un número único que el visitante pueda ing
 
     * Seleccione la pestaña **Relaciones**.
     
-    * Haga clic en **Añadir relación** y seleccione **Varios a uno**.
+    * Haga clic en **Agregar relación** y seleccione **Varios a uno**.
     
-    * Seleccione **Contacto** para **Relacionados (uno)**. 
+    * Seleccione **Contacto** para **Relacionados (uno)** . 
     
     * Escriba **Visitante** para **Nombre para mostrar del campo de búsqueda** 
     
-    * Haga clic en **Listo**.
+    * Haga clic en **Done**(Listo).
     
 3.  Crear relación de visita a edificio
 
-    * Haga clic en **Añadir relación** y seleccione **Varios a uno**.
+    * Haga clic en **Agregar relación** y seleccione **Varios a uno**.
     
-    * Seleccione **Edificio** en **Relacionados (uno)**. 
+    * Seleccione **Edificio** en **Relacionados (uno)** . 
     
-    * Haga clic en **Listo**.
+    * Haga clic en **Done**(Listo).
     
 4.  Haga clic en **Guardar tabla**.
 
@@ -269,17 +270,17 @@ Nos gustaría asignar a cada visita un número único que el visitante pueda ing
 
 6.  Seleccione **Publicar todas las personalizaciones**.
 
-# Ejercicio 4: Importar datos
+# <a name="exercise-4-import-data"></a>Ejercicio \#4: Importación de datos
 
 **Objetivo:** En este ejercicio importará datos de ejemplo a la base de datos de Dataverse.
 
-## Tarea 1: Importar solución
+## <a name="task-1-import-solution"></a>Tarea n.° 1: Importar solución
 
 En esta tarea, importará una solución que contiene el flujo de Power Automate necesario para completar la importación de datos.
 
 1. Debería tener el archivo **DataImport_managed.zip** almacenado en su escritorio. Si no, descargue la [Solución de importación de datos](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/DataImport_managed.zip?raw=true).
 
-2. Conéctese a <https://make.powerapps.com>.
+2. Inicie sesión en <https://make.powerapps.com>.
 
 3. Seleccione su ambiente **Práctica [mis iniciales]** en la parte superior derecha, si aún no está seleccionado.
 
@@ -291,9 +292,7 @@ En esta tarea, importará una solución que contiene el flujo de Power Automate 
 >
 >   Faltan dependencias. Instale las siguientes soluciones antes de instalar esta...
 >
->   Ese mensaje indica que el modelo de datos no está completo, el
->   prefijo del publicador no es **bc** o los nombres de las tablas **Building** y **Visits**
->   difieren de los nombres enumerados en los pasos anteriores.
+>   Mediante este mensaje se indica que el modelo de datos no está completo, que el prefijo del publicador no es **bc** o que los nombres de las tablas **Edificio** y **Visita** difieren de los nombres mostrados en los pasos anteriores.
 
 6. Presione **Siguiente**. Se le pedirá que restablezca las conexiones. 
 
@@ -309,13 +308,13 @@ En esta tarea, importará una solución que contiene el flujo de Power Automate 
 
 12. Espere hasta que se complete la importación.
 
-## Tarea 2: Importar datos  
+## <a name="task-2-import-data"></a>Tarea n.°2: Importación de datos  
 
 1. Abra la solución **Importar datos**.
 
 2. Compruebe el **Estado** del flujo **Datos de importación**.
 
-3. Si el **Estado** está **Desactivado**, seleccione **[...]** junto a **Importar datos** y, luego, seleccione **Activar**.
+3. Si el **Estado** está **Desactivado**, seleccione **...** junto a **Importar datos** y, luego, seleccione **Activar**.
 
    > **Importante:** Si recibe un mensaje de error, compruebe que las tablas y las columnas que creó coincidan con las instrucciones anteriores.
 
@@ -325,13 +324,13 @@ En esta tarea, importará una solución que contiene el flujo de Power Automate 
 
 6. Haga clic en **Ejecutar** luego en **Ejecutar flujo** cuando se le solicite.
 
-7. Haga clic en **Listo**.
+7. Haga clic en **Done**(Listo).
 
 8. Espere hasta que la instancia de flujo complete la ejecución. Puede actualizar la tabla **Historial de ejecución de 28 días** para ver cuándo se ha ejecutado el flujo. 
 
     > El propósito de este flujo era generar datos de ejemplo para los próximos laboratorios. En la siguiente tarea, comprobará que la importación de datos se haya realizado correctamente. 
 
-## Tarea 3: Verificar la importación de datos
+## <a name="task-3-verify-data-import"></a>Tarea n.° 3: Comprobar la importación de datos
 
 1. Vuelva a la pestaña anterior de Power Apps. Haga clic en la ventana emergente **Listo**. 
 
@@ -353,7 +352,7 @@ En esta tarea, importará una solución que contiene el flujo de Power Automate 
 
 7. Cierre la ventana abierta recientemente.
 
-# Desafíos
+# <a name="challenges"></a>Desafíos
 
 * ¿Consideraría usar la actividad de *cita* como parte de la solución? ¿Qué cambiaría?
 * ¿Cómo hacer que el final programado tenga lugar después del inicio programado? 
