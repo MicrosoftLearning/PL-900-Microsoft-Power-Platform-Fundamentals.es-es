@@ -2,18 +2,16 @@
 lab:
   title: 'Laboratorio: Validar el ambiente de laboratorio'
   module: 'Module 0: Course introduction'
-ms.openlocfilehash: f98bf8aee0be31934acee15f3b5668d3e6e6108a
-ms.sourcegitcommit: ef58c858463b890e923ef808b1d43405423943fd
+ms.openlocfilehash: e69074549dddd4494db53a9ccb9ebfb3ae198d48
+ms.sourcegitcommit: fc79a9b68a8235b37fd90ef84ba8ae1aa2e581f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "137899026"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144424707"
 ---
-<a name="module-0-course-introduction"></a>Módulo 0: Introducción al curso
-=================================
+# <a name="module-0-course-introduction"></a>Módulo 0: Introducción al curso
 
-<a name="scenario"></a>Escenario
---------
+## <a name="scenario"></a>Escenario
 
 Bellows College es una institución educativa que tiene un campus con varios edificios. Los visitantes del campus están actualmente registrados en revistas en papel. La información no se recaba de manera uniforme y no hay forma de recopilar y analizar los datos sobre las visitas de todo el campus.
 
@@ -27,62 +25,36 @@ En este laboratorio del Módulo 0, adquirirá un inquilino de prueba de Power Pl
 
 ### <a name="task-1---acquire-your-microsoft-power-platform-trial-tenant"></a>Tarea 1: Adquirir su inquilino de prueba de Power Platform
 
-1. Copie sus **Credenciales de Microsoft 365** del proveedor de servicios de hosting del laboratorio autorizado.
+1.  Copie sus **Credenciales de Microsoft 365** del proveedor de servicios de hosting del laboratorio autorizado.
 
-2. Vaya a <https://powerapps.microsoft.com> y haga clic en **Inicio gratis.**
+2.  Vaya a <https://powerapps.microsoft.com> y haga clic en **Inicio gratis.**
 
-3. Debajo de **Comenzar**, escriba la dirección de correo electrónico de sus credenciales de Microsoft 365 en el cuadro de texto **Escriba su dirección de correo electrónico del trabajo.**
+3.  Debajo de **Comenzar**, escriba la dirección de correo electrónico de sus credenciales de Microsoft 365 en el cuadro de texto **Escriba su dirección de correo electrónico del trabajo.**
 
-4. Verá un mensaje que le indica que ya tiene una cuenta con Microsoft. Seleccione **Conectarse**.
+4.  Verá un mensaje que le indica que ya tiene una cuenta con Microsoft. Seleccione **Conectarse**.
 
-5. Escriba la contraseña proporcionada por el proveedor de servicios de hosting del laboratorio autorizado. 
+5.  Escriba la contraseña proporcionada por el proveedor de servicios de hosting del laboratorio autorizado e inicie sesión.
 
-6. Seleccione **Sí** para permanecer conectado.
+6.  Seleccione **Sí** para permanecer conectado.
 
-7. Complete la información de la cuenta y seleccione **Comenzar** para suscribirse a la prueba de Power Platform.  
+7.  Complete la información de la cuenta y seleccione **Comenzar** para suscribirse a la prueba de Power Platform.
 
 ### <a name="task-2--create-environment"></a>Tarea \#2: Crear un entorno
 
-1. Acceda a <https://admin.powerplatform.microsoft.com> e inicie sesión con sus credenciales de Microsoft 365 si se le solicita de nuevo.
+1.  Acceda a <https://admin.powerplatform.microsoft.com> e inicie sesión con sus credenciales de Microsoft 365 si se le solicitan.
 
-2. Seleccione **Entornos** y haga clic en **+Nuevo**.
+2.  Seleccione **Entornos** y haga clic en **+Nuevo**.
 
-    - En **Nombre**, escriba **Práctica [mis iniciales]** . (Ejemplo: Práctica AJ).
-    
-    - En **Tipo**, seleccione **Prueba** (no seleccione la opción de prueba basada en suscripción).
-    
-    - Cambie el botón de alternancia en **¿Crear una base de datos para este entorno?** a **Sí**.
-    
-    - Deje todas las demás selecciones como predeterminadas y haga clic en **Siguiente**.
-    
-    - En la siguiente pestaña, deje todas las selecciones predeterminadas y haga clic en **Guardar**.
+    1.  En **Nombre**, escriba **Práctica [mis iniciales]** . (Ejemplo: Práctica AJ).
 
-3. Su entorno de **práctica** debería mostrarse en la lista de entornos. 
+    2.  En **Tipo**, seleccione **Prueba** (no seleccione la opción de prueba basada en suscripción).
 
-    > El aprovisionamiento del entorno podría tardar unos minutos. Si es necesario, actualice la página.
+    3.  Cambie el botón de alternancia en **¿Crear una base de datos para este entorno?** a **Sí**.
 
-# <a name="exercise-2-provision-a-power-apps-portal"></a>Ejercicio \#2: Aprovisionar un portal de Power Apps
+    4.  Deje todas las demás selecciones como predeterminadas y haga clic en **Siguiente**.
 
-**Objetivo:** El aprovisionamiento de un portal de Power Apps puede llevar algún tiempo. En este ejercicio, creará su portal de Power Apps en su entorno para que se pueda iniciar el proceso de aprovisionamiento. Usará este portal en un laboratorio posterior.
+    5.  En la siguiente pestaña, deje todas las selecciones predeterminadas y haga clic en **Guardar**.
 
-## <a name="task-1-create-power-apps-portal"></a>Tarea \#1: Crear un portal de Power Apps
+3.  Su entorno de **práctica** debería mostrarse en la lista de entornos.
 
-1.  Inicie sesión en <https://make.powerapps.com>.
-
-2.  Si el **Ambiente** que se muestra en la parte superior derecha no es su ambiente de práctica, seleccione su ambiente.
-
-3.  En la página Inicio, haga clic en el panel **Portal desde cero**, debajo de **Cree su propia aplicación**.
-
-    > Si no ve esta opción, intente alejar la imagen.
-
-4.  Proporcione nuevos detalles del portal.
-
-    -   Escriba **```Bellows College Visitors```** como **nombre** del portal.
-
-    -   Proporcione una URL única: **algo**.powerappsportals.com (si el nombre ya está en uso, elija uno diferente).
-
-    -   Seleccione un **Idioma** base para el portal.
-
-    -   Haga clic en **Crear**
-
-    > El proceso de aprovisionamiento del portal se ejecutará entre 30 y 45 minutos. No tiene que esperar, ya que esto continuará mientras pasa al siguiente módulo.
+>   El aprovisionamiento del entorno podría tardar unos minutos. Si es necesario, actualice la página.
