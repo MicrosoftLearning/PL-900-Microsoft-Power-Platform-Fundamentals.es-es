@@ -2,28 +2,30 @@
 lab:
   title: 'Laboratorio 1: Modelado de datos'
   module: 'Module 2: Introduction to Microsoft Dataverse'
-ms.openlocfilehash: 05d0f0656ae0d93f5666f7c14602c3976a9a9ac9
-ms.sourcegitcommit: ef58c858463b890e923ef808b1d43405423943fd
+ms.openlocfilehash: c3ea362eebf9156f069a9ab8635859e6186c1626
+ms.sourcegitcommit: 0118c25a230425d0ccba16e6c3922053ee07c183
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "137899015"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "144810913"
 ---
 # <a name="module-2-introduction-to-microsoft-dataverse"></a>Módulo 2: Introducción a Microsoft Dataverse
 
 # <a name="scenario"></a>Escenario
 
-Bellows College es una institución educativa que tiene un campus con varios edificios. Actualmente se guarda un registro físico de las visitas al campus. La información no se recaba de manera uniforme y no hay forma de recopilar y analizar los datos sobre las visitas de todo el campus. 
+Bellows College es una institución educativa que tiene un campus con varios edificios. Actualmente se guarda un registro físico de las visitas al campus. La información no se recaba de manera uniforme y no hay forma de recopilar y analizar los datos sobre las visitas de todo el campus.
 
 La administración del campus querría modernizar el sistema de registro de visitantes de los edificios cuyo acceso esté controlado por el personal de seguridad y en los que los anfitriones deban anotar con antelación las visitas y dejar constancia de ellas.
 
-A lo largo de este curso, creará aplicaciones y realizará la automatización para permitir que el personal de administración y seguridad de Bellows College administre y controle el acceso a los edificios en el campus. 
+A lo largo de este curso, creará aplicaciones y realizará la automatización para permitir que el personal de administración y seguridad de Bellows College administre y controle el acceso a los edificios en el campus.
 
 En este laboratorio, accederá a su ambiente, creará una base de datos de Microsoft Dataverse y creará una solución para seguir los cambios. También creará un modelo de datos que cumpla con los siguiente requisitos:
 
--   R1: Hacer un seguimiento de las ubicaciones (edificios) del campus en las que se producen las visitas
--   R2: Registrar información básica para identificar y hacer un seguimiento de los visitantes 
--   R3 – Programar, registrar y administrar visitas 
+-   R1: Hacer un seguimiento de la información de las visitas programadas al campus
+
+-   R2: Registrar información básica para identificar y hacer un seguimiento de los visitantes
+
+-   R3 – Programar, registrar y administrar visitas
 
 Por último, importará los datos de ejemplo en Microsoft Dataverse.
 
@@ -33,330 +35,193 @@ Para preparar sus entornos de aprendizaje tendrá que:
 
 * crear una solución y un publicador
 * agregar los componentes nuevos y existentes que se necesitan para cumplir con los requisitos de la aplicación. Consulte la descripción de los metadatos (tablas y relaciones) en el [documento del modelo de datos](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png). Puede mantener presionada la tecla CTRL y hacer clic o hacer clic con el botón derecho en el vínculo para abrir el documento del modelo de datos en una nueva ventana.
-
-Su solución contendrá varias tablas al completar todas las personalizaciones:
-
--   Contacto
--   Compilación
--   Visite
+* crear la tabla Visita.
+* importación de datos de visita mediante una hoja de cálculo de Excel
 
 ## <a name="prerequisites"></a>Requisitos previos:
 
-* Finalización del **Módulo 0 Laboratorio 0: Validación del entorno de laboratorio**
+-   Finalización del **Módulo 0 Laboratorio 0: Validación del entorno de laboratorio**
 
 ## <a name="things-to-consider-before-you-begin"></a>Cuestiones a tener en cuenta antes de comenzar:
 
-* Convención de nomenclatura
+-   Convenciones de nomenclatura: escriba los nombres con cuidado.
 
-* Tipos de datos, restricciones (por ejemplo, la longitud máxima de un nombre)
+# <a name="exercise-1-create-new-table"></a>Ejercicio \#1: Creación de una nueva tabla
 
-* Formato de datetime para facilitar la localización
+**Objetivo:** En este ejercicio, creará una nueva tabla personalizada para las visitas. 
 
-# <a name="exercise-1-create-solution"></a>Ejercicio \#1: Crear la solución
+## <a name="task--1-create-visit-table-and-columns"></a>Tarea \#1: Crear la tabla y las columnas Visita
 
-## <a name="task-1-create-solution-and-publisher"></a>Tarea \#1: Crear la solución y el publicador
-
-1.  Crear solución
-
-    -   Vaya a <https://make.powerapps.com>. Es posible que deba volver a autenticarse: haga clic en **Iniciar sesión** y siga las instrucciones si es necesario.
-
-    -   Seleccione su entorno haciendo clic en **Entorno**, en la esquina superior derecha de la pantalla, y elija su entorno en el menú desplegable.
-
-    -   Seleccione **Soluciones** en el menú de la izquierda y haga clic en **Nueva solución**.
-
-    -   Escriba **[Su apellido] Administración del campus** en **Nombre para mostrar**.
-
-2.  Crear publicador
-
-    -   En la sección **Publicador**, seleccione **+ Publicador**.
-
-    -   En la ventana emergente, escriba **Bellows College** en **Nombre para mostrar**. 
-
-    -   Escriba **BellowsCollege** en **Nombre**.
-    
-    -   Escriba **bc** en **Prefijo**.
-
-    -   Haga clic en **Guardar**
-    
-    -   Haga clic en **Listo** en la ventana emergente.
-
-3.  Complete la creación de la solución.
-
-    -   Luego, haga clic en el menú desplegable **Publicador** y seleccione el publicador **Bellows College** que acaba de crear.
-
-    -   Compruebe que la **Versión** está establecida en **1.0.0.0** 
-    
-    -   Haga clic en **Crear**.
-
-# <a name="exercise-2-add-existing-and-create-new-tables"></a>Ejercicio \#2: Agregar tablas existentes y crear tablas nuevas
-
-**Objetivo:** En este ejercicio, agregará la tabla estándar Contacto y creará nuevas tablas personalizadas para Edificios y Visitas en la solución. 
-
-## <a name="task-1-add-existing-table"></a>Tarea \#1: Agregar una tabla existente
-
-1.  Haga clic para abrir la solución **Administración del campus** que acaba de crear.
-
-2.  Seleccione **Agregar existente** y luego **Tabla**.
-
-3.  Localice **Contacto** y selecciónelo.
-
-4.  Haga clic en **Next**.
-
-5.  Haga clic en **Seleccionar componentes** debajo de Contacto.
-
-6.  Seleccione la pestaña **Vistas** y elija la vista **Contactos activos**. Haga clic en **Agregar**.
-    
-7.  Haga clic nuevamente en **Seleccionar componentes**.
-
-8.  Seleccione la pestaña **Formulario** y elija el formulario **Contacto**.
-    
-9.  Haga clic en **Agregar**.
-
-    > Debería tener **1 vista** y **1 formulario** seleccionados. 
-    
-10.  Vuelva a hacer clic en **Agregar**. Esto agregará la tabla Contacto con la vista y el formulario seleccionados a la solución que acaba de crear.
-
-> Ahora su solución debería tener una tabla: Contacto.
-    
-## <a name="task-2-create-building-table"></a>Tarea n.°2: Crear la tabla Edificio
-
-1.  Debe mantener su explorador abierto en su solución Administración del campus. De lo contrario, abra la solución Administración del campus siguiendo estos pasos:
-
-    * Haga clic en <https://make.powerapps.com> (si aún no ha iniciado sesión).
-    
-    * Seleccione **Soluciones** y haga clic para abrir la solución **[Su apellido] Administración del campus** que acaba de crear.
-          
-2.  Crear la tabla Edificio
-
-    -   Haga clic en **Nuevo** y seleccione **Tabla**.
-    
-    -   Escriba **Edificio** en **Nombre para mostrar**. 
-    
-    -   Haga clic en **Save**(Guardar). Esto iniciará el aprovisionamiento de la tabla en segundo plano, y podrá comenzar a agregar otras tablas y columnas.
-
-## <a name="task-3-create-visit-table-and-columns"></a>Tarea n.° 3: Crear la tabla y las columnas Visita
-
-La tabla **Visita** contendrá información sobre las visitas al campus, incluidos el edificio, el visitante, la hora programada y la hora real de cada visita. 
+La tabla **Visita** contendrá información sobre las visitas al campus, incluidos el visitante, la hora programada y la hora real de cada visita.
 
 Nos gustaría asignar a cada visita un número único que el visitante pueda ingresar e interpretar fácilmente cuando se le solicite durante el proceso de registro de la visita.
 
-> Usamos el comportamiento de **Independiente de la zona horaria** para registrar información de la fecha y hora, ya que el horario de una visita es siempre local para la ubicación del edificio y no debe cambiar cuando se consulta desde una zona horaria diferente. 
+>   Utilizamos el comportamiento de **Zona horaria independiente** para registrar información de la fecha y hora, ya que el horario de una visita es siempre local para la ubicación del edificio y no debe cambiar cuando se ve desde una zona horaria diferente.
 
-1.  Debe mantener su explorador abierto en su solución Administración del campus. De lo contrario, abra la solución Administración del campus siguiendo estos pasos:
+1.  Haga clic en <https://make.powerapps.com> (si aún no ha iniciado sesión).
 
-    * Haga clic en <https://make.powerapps.com> (si aún no ha iniciado sesión).
-    
-    * Seleccione **Soluciones** y haga clic para abrir la solución **[Su apellido] Administración del campus** que acaba de crear.
+2.  Seleccione su ambiente **Práctica [mis iniciales]** en la parte superior derecha, si aún no está seleccionado.
 
-2. Crear la tabla Visita
+3.  Con el panel de navegación de la izquierda, expanda Dataverse y seleccione Tablas.
 
-   * Haga clic en **Nuevo** y seleccione **Tabla**.
-   
-   * Escriba **Visita** en **Nombre para mostrar**. 
-   
-   * Haga clic en **Save**(Guardar). Esto iniciará el aprovisionamiento de la tabla en segundo plano, y podrá comenzar a agregar otras columnas.
+4.  Haga clic en **Nueva tabla**.
 
-3. Crear la columna Inicio programado
+5.  Escriba **Visita** en **Nombre para mostrar**.
 
-   * Seleccione la tabla **Visitas**.
+6.  Haga clic en **Crear**. Esto iniciará el aprovisionamiento de la tabla en segundo plano, y podrá comenzar a agregar otras columnas.
 
-   * Asegúrese de tener la pestaña **Campos** seleccionada y haga clic en **Agregar columna**.
-   
-   * Escriba **Inicio programado** para **Nombre para mostrar**.
-   
-   * Seleccione **Fecha y hora** para **Tipo de datos**.
-   
-   * En **Obligatorio**, seleccione **Obligatorio**.
-   
-   * Expanda la sección **Opciones avanzadas**.
-   
-   * En **Comportamiento**, seleccione **Independiente de la zona horaria**.
-   
-   * Haga clic en **Done**(Listo).
+7.  Crear la columna Inicio programado
 
-4.  Crear la columna Fin programado
+    1.  Debe estar en la página de columnas de la tabla Visita.
 
-    * Haga clic en **Agregar columna**.
-    
-    * Escriba **Fin programado** en **Nombre para mostrar**.
-    
-    * Seleccione **Fecha y hora** para **Tipo de datos**.
-    
-    * En **Obligatorio**, seleccione **Obligatorio**.
-    
-    * Expanda la sección **Opciones avanzadas**.
-    
-    * En **Comportamiento**, seleccione **Independiente de la zona horaria**.
-    
-    * Haga clic en **Done**(Listo).
-    
-5.  Crear la columna Inicio real
+    2.  Asegúrese de tener la pestaña **Campos** seleccionada y haga clic en **Agregar columna**.
 
-    * Haga clic en **Agregar columna**.
-    
-    * Escriba **Inicio real** para el **Nombre para mostrar**.
-    
-    * Seleccione **Fecha y hora** para **Tipo de datos**.
-    
-    * En el campo **Necesario**, déjelo como **Opcional**.
-    
-    * Expanda la sección **Opciones avanzadas**.
-    
-    * En **Comportamiento**, seleccione **Independiente de la zona horaria**.
-    
-    * Haga clic en **Done**(Listo).
-    
-6.  Crear la columna Fin real
+    3.  Escriba **Inicio programado** para **Nombre para mostrar**.
 
-    * Haga clic en **Agregar columna**.
-    
-    * Escriba **Fin real** para **Nombre para mostrar**.
-    
-    * Seleccione **Fecha y hora** para **Tipo de datos**.
-    
-    * En el campo **Necesario**, déjelo como **Opcional**.
-    
-    * Expanda la sección **Opciones avanzadas**.
-    
-    * En **Comportamiento**, seleccione **Independiente de la zona horaria**.
-    
-    * Haga clic en **Done**(Listo).
-    
-7.  Crear la columna Código
+    4.  Seleccione **Fecha y hora** para **Tipo de datos**.
 
-    * Haga clic en **Agregar columna**.
-    
-    * Escriba **Código** para **Nombre para mostrar**.
-    
-    * Seleccione **Autonumeración** para **Tipo de datos**.
-    
-    * Seleccione **Número prefijado de fecha** para **Tipo de autonumeración**.
-    
-    * Haga clic en **Done**(Listo).
-    
-8.  Haga clic en **Guardar tabla**.
+    5.  En **Obligatorio**, seleccione **Obligatorio**.
 
-# <a name="exercise-3-create-relationships"></a>Ejercicio \#3: Crear relaciones
+    6.  Expanda la sección **Opciones avanzadas**.
 
-**Objetivo:** En este ejercicio, agregará relaciones entre las tablas.
+    7.  En **Comportamiento**, seleccione **Independiente de la zona horaria**.
 
-## <a name="task-1-create-relationships"></a>Tarea n.° 1: Crear relaciones
+    8.  Haga clic en **Done**(Listo).
 
-1.  Asegúrese de que todavía está viendo la tabla **Visita** de su solución de **Administración del campus**. De lo contrario, vaya hacia allí.
+8.  Crear la columna Fin programado
 
-2.  Crear una relación de visita a contacto
+    1.  Haga clic en **Agregar columna**.
 
-    * Seleccione la pestaña **Relaciones**.
+    2.  Escriba **Fin programado** en **Nombre para mostrar**.
+
+    3.  Seleccione **Fecha y hora** para **Tipo de datos**.
+
+    4.  En **Obligatorio**, seleccione **Obligatorio**.
+
+    5.  Expanda la sección **Opciones avanzadas**.
+
+    6.  En **Comportamiento**, seleccione **Independiente de la zona horaria**.
+
+    7.  Haga clic en **Done**(Listo).
+
+9.  Crear la columna Inicio real
+
+    1.  Haga clic en **Agregar columna**.
+
+    2.  Escriba **Inicio real** para el **Nombre para mostrar**.
+
+    3.  Seleccione **Fecha y hora** para **Tipo de datos**.
+
+    4.  En el campo **Necesario**, déjelo como **Opcional**.
+
+    5.  Expanda la sección **Opciones avanzadas**.
+
+    6.  En **Comportamiento**, seleccione **Independiente de la zona horaria**.
+
+    7.  Haga clic en **Done**(Listo).
+
+10. Crear la columna Fin real
+
+    1.  Haga clic en **Agregar columna**.
+
+    2.  Escriba **Fin real** para **Nombre para mostrar**.
+
+    3.  Seleccione **Fecha y hora** para **Tipo de datos**.
+
+    4.  En el campo **Necesario**, déjelo como **Opcional**.
+
+    5.  Expanda la sección **Opciones avanzadas**.
+
+    6.  En **Comportamiento**, seleccione **Independiente de la zona horaria**.
+
+    7.  Haga clic en **Done**(Listo).
+
+11. Crear la columna Código
+
+    1.  Haga clic en **Agregar columna**.
+
+    2.  Escriba **Código** para **Nombre para mostrar**.
+
+    3.  Seleccione **Autonumeración** para **Tipo de datos**.
     
-    * Haga clic en **Agregar relación** y seleccione **Varios a uno**.
-    
-    * Seleccione **Contacto** para **Relacionados (uno)** . 
-    
-    * Escriba **Visitante** para **Nombre para mostrar del campo de búsqueda** 
-    
-    * Haga clic en **Done**(Listo).
-    
-3.  Crear relación de visita a edificio
+    4.  Seleccione **Número prefijado de fecha** para **Tipo de autonumeración**.
 
-    * Haga clic en **Agregar relación** y seleccione **Varios a uno**.
-    
-    * Seleccione **Edificio** en **Relacionados (uno)** . 
-    
-    * Haga clic en **Done**(Listo).
-    
-4.  Haga clic en **Guardar tabla**.
+    5.  Haga clic en **Done**(Listo).
 
-5.  Seleccione **Volver a soluciones** en la parte superior izquierda.
+12. Crear columna de búsqueda de visitante
 
-6.  Seleccione **Publicar todas las personalizaciones**.
+    1.  Haga clic en **Agregar columna**.
 
-# <a name="exercise-4-import-data"></a>Ejercicio \#4: Importación de datos
+    2.  Escriba **Visitante** en **Nombre para mostrar**.
+
+    3.  Seleccione **Búsqueda** en **Tipo de datos**.
+
+    4.  Seleccione **Contacto** para la **tabla Relacionados.**
+
+    5.  Expanda la sección **Opciones avanzadas**.
+    
+    6.  Escriba **visitor_id** en **Nombre de la relación**.
+    
+    7.  Haga clic en **Done**(Listo).
+
+13. Haga clic en **Guardar tabla**, en la parte inferior derecha.
+
+# <a name="exercise-2-import-data"></a>Ejercicio \#2: Importación de datos
 
 **Objetivo:** En este ejercicio importará datos de ejemplo a la base de datos de Dataverse.
 
-## <a name="task-1-import-solution"></a>Tarea n.° 1: Importar solución
+## <a name="task-1-import-the-visitsxls-file"></a>Tarea \#1: Importe el archivo Visits.xls.
 
-En esta tarea, importará una solución que contiene el flujo de Power Automate necesario para completar la importación de datos.
+En esta tarea, importará los datos de una visita desde un archivo de Excel. 
 
-1. Debería tener el archivo **DataImport_managed.zip** almacenado en su escritorio. Si no, descargue la [Solución de importación de datos](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/DataImport_managed.zip?raw=true).
+1.  Debe tener el archivo **Visits.xls** almacenado en su escritorio. Si no es así, descargue el archivo [Visits.xls](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx).
 
-2. Inicie sesión en <https://make.powerapps.com>.
+2.  Si aún no ha iniciado sesión, inicie sesión en <https://make.powerapps.com>.
 
-3. Seleccione su ambiente **Práctica [mis iniciales]** en la parte superior derecha, si aún no está seleccionado.
+3.  Seleccione su ambiente **Práctica [mis iniciales]** en la parte superior derecha, si aún no está seleccionado.
 
-4. Seleccione **Soluciones** en el panel de navegación izquierdo.
+4.  Con el panel de navegación de la izquierda, expanda **Dataverse** y seleccione Tablas.
+    >   Es posible que vea esto como Datos \> Tablas en la pantalla. 
 
-5. Haga clic en **Importar** y luego en **Examinar**. Examine y seleccione **DataImport_managed.zip** desde su escritorio y luego presione **Siguiente**.
+5.  Busque y abra la tabla **Visita** que creó en el ejercicio anterior.
 
->   Puede recibir el siguiente mensaje:
->
->   Faltan dependencias. Instale las siguientes soluciones antes de instalar esta...
->
->   Mediante este mensaje se indica que el modelo de datos no está completo, que el prefijo del publicador no es **bc** o que los nombres de las tablas **Edificio** y **Visita** difieren de los nombres mostrados en los pasos anteriores.
+6.  Con el menú de la parte superior, seleccione la flecha desplegable situada junto a **Datos**, seleccione la flecha situada junto a **Obtener datos** y, a continuación, seleccione **Obtener datos desde Excel**.
 
-6. Presione **Siguiente**. Se le pedirá que restablezca las conexiones. 
+7.  En el menú que aparece, seleccione el botón **Cargar**.
 
-7. Expanda el desplegable **Seleccionar una conexión** y seleccione **+Nueva conexión**.
+8.  Busque y seleccione el archivo **Visits.xls** que descargó anteriormente. *(Tenga en cuenta que el archivo puede tardar un minuto o dos en cargarse). No se preocupe si recibe un error que le indica que hay errores de asignación, nos encargaremos de eso más adelante).*
 
-8. Se abre una nueva ventana o pestaña del explorador. Seleccione **Crear** cuando se le pida crear la conexión. Conéctese si es necesario para completar la creación de la conexión.
+9. Seleccione **Asignar columnas**.
 
-9. Cierre la pestaña actual para volver a la pestaña **Importar una solución**.
+10. Asigne las columnas como se indica a continuación:
 
-10. Asegúrese de que la conexión que acaba de crear esté seleccionada. Si no ve la conexión, haga clic en **Actualizar** para actualizar la lista de conexiones. 
+    | Columnas de bases de datos de visitas | Valores de origen   |
+    |------------------|-----------------|
+    | Finalización real       | Finalización real      |
+    | Inicio real     | Inicio real    |
+    | Código             | Código            |
+    | Nombre             | Nombre            |
+    | Final programado    | Finalización programada   |
+    | Scheduled Start  | Inicio programado |
 
-11. Presione **Importar**.
+11. Deje todos los demás campos en **Sin establecer**.
 
-12. Espere hasta que se complete la importación.
+12. En la esquina superior derecha de la pantalla, seleccione **Guardar cambios**.
 
-## <a name="task-2-import-data"></a>Tarea n.°2: Importación de datos  
+13. En la pantalla **Importar datos**, compruebe que el estado de asignación indica que la asignación se realizó correctamente.
 
-1. Abra la solución **Importar datos**.
+14. Seleccione **Importar** en la esquina superior derecha para completar la importación de los datos.
 
-2. Compruebe el **Estado** del flujo **Datos de importación**.
+**Nota:** *Los datos pueden tardar unos minutos en importarse en la tabla. No se preocupe si aparecen algunos errores, es normal, y no afectará al resto del curso.*
 
-3. Si el **Estado** está **Desactivado**, seleccione **...** junto a **Importar datos** y, luego, seleccione **Activar**.
+## <a name="task-2-verify-data-import"></a>Tarea \#2: Comprobar la importación de datos
 
-   > **Importante:** Si recibe un mensaje de error, compruebe que las tablas y las columnas que creó coincidan con las instrucciones anteriores.
+1.  Una vez importados los datos, use el menú de navegación a la izquierda de la pantalla para seleccionar de nuevo la tabla **Visita**.
 
-4. Abra el componente **Importar de datos**. Power Automate se abrirá en una nueva pestaña. 
+2.  Tenga en cuenta que tiene muchas pestañas para la tabla Visita. Entre ellas, se incluyen Cikynns, Relaciones, Reglas de negocio, Vistas, etc. 
 
-5. Haga clic en **Comenzar** si se muestra en una ventana emergente. 
+3.  Seleccione la pestaña **Datos** de la tabla Visita. Esto está debajo de **Tablas** \> **Visita**.
 
-6. Haga clic en **Ejecutar** luego en **Ejecutar flujo** cuando se le solicite.
+3.  Compruebe que hay registros en la tabla. Para cambiar la vista, seleccione el nombre de la vista en la parte superior derecha y cámbielo a **Todas las columnas**. 
 
-7. Haga clic en **Done**(Listo).
-
-8. Espere hasta que la instancia de flujo complete la ejecución. Puede actualizar la tabla **Historial de ejecución de 28 días** para ver cuándo se ha ejecutado el flujo. 
-
-    > El propósito de este flujo era generar datos de ejemplo para los próximos laboratorios. En la siguiente tarea, comprobará que la importación de datos se haya realizado correctamente. 
-
-## <a name="task-3-verify-data-import"></a>Tarea n.° 3: Comprobar la importación de datos
-
-1. Vuelva a la pestaña anterior de Power Apps. Haga clic en la ventana emergente **Listo**. 
-
-2. Seleccione **Soluciones** en la barra de navegación izquierda y abra su solución **Administración del campus**.
-
-2. Haga clic para abrir la tabla **Visita**, luego seleccione la pestaña **Datos**.
-
-3. Haga clic en **Visitas activas** en la esquina superior derecha para mostrar el selector de vista, luego seleccione **Todas las columnas**. Esto cambiará la vista que se está utilizando para mostrar los datos de la tabla Visita. 
-
-    > Si no ve **Visitas activas** debido a que la resolución es más pequeña, debería ver un icono con forma de ojo en la misma ubicación.
-
-    > Si la importación se realizó correctamente, debería ver una lista de las filas de visitas.
-
-4. Haga clic en cualquier valor en la columna **Edificio** y confirme que el formulario del edificio se abra en otra ventana. 
-
-5. Cierre la ventana abierta recientemente.
-
-6. Haga clic en cualquier valor en la columna **Visitante** (es posible que deba desplazar la vista hacia la derecha), confirme que el formulario de contacto se abra en una ventana separada.
-
-7. Cierre la ventana abierta recientemente.
-
-# <a name="challenges"></a>Desafíos
-
-* ¿Consideraría usar la actividad de *cita* como parte de la solución? ¿Qué cambiaría?
-* ¿Cómo hacer que el final programado tenga lugar después del inicio programado? 
-* ¿Cómo agregar la compatibilidad para múltiples reuniones durante una sola visita?
-* ¿Cómo asegurar el acceso al edificio no solo para los contactos externos, sino también para el personal interno?
-* ¿Cómo hacer que las visitas a determinados edificios requieran la aprobación de la dirección? ¿Qué cambiaría el proceso de aprobación en el modelo de datos?
-
+Enhorabuena, ha creado una tabla nueva y ha importado datos correctamente.
