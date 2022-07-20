@@ -2,12 +2,12 @@
 lab:
   title: 'Laboratorio 5: Procedimientos para crear un panel sencillo'
   module: 'Module 5: Get Started with Power BI'
-ms.openlocfilehash: 8d104c42de9d4114c668a63a4d8d30cbbcc4b39e
-ms.sourcegitcommit: 36c8fda9cdc6f448416d7000e38c1606bea87d2e
+ms.openlocfilehash: 1df94fcda0e59554c10ed772314e5138936b73a8
+ms.sourcegitcommit: 50e1a519a6893e02a4a0c2c6bef93cafd2513611
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "144812939"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "147125742"
 ---
 # <a name="module-5-get-started-with-power-bi"></a>Módulo 5: Introducción a Power BI
 ## <a name="lab-how-to-build-a-simple-dashboard"></a>Laboratorio: Procedimientos para crear un panel sencillo
@@ -88,9 +88,9 @@ Ahora ya configuró el servicio Power BI para usarlo en sus laboratorios.
 
 5.  Haga clic en el informe fuera del gráfico circular para anular la selección y seleccione el gráfico de columnas apiladas en el panel **Visualizaciones**.
 
-6.  Presione la flecha desplegable situada junto **a bc_Visit** en el panel Campos. Arrastre el campo **Visita** y colóquelo en el cuadro **Valores**.
+6.  Presione la flecha desplegable situada junto **a bc_Visit** en el panel Campos. Arrastre el campo **Visita** y colóquelo en el cuadro de destino **Eje Y**.
 
-7.  Arrastre el campo **Comienzo** y colóquelo en el cuadro de destino **Eje**.
+7.  Arrastre el campo **Comienzo** y colóquelo en el cuadro de destino **Eje X**.
 
 8.  En el panel Visualizaciones, haga clic en **X** junto a **Año** y **Trimestre** para dejar solo los totales de **Mes** y **Día** para el eje.
 

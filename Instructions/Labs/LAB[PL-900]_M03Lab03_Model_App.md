@@ -2,12 +2,12 @@
 lab:
   title: 'Laboratorio 3: Cómo crear una aplicación basada en modelo'
   module: 'Module 3: Get started with Power Apps'
-ms.openlocfilehash: ed98e1f2c2ff900f84b98910e0ef2d14d130f462
-ms.sourcegitcommit: dbffa13e13419f5b9aadc894eb95fd16215b2ebf
+ms.openlocfilehash: c69ca883cc8f8c8b00ed3f67fb18f93b035726e3
+ms.sourcegitcommit: 50e1a519a6893e02a4a0c2c6bef93cafd2513611
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "146458379"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "147125766"
 ---
 # <a name="module-3-get-started-with-power-apps"></a>Módulo 3: Introducción a Power Apps
 ## <a name="lab-how-to-build-a-model-driven-app"></a>Laboratorio: Cómo crear una aplicación basada en modelo
@@ -234,7 +234,7 @@ Tarea n.° 3: Probar la aplicación
 
 2. Crear un nuevo contacto
 
-    0. La aplicación debería abrirse en la vista **Mis contactos activos**. Si no es así, seleccione Visitas a la izquierda.
+    0. La aplicación debería abrirse en la vista **Mis contactos activos**. Si no es así, seleccione Contactos a la izquierda.
 
     1. Haga clic en **Nuevo** en el menú superior.
 
