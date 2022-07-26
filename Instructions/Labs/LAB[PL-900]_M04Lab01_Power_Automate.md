@@ -2,15 +2,14 @@
 lab:
   title: 'Laboratorio 4: Cómo crear una solución automatizada'
   module: 'Module 4: Get Started with Power Automate'
-ms.openlocfilehash: 9b07c81fad82867bb54c2889687075fa7a463b81
-ms.sourcegitcommit: 36c8fda9cdc6f448416d7000e38c1606bea87d2e
+ms.openlocfilehash: 35d4b6940f31e1a2aef5e8b43d8ca7007e1b72f2
+ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "144812951"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "147154328"
 ---
-# <a name="module-4-get-started-with-power-automate"></a>Módulo 4: Introducción a Power Automate
-## <a name="lab-how-to-build-an-automated-solution"></a>Laboratorio: Cómo crear una solución automatizada
+# <a name="lab-4-how-to-build-an-automated-solution"></a>Laboratorio 4: Cómo crear una solución automatizada
 
 ## <a name="scenario"></a>Escenario
 
@@ -22,31 +21,30 @@ A lo largo de este curso, creará aplicaciones y realizará la automatización p
 
 En este laboratorio, creará un flujo de Power Automate para enviar un correo electrónico a un visitante cuando se programe una visita.
 
-# <a name="high-level-lab-steps"></a>Pasos de alto nivel del laboratorio
+## <a name="high-level-lab-steps"></a>Pasos de alto nivel del laboratorio
 
 Se han identificado las siguientes condiciones como requisitos que debe implementar para completar el proyecto:
 
--   Los contactos deben recibir una notificación por correo electrónico cuando se programe una visita.
+- Los contactos deben recibir una notificación por correo electrónico cuando se programe una visita.
 
 ## <a name="prerequisites"></a>Prerrequisitos
 
--   Finalización del **Módulo 0 Laboratorio 0: Validación del entorno de laboratorio**
+- Finalización del **Módulo 0 Laboratorio 0: Validación del entorno de laboratorio**
+- Finalización del **Módulo 2 Laboratorio 1: Modelado de datos**
+- Finalización del **Módulo 2 Laboratorio 3: Cómo crear una aplicación basada en modelo**
+- Contacto John Doe creado con una dirección de correo electrónico personal
 
--   Finalización del **Módulo 2 Laboratorio 1: Introducción a Microsoft Dataverse**
-
--   Contacto John Doe creado con una dirección de correo electrónico personal
-
-# <a name="exercise-1-create-visit-notification-flow"></a>Ejercicio \#1: Crear flujo de notificación de visita
+## <a name="exercise-1-create-visit-notification-flow"></a>Ejercicio 1: Crear flujo de notificación de visita
 
 **Objetivo:** En este ejercicio, creará un flujo de Power Automate que implementa el requisito. Cuando se crea una visita, el visitante debe recibir un correo electrónico que incluya el código único asignado a la visita.
 
-## <a name="task-1-create-a-flow"></a>Tarea \#1: Creación de un flujo
+### <a name="task-1-create-a-flow"></a>Tarea \#1: Creación de un flujo
 
 1.  Vaya a <https://make.powerapps.com>. Es posible que deba volver a autenticarse: haga clic en **Iniciar sesión** y siga las instrucciones si es necesario.
 
 2.  Seleccione su ambiente **Práctica [mis iniciales]** en la parte superior derecha, si aún no está seleccionado.
 
-2.  En el panel de navegación izquierdo, seleccione **Flujos**.
+3.  En el panel de navegación izquierdo, seleccione **Flujos**.
 
 4.  Si se le solicita, seleccione **Comenzar**.
 
@@ -66,12 +64,11 @@ Se han identificado las siguientes condiciones como requisitos que debe implemen
 
     3.  Seleccione **Organización** para el **ámbito**.
 
-    4.  En la etapa de desencadenamiento, haga clic en los puntos suspensivos ( **...** ) y en **Cambiar el nombre**.
-        Cambie el nombre de este desencadenador a **"Cuando se agrega una visita"** . Esta es una buena manera de que usted y otros editores de flujo puedan comprender el propósito de la etapa sin tener que profundizar en los detalles.
+    4.  En la etapa de desencadenamiento, haga clic en los puntos suspensivos ( **...** ) y en **Cambiar el nombre**. Cambie el nombre de este desencadenador a **"Cuando se agrega una visita"** . Esta es una buena manera de que usted y otros editores de flujo puedan comprender el propósito de la etapa sin tener que profundizar en los detalles.
 
-## <a name="task-2-create-a-step-to-get-the-visitor-row"></a>Tarea \#2: Crear un paso para obtener la fila del visitante
+### <a name="task-2-create-a-step-to-get-the-visitor-row"></a>Tarea \#2: Crear un paso para obtener la fila del visitante
 
-1.  Seleccione **Nuevo paso**. Esta etapa es necesaria para recuperar la información de los visitantes, incluyendo la dirección de correo electrónico.
+1.  Seleccione **+ New step**(+ Nuevo paso). Esta etapa es necesaria para recuperar la información de los visitantes, incluyendo la dirección de correo electrónico.
 
 2.  Busque **Dataverse**.
 
@@ -79,16 +76,16 @@ Se han identificado las siguientes condiciones como requisitos que debe implemen
 
 4.  Seleccione **Contactos** como **Nombre de tabla**.
 
-5.  Seleccione el campo **Id. de fila**. Observe que se abre una ventana para seleccionar contenido dinámico o expresiones. 
+5.  Seleccione el campo **Id. de fila**. Observe que se abre una ventana para seleccionar contenido dinámico o expresiones.
 
-6.  En el campo **id. de fila**, seleccione **Visitante (valor)** de la lista de contenido dinámico. En este paso, busca el contacto para la fila de visita que se creó para desencadenar este flujo. Puesto que la dirección de correo electrónico forma parte de la tabla Contacto, necesitará esta información para enviar el correo electrónico al visitante. 
+6.  En el campo **id. de fila**, seleccione **Visitante (valor)** de la lista de contenido dinámico. En este paso, busca el contacto para la fila de visita que se creó para desencadenar este flujo. Puesto que la dirección de correo electrónico forma parte de la tabla Contacto, necesitará esta información para enviar el correo electrónico al visitante.
 
 7.  En esta acción, haga clic en los puntos suspensivos ( **...** ) y en **Cambiar nombre**.
         Cambie el nombre de esta acción a **"Obtener visitante"** . Esta es una buena manera de que usted y otros editores de flujo puedan comprender el propósito de la etapa sin tener que profundizar en los detalles.
 
-## <a name="task-3-create-a-step-to-send-an-email-to-the-visitor"></a>Tarea \#3: Crear un paso para enviar un correo electrónico al visitante
+### <a name="task-3-create-a-step-to-send-an-email-to-the-visitor"></a>Tarea \#3: Crear un paso para enviar un correo electrónico al visitante
 
-1.  Haga clic en **Nuevo paso**. Este es el paso que enviará un correo electrónico al visitante.
+1.  Haga clic en **+ Nuevo paso**. Este es el paso que enviará un correo electrónico al visitante.
 
 2.  Busque *correo*, seleccione el conector de **Office 365 Outlook** y la acción **Enviar un correo electrónico (V2)** .
 
@@ -122,7 +119,7 @@ Se han identificado las siguientes condiciones como requisitos que debe implemen
 
 9.  Resalte el texto **{Scheduled Start}** . Reemplácelo por el campo **Inicio programado** del paso **Cuando se agrega una visita**.
 
-10.  Resalte el texto **{Scheduled End}** . Reemplácelo por el campo **Finalización programada** del paso **Cuando se agrega una visita**.
+10.  Resalte el texto **{Scheduled End}** . Reemplácelo por el campo **Fin programado** del paso **Cuando se agrega una visita**.
 
 11.  Haga clic en **Save**(Guardar).
 
@@ -130,13 +127,13 @@ Deje esta pestaña de flujo abierta para la siguiente tarea. El flujo debería t
 
 ![Ejemplo de pasos de flujo.](media/4-Flow.png)
 
-## <a name="task-4-validate-and-test-the-flow"></a>Tarea \#4: Validar y probar el flujo
+### <a name="task-4-validate-and-test-the-flow"></a>Tarea \#4: Validar y probar el flujo
 
 1.  Abra una pestaña nueva en el explorador y vaya a <https://make.powerapps.com>.
 
 2.  Seleccione su ambiente **Práctica [mis iniciales]** en la parte superior derecha, si aún no está seleccionado.
 
-3.  Haga clic en **Aplicaciones** y seleccione la aplicación **basada en un modelo de administración del campus** que creó antes.
+3.  Haga clic en **Aplicaciones** y seleccione la aplicación basada en el modelo **Administración del campus de Bellows** que creó anteriormente.
 
 3.  Deje esta pestaña del explorador abierta y vuelva a la pestaña anterior con el flujo.
 
@@ -160,10 +157,10 @@ Deje esta pestaña de flujo abierta para la siguiente tarea. El flujo debería t
 
 8. Seleccione el botón **Guardar y cerrar**.
 
-9. Vaya a la pestaña del explorador con la prueba del flujo en ejecución. Después de un breve retraso, debería ver el flujo en ejecución. Aquí es donde puede detectar cualquier problema en el flujo o confirmar que se ha ejecutado correctamente. 
+9. Vaya a la pestaña del explorador con la prueba del flujo en ejecución. Después de un breve retraso, debería ver el flujo en ejecución. Aquí es donde puede detectar cualquier problema en el flujo o confirmar que se ha ejecutado correctamente.
 
 Después de una pausa breve, debería ver un correo electrónico en la bandeja de entrada, ya que ha rellenado el correo electrónico de John Doe como su correo electrónico personal. Tenga en cuenta que puede ir a la carpeta Correo no deseado.
 
-# <a name="challenges"></a>Desafíos
+## <a name="challenges"></a>Desafíos
 
--   Juega con el formato del correo electrónico. ¿Cómo puede hacer que parezca más profesional? 
+- Juega con el formato del correo electrónico. ¿Cómo puede hacer que parezca más profesional?
