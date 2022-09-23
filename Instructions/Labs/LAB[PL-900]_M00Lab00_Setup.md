@@ -1,15 +1,15 @@
 ---
 lab:
-  title: 'Laboratorio: Validar el ambiente de laboratorio'
+  title: 'Laboratorio 0: Validar el ambiente de laboratorio'
   module: 'Module 0: Course introduction'
-ms.openlocfilehash: e69074549dddd4494db53a9ccb9ebfb3ae198d48
-ms.sourcegitcommit: fc79a9b68a8235b37fd90ef84ba8ae1aa2e581f5
+ms.openlocfilehash: d25543d93be7e40749c8fee3a01c35b3a8f2947b
+ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "144424707"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "147154400"
 ---
-# <a name="module-0-course-introduction"></a>Módulo 0: Introducción al curso
+# <a name="lab-0-validate-lab-environment"></a>Laboratorio 0: Validar el ambiente de laboratorio
 
 ## <a name="scenario"></a>Escenario
 
@@ -19,42 +19,52 @@ La administración del campus querría modernizar el sistema de registro de visi
 
 A lo largo de este curso, creará aplicaciones y realizará la automatización para permitir que el personal de administración y seguridad de Bellows College administre y controle el acceso a los edificios en el campus.
 
-En este laboratorio del Módulo 0, adquirirá un inquilino de prueba de Power Platform y accederá al centro de administración de Power Platform. En el Centro de administración creará el entorno de **práctica** en el que realizará la mayor parte del trabajo de laboratorio.
+En este laboratorio del Módulo 0, adquirirá una prueba de Power Platform y accederá al Centro de administración de Power Platform. En el centro de administración creará un entorno de **Práctica** en el que realizará la mayor parte del trabajo de laboratorio.
 
 ## <a name="exercise-1--setup"></a>Ejercicio 1: Configuración
 
-### <a name="task-1---acquire-your-microsoft-power-platform-trial-tenant"></a>Tarea 1: Adquirir su inquilino de prueba de Power Platform
+### <a name="task-1---acquire-your-microsoft-power-platform-trial-tenant"></a>Tarea \#1: Adquirir su inquilino de prueba de Power Platform
 
-1.  Copie sus **Credenciales de Microsoft 365** del proveedor de servicios de hosting del laboratorio autorizado.
+1. Copie sus **Credenciales de Microsoft 365** del proveedor de servicios de hosting del laboratorio autorizado.
 
-2.  Vaya a <https://powerapps.microsoft.com> y haga clic en **Inicio gratis.**
+1. Vaya a <https://powerapps.microsoft.com> y haga clic en **Inicio gratis**.
 
-3.  Debajo de **Comenzar**, escriba la dirección de correo electrónico de sus credenciales de Microsoft 365 en el cuadro de texto **Escriba su dirección de correo electrónico del trabajo.**
+1. En **Empecemos**, escriba la dirección de correo electrónico de sus credenciales de Microsoft 365 en el cuadro de texto **Escriba su dirección de correo electrónico profesional** y haga clic en **Siguiente**.
 
-4.  Verá un mensaje que le indica que ya tiene una cuenta con Microsoft. Seleccione **Conectarse**.
+1. Si aparece un mensaje que le indica que ya tiene una cuenta con Microsoft. Seleccione **Iniciar sesión**.
 
-5.  Escriba la contraseña proporcionada por el proveedor de servicios de hosting del laboratorio autorizado e inicie sesión.
+1. Escriba la contraseña proporcionada por el proveedor de servicios de hosting del laboratorio autorizado e inicie sesión.
 
-6.  Seleccione **Sí** para permanecer conectado.
+1. Seleccione **Sí** para permanecer conectado.
 
-7.  Complete la información de la cuenta y seleccione **Comenzar** para suscribirse a la prueba de Power Platform.
+1. No cambie el país.
+
+1. En **Número de teléfono**, escriba 01234567890.
+
+1. Complete la información de la cuenta y seleccione **Comenzar** para suscribirse a la prueba de Power Platform.
+
+1. En la pantalla de confirmación, haga clic en **Comenzar**.
+
+1. Si aparece un mensaje para especificar los detalles de contacto, haga clic en **X** para cerrar la ventana emergente.
 
 ### <a name="task-2--create-environment"></a>Tarea \#2: Crear un entorno
 
-1.  Acceda a <https://admin.powerplatform.microsoft.com> e inicie sesión con sus credenciales de Microsoft 365 si se le solicitan.
+1. Vaya a <https://admin.powerplatform.microsoft.com> e inicie sesión con sus credenciales de Microsoft 365 si se le solicita.
 
-2.  Seleccione **Entornos** y haga clic en **+Nuevo**.
+1. Si aparece un elemento emergente de bienvenida, haga clic en **Comenzar**.
 
-    1.  En **Nombre**, escriba **Práctica [mis iniciales]** . (Ejemplo: Práctica AJ).
+1. Seleccione **Entornos** y haga clic en **+ Nuevo**.
 
-    2.  En **Tipo**, seleccione **Prueba** (no seleccione la opción de prueba basada en suscripción).
+    1. En **Nombre**, escriba **Práctica de [mis iniciales]** (ejemplo: Práctica de AJ).
 
-    3.  Cambie el botón de alternancia en **¿Crear una base de datos para este entorno?** a **Sí**.
+    1. En **Tipo**, seleccione **Prueba** (no seleccione la opción de prueba basada en suscripción).
 
-    4.  Deje todas las demás selecciones como predeterminadas y haga clic en **Siguiente**.
+    1. Cambie el botón de alternancia en **¿Crear una base de datos para este entorno?** a **Sí**.
 
-    5.  En la siguiente pestaña, deje todas las selecciones predeterminadas y haga clic en **Guardar**.
+    1. Deje el resto de selecciones con el valor predeterminado y haga clic en **Siguiente**.
 
-3.  Su entorno de **práctica** debería mostrarse en la lista de entornos.
+    1. En la pestaña siguiente, deje todas las selecciones predeterminadas y haga clic en **Guardar**.
 
->   El aprovisionamiento del entorno podría tardar unos minutos. Si es necesario, actualice la página.
+1. Su entorno de **práctica** debería mostrarse en la lista de entornos.
+
+> El aprovisionamiento del entorno podría tardar unos minutos. Si es necesario, actualice la página.
