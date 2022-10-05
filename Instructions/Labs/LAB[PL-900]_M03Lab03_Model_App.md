@@ -2,13 +2,8 @@
 lab:
   title: 'Laboratorio 3: Cómo crear una aplicación basada en modelo'
   module: 'Module 3: Get started with Power Apps'
-ms.openlocfilehash: a5176245ed8ec696049d78e1022e82aa8236057f
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154424"
 ---
+
 # <a name="lab-3-how-to-build-a-model-driven-app"></a>Laboratorio 3: Cómo crear una aplicación basada en modelo
 
 ## <a name="scenario"></a>Escenario
@@ -146,9 +141,9 @@ IMPORTANTE: Asegúrese de que no cierra la vista Visitas activas, ya que la apro
 
 **Nota:** Como ya no filtramos el estado de la vista, obtendremos todas las visitas de hoy, incluidas las completadas. Estos campos ayudarán a diferenciar visitas completadas y visitas en curso.
 
-1. Haga clic en **Save**(Guardar).
+9. Haga clic en **Save**(Guardar).
 
-2. Haga clic en **Publicar** y espere a que se complete la publicación.
+10. Haga clic en **Publicar** y espere a que se complete la publicación.
 
 ## <a name="exercise-2-create-model-driven-app"></a>Ejercicio 2: Crear una aplicación basada en modelo
 
@@ -186,7 +181,7 @@ Por motivos de simplicidad y tiempo, no abordaremos algunas de las columnas de v
 
 8. Con los iconos de navegación del panel izquierdo de la pantalla, seleccione **Navegación**.
 
-9. En el panel de navegación, seleccione el **Grupo 1** debajo de Barra de navegación.
+9. En el panel de navegación, seleccione el **Grupo 1** debajo de Barra de navegación. Es posible que tenga que expandir el menú de la izquierda.
 
 10. En el lado derecho de la pantalla, en la sección **Opciones de presentación**, cambie la propiedad **Título** a **Seguridad**.
 
@@ -260,7 +255,7 @@ Ahora que tenemos todos los componentes necesarios agregados a la aplicación co
 
 - Haga clic en **Guardar y cerrar**. Esto creará el registro de la visita y debería poder verlo en la vista Visitas activas.
 
-- Cambie la vista a **Visitas de hoy**. Ya no debería ver la nueva visita en la vista, ya que está programada para mañana.
+- Cambie la vista a **Visitas de hoy** con la lista desplegable situada junto a **Visitas activas**. Ya no debería ver la nueva visita en la vista, ya que está programada para mañana.
 
 4. Puede agregar más registros de prueba.
 
