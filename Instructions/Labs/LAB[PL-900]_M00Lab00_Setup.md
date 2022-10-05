@@ -8,13 +8,13 @@ lab:
 
 ## <a name="scenario"></a>Escenario
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
+Bellows College es una institución educativa que tiene un campus con varios edificios. Los visitantes del campus están actualmente registrados en revistas en papel. La información no se recaba de manera uniforme y no hay forma de recopilar y analizar los datos sobre las visitas de todo el campus.
 
 La administración del campus querría modernizar el sistema de registro de visitantes de los edificios cuyo acceso esté controlado por el personal de seguridad y en los que los anfitriones deban anotar con antelación las visitas y dejar constancia de ellas.
 
 A lo largo de este curso, creará aplicaciones y realizará la automatización para permitir que el personal de administración y seguridad de Bellows College administre y controle el acceso a los edificios en el campus.
 
-In this Module 0 lab, you will acquire a Power Platform trial and access the Power Platform admin center. In the admin center, you will then create a <bpt id="p1">**</bpt>Practice<ept id="p1">**</ept> environment that you will perform the majority of your lab work in.
+En este laboratorio del Módulo 0, adquirirá una prueba de Power Platform y accederá al Centro de administración de Power Platform. En el centro de administración creará un entorno de **Práctica** en el que realizará la mayor parte del trabajo de laboratorio.
 
 ## <a name="exercise-1--setup"></a>Ejercicio 1: Configuración
 
@@ -26,7 +26,7 @@ In this Module 0 lab, you will acquire a Power Platform trial and access the Pow
 
 1. En **Empecemos**, escriba la dirección de correo electrónico de sus credenciales de Microsoft 365 en el cuadro de texto **Escriba su dirección de correo electrónico profesional** y haga clic en **Siguiente**.
 
-1. If you see a prompt that you have an existing account with Microsoft. Select <bpt id="p1">**</bpt>Sign in<ept id="p1">**</ept>.
+1. Si aparece un mensaje que le indica que ya tiene una cuenta con Microsoft. Seleccione **Iniciar sesión**.
 
 1. Escriba la contraseña proporcionada por el proveedor de servicios de hosting del laboratorio autorizado e inicie sesión.
 
@@ -34,7 +34,7 @@ In this Module 0 lab, you will acquire a Power Platform trial and access the Pow
 
 1. No cambie el país.
 
-1. En **Número de teléfono**, escriba 01234567890.
+1. En **Número de teléfono**, escriba 0123456789.
 
 1. Complete la información de la cuenta y seleccione **Comenzar** para suscribirse a la prueba de Power Platform.
 
@@ -62,4 +62,4 @@ In this Module 0 lab, you will acquire a Power Platform trial and access the Pow
 
 1. Su entorno de **práctica** debería mostrarse en la lista de entornos.
 
-> Your environment may take a few minutes to provision. Refresh the page if needed.
+> El aprovisionamiento del entorno podría tardar unos minutos. Si es necesario, actualice la página.

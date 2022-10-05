@@ -8,9 +8,9 @@ lab:
 
 ## <a name="scenario"></a>Escenario
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
+Bellows College es una institución educativa que tiene un campus con varios edificios. Actualmente se guarda un registro físico de las visitas al campus. La información no se recaba de manera uniforme y no hay forma de recopilar y analizar los datos sobre las visitas de todo el campus.
 
-Currently, campus administration is leveraging an Excel spreadsheet to track visitor registration. They would like to modernize their visitor registration system where access to the buildings is controlled by security personnel and all visits are required to be pre-registered and recorded by their hosts.
+Actualmente, la administración del campus utiliza una hoja de cálculo de Excel para realizar un seguimiento del registro de visitantes. Le gustaría modernizar el sistema de registro de visitantes de los edificios cuyo acceso esté controlado por el personal de seguridad y en los que los anfitriones deban anotar con antelación las visitas y dejar constancia de ellas.
 
 A lo largo de este curso, creará aplicaciones y realizará la automatización para permitir que el personal de administración y seguridad de Bellows College administre y controle el acceso a los edificios en el campus.
 
@@ -37,11 +37,11 @@ Seguiremos el siguiente esquema para diseñar la aplicación de lienzo:
 
 ### <a name="task-1-create-the-visits-app"></a>Tarea \#1: Crear la aplicación Visitas
 
-1.  Navigate to <ph id="ph1">&lt;https://make.powerapps.com&gt;</ph>. You may need to reauthenticate - click <bpt id="p1">**</bpt>Sign in<ept id="p1">**</ept> and follow instructions if needed.
+1.  Vaya a <https://make.powerapps.com>. Es posible que deba volver a autenticarse: haga clic en **Iniciar sesión** y siga las instrucciones si es necesario.
 
 2.  Seleccione su ambiente **Práctica [mis iniciales]** en la parte superior derecha, si aún no está seleccionado.
 
-3.  If necessary, click the <bpt id="p1">**</bpt>Home<ept id="p1">**</ept> icon on the left side of the screen. Under the <bpt id="p1">**</bpt>Start from<ept id="p1">**</ept> section, select <bpt id="p2">**</bpt>Dataverse<ept id="p2">**</ept>.
+3.  Si es necesario, haga clic en el icono **Inicio** en el lado izquierdo de la pantalla. En la sección **Iniciar desde**, seleccione **Dataverse**.
 
 4.  Seleccione la conexión de Dataverse.
 
@@ -60,17 +60,17 @@ Seguiremos el siguiente esquema para diseñar la aplicación de lienzo:
 
 ![Aplicación de lienzo creada a partir de los datos de visitas.](media/2-canvas-app-from-data.png)
 
-9. Bellows College es una institución educativa que tiene un campus con varios edificios.
+9. En el diseñador de aplicaciones, seleccione el botón **Vista previa de la aplicación** (icono Reproducir) en la barra de comandos. *(También puede obtener una vista previa de la aplicación pulsando F5 en el teclado).* Eche un vistazo para ver el aspecto de su aplicación lista para usar.
 
 10. Cierre la vista previa de la aplicación seleccionando la **X** de la esquina superior derecha de la pantalla.
 
-Actualmente se guarda un registro físico de las visitas al campus.
+Enhorabuena, ha creado correctamente una instancia de Power App a partir de una tabla de Dataverse. El siguiente paso del proceso es adaptar la aplicación para se ajuste a la personalización de marca de la universidad. La siguiente serie de pasos le guiará por el proceso de personalizar un poco más la aplicación.
 
 ### <a name="task-2-modify-and-theme-the-newly-created-app"></a>Tarea \#2: Modificar y aplicar un tema a la nueva aplicación
 
 En esta tarea, personalizará el texto del encabezado en cada una de las tres pantallas de la aplicación (Examinar, Detalles y Editar) y cambiará el tema de la aplicación.
 
-1.  La información no se recaba de manera uniforme y no hay forma de recopilar y analizar los datos sobre las visitas de todo el campus.
+1.  Está en la pantalla Examinar. Seleccione la etiqueta **Visitas** en la pantalla.
 
 1.  En el lado derecho de la pantalla, en la pestaña Propiedades, actualice la propiedad de control **Texto** a **"Visitas a Bellows College".**
 
@@ -102,18 +102,18 @@ En esta tarea, personalizará el texto del encabezado en cada una de las tres pa
 
 En esta tarea, probará la nueva aplicación.
 
-1.  Con la aplicación abierta en el Diseñador de aplicaciones, seleccione **Archivo**, actualice el nombre de la aplicación a **Aplicación de visitas** y seleccione **Guardar**.
+1.  Con la aplicación abierta en el Diseñador de aplicaciones, seleccione **Configuración**, en la sección **General** , actualice el nombre de la aplicación a **Aplicación de visitas**, haga clic en la **X** para cerrar la pantalla de configuración y, a continuación, seleccione **Guardar**.
 
 2.  Seleccione la flecha **Atrás** para volver a la aplicación.
 
 3.  En el panel de navegación izquierdo, seleccione **BrowseScreen1**.
 
-4.  In the app designer, select the <bpt id="p1">**</bpt>preview the app<ept id="p1">**</ept> button (Play icon) on the command bar. <bpt id="p1">*</bpt>(You can also preview the app by pressing F5 on your keyboard.)<ept id="p1">*</ept>
+4.  En el diseñador de aplicaciones, seleccione el botón **Vista previa de la aplicación** (icono Reproducir) en la barra de comandos. *(También puede obtener una vista previa de la aplicación pulsando F5 en el teclado).*
 
 4.  Una vez que se abra la aplicación, en el campo **Buscar elementos**, escriba el texto **Maria**
      *(observe cómo se filtran los elementos de la galería en función de lo que se escribe en el campo de búsqueda).*
 
-5.  Actualmente, la administración del campus utiliza una hoja de cálculo de Excel para realizar un seguimiento del registro de visitantes.
+5.  Cuando se muestre el registro **Contoso Suites** para **Maria Campbell**, haga clic en la fila para abrir los detalles de esa visita. (**Nota**: *Si se muestra más de un registro Contoso Suites Maria Campbell, seleccione cualquiera de ellos*).
 
 6.  Para editar el registro, seleccione el **icono de lápiz** en la esquina superior derecha de la aplicación.
 
@@ -121,7 +121,7 @@ En esta tarea, probará la nueva aplicación.
 
 8.  En la parte superior derecha de la pantalla, haga clic en el icono **X** para volver al editor de aplicaciones de lienzo.
 
-Le gustaría modernizar el sistema de registro de visitantes de los edificios cuyo acceso esté controlado por el personal de seguridad y en los que los anfitriones deban anotar con antelación las visitas y dejar constancia de ellas.
+Felicidades. Ha creado y configurado su primera aplicación de lienzo.
 
 ## <a name="challenges"></a>Desafíos
 

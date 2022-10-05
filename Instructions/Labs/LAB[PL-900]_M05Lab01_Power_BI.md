@@ -8,7 +8,7 @@ lab:
 
 ## <a name="scenario"></a>Escenario
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
+Bellows College es una institución educativa que tiene un campus con varios edificios. Los visitantes del campus están actualmente registrados en revistas en papel. La información no se recaba de manera uniforme y no hay forma de recopilar y analizar los datos sobre las visitas de todo el campus.
 
 La administración del campus querría modernizar el sistema de registro de visitantes de los edificios cuyo acceso esté controlado por el personal de seguridad y en los que los anfitriones deban anotar con antelación las visitas y dejar constancia de ellas.
 
@@ -32,7 +32,7 @@ Seguiremos los pasos a continuación para diseñar y crear un panel de control d
 ## <a name="things-to-consider-before-you-begin"></a>Cuestiones que tener en cuenta antes de comenzar
 
 -   ¿Quién es la audiencia objetivo del informe?
--   How will the audience consume the report? Typical device? Location?
+-   ¿Cómo consumirá el informe la audiencia? ¿Dispositivo típico? ¿Ubicación?
 -   ¿Tiene suficientes datos para visualizar?
 -   ¿Cuáles son las posibles características que puede usar para analizar datos sobre las visitas?
 
@@ -56,7 +56,7 @@ Seguiremos los pasos a continuación para diseñar y crear un panel de control d
 
 7.  Una vez completada la carga de datos, expanda **Mi área de trabajo** y seleccione el informe de **visitas** (observe que el Tipo está establecido en **Informe**).
 
-8.  Click <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>. If <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> menu item is not visible click <bpt id="p2">**</bpt>...<ept id="p2">**</ept> and then select <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept>.
+8.  Haga clic en **Editar**. Si el elemento del menú **Editar** no es visible, haga clic en **...** y luego seleccione **Editar**.
 
 Ahora ya configuró el servicio Power BI para usarlo en sus laboratorios.
 
@@ -64,15 +64,15 @@ Ahora ya configuró el servicio Power BI para usarlo en sus laboratorios.
 
 1.  Presione el icono de **gráfico circular** en el panel **Visualizaciones** para insertar un gráfico.
 
-2.  Press the drop-down arrow beside <bpt id="p1">**</bpt>bc_building<ept id="p1">**</ept> in the Fields pane. Drag the <bpt id="p1">**</bpt>Building<ept id="p1">**</ept> field and drop it into <bpt id="p2">**</bpt>Legend<ept id="p2">**</ept> box.
+2.  Presione la flecha desplegable situada junto **a bc_Visit** en el panel Campos. Arrastre el campo **Edificio** y colóquelo en el cuadro **Leyenda**.
 
-3.  Bellows College es una institución educativa que tiene un campus con varios edificios.
+3.  Arrastre el campo **Visita** y colóquelo en el cuadro **Valores**.
 
 4.  Cambie el tamaño del gráfico circular utilizando los tiradores de las esquinas para que todos los componentes del gráfico sean visibles.
 
 5.  Haga clic en el informe fuera del gráfico circular para anular la selección y seleccione el gráfico de columnas apiladas en el panel **Visualizaciones**.
 
-6.  Los visitantes del campus están actualmente registrados en revistas en papel.
+6.  Presione la flecha desplegable situada junto **a bc_Visit** en el panel Campos. Arrastre el campo **Visita** y colóquelo en el cuadro de destino **Eje Y**.
 
 7.  Arrastre el campo **Comienzo** y colóquelo en el cuadro de destino **Eje X**.
 
@@ -84,7 +84,7 @@ Ahora ya configuró el servicio Power BI para usarlo en sus laboratorios.
 
     1.  Haga clic en varios sectores de creación en el gráfico circular y observe los cambios en el informe de tiempo.
 
-    2.  La información no se recaba de manera uniforme y no hay forma de recopilar y analizar los datos sobre las visitas de todo el campus.
+    2.  Haga clic en el gráfico de columnas. Presione la flecha hacia abajo para activar el modo **Explorar en profundidad** (o haga clic con el botón derecho en el gráfico y seleccione **Explorar en profundidad**) y, a continuación, haga clic en una columna para explorar en profundidad hasta el siguiente nivel (días).
 
     3.  Rastree agrupando y desagrupando datos y seleccione varias barras en el gráfico de columnas de tiempo para observar los cambios en el informe circular.
 
@@ -96,13 +96,13 @@ Ahora ya configuró el servicio Power BI para usarlo en sus laboratorios.
 
 1.  Debería tener abierto el informe de la tarea anterior.
 
-2.  Select <bpt id="p1">**</bpt>Pin to a dashboard<ept id="p1">**</ept> on the menu. Depending on the layout you may need to press <bpt id="p1">**</bpt>...<ept id="p1">**</ept> to show additional menu items.
+2.  Seleccione **Anclar a un panel de información** en el menú. Según el diseño, es posible que deba presionar **...** para mostrar los elementos de menú adicionales.
 
 3.  Seleccione **Nuevo tablero** en la confirmación de **Anclar al tablero**.
 
 4.  Introduzca **Administración del campus** como un **Nombre del tablero**, presione **Anclar elemento en vivo**.
 
-5.  A pop-up will prompt you that the dashboard has been created. Select <bpt id="p1">**</bpt>Go to dashboard<ept id="p1">**</ept>.
+5.  Un elemento emergente le pedirá que tenga el panel creado. Seleccione **Ir al panel**.
 
 6.  Pruebe la interactividad de los gráficos circulares y de barras que se muestran.
 
@@ -110,7 +110,7 @@ Ahora ya configuró el servicio Power BI para usarlo en sus laboratorios.
 
 1.  En el panel de información **Administración de campus**, seleccione la barra **Pregunte algo sobre sus datos** en la parte superior.
 
-2.  Enter <bpt id="p1">**</bpt>buildings by number of visits<ept id="p1">**</ept> in Q&amp;A area. A bar chart will be displayed.
+2.  Introduzca **edificios por número de visitas** en el área de preguntas y respuestas. Se mostrará un gráfico de barras.
 
 3.  Seleccione **Anclar visualización**.
 
@@ -118,7 +118,7 @@ Ahora ya configuró el servicio Power BI para usarlo en sus laboratorios.
 
 5.  Haga clic en **Salir de Preguntas y respuestas**.
 
-Your <bpt id="p1">**</bpt>Campus Management<ept id="p1">**</ept> dashboard should be displayed with three visuals on it. You may have to scroll down to see the new Q&amp;A visual.
+El panel de **Administración del campus** debe mostrarse con tres objetos visuales. Es posible que deba desplazarse hacia abajo para ver el nuevo objeto visual Preguntas y respuestas.
 
 Su panel de información debería tener un aspecto similar al siguiente:
 
