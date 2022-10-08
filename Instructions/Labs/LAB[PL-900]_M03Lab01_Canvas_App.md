@@ -1,14 +1,9 @@
 ---
 lab:
-  title: 'Laboratorio 2: Cómo crear una aplicación de lienzo'
+  title: "Laboratorio\_2: Cómo crear una aplicación de lienzo"
   module: 'Module 3: Get started with Power Apps'
-ms.openlocfilehash: 9a9a447ac07176e7f7ed3471c105b2d06fa60c97
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154436"
 ---
+
 # <a name="lab-2-how-to-build-a-canvas-app"></a>Laboratorio 2: Cómo crear una aplicación de lienzo
 
 ## <a name="scenario"></a>Escenario
@@ -107,7 +102,7 @@ En esta tarea, personalizará el texto del encabezado en cada una de las tres pa
 
 En esta tarea, probará la nueva aplicación.
 
-1.  Con la aplicación abierta en el Diseñador de aplicaciones, seleccione **Archivo**, actualice el nombre de la aplicación a **Aplicación de visitas** y seleccione **Guardar**.
+1.  Con la aplicación abierta en el Diseñador de aplicaciones, seleccione **Configuración**, en la sección **General** , actualice el nombre de la aplicación a **Aplicación de visitas**, haga clic en la **X** para cerrar la pantalla de configuración y, a continuación, seleccione **Guardar**.
 
 2.  Seleccione la flecha **Atrás** para volver a la aplicación.
 

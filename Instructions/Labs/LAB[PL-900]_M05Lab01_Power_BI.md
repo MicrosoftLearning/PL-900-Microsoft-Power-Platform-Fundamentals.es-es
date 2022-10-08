@@ -1,14 +1,9 @@
 ---
 lab:
-  title: 'Laboratorio 5: Procedimientos para crear un panel sencillo'
+  title: "Laboratorio\_5: Procedimientos para crear un panel sencillo"
   module: 'Module 5: Get Started with Power BI'
-ms.openlocfilehash: 2fb53fa9130cae4a711b11f341ea663f019c94c8
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154448"
 ---
+
 ## <a name="lab-5-how-to-build-a-simple-dashboard"></a>Laboratorio 5: Procedimientos para crear un panel sencillo
 
 ## <a name="scenario"></a>Escenario
@@ -69,9 +64,9 @@ Ahora ya configuró el servicio Power BI para usarlo en sus laboratorios.
 
 1.  Presione el icono de **gráfico circular** en el panel **Visualizaciones** para insertar un gráfico.
 
-2.  Presione la flecha desplegable situada junto a **bc_building** en el panel Campos. Arrastre el campo **Edificio** y colóquelo en el cuadro **Leyenda**.
+2.  Presione la flecha desplegable situada junto **a bc_Visit** en el panel Campos. Arrastre el campo **Edificio** y colóquelo en el cuadro **Leyenda**.
 
-3.  Presione la flecha desplegable situada junto **a bc_Visit** en el panel Campos. Arrastre el campo **Visita** y colóquelo en el cuadro **Valores**.
+3.  Arrastre el campo **Visita** y colóquelo en el cuadro **Valores**.
 
 4.  Cambie el tamaño del gráfico circular utilizando los tiradores de las esquinas para que todos los componentes del gráfico sean visibles.
 

@@ -1,14 +1,9 @@
 ---
 lab:
-  title: 'Laboratorio 0: Validar el ambiente de laboratorio'
+  title: "Laboratorio\_0: Validar el ambiente de laboratorio"
   module: 'Module 0: Course introduction'
-ms.openlocfilehash: d25543d93be7e40749c8fee3a01c35b3a8f2947b
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154400"
 ---
+
 # <a name="lab-0-validate-lab-environment"></a>Laboratorio 0: Validar el ambiente de laboratorio
 
 ## <a name="scenario"></a>Escenario
@@ -39,7 +34,7 @@ En este laboratorio del Módulo 0, adquirirá una prueba de Power Platform y ac
 
 1. No cambie el país.
 
-1. En **Número de teléfono**, escriba 01234567890.
+1. En **Número de teléfono**, escriba 0123456789.
 
 1. Complete la información de la cuenta y seleccione **Comenzar** para suscribirse a la prueba de Power Platform.
 
