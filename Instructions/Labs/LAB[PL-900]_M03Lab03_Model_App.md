@@ -65,7 +65,7 @@ Si no ve la tabla Visita, asegúrese de que se encuentra en el entorno correcto 
 
 5. En el lado derecho de la pantalla, en el panel Propiedades, seleccione el campo **Nombre para mostrar** y cámbielo a **Información principal**.
 
-6. Con el menú de la parte superior de la pantalla, seleccione el **campo + Formulario** y agregue los siguientes campos debajo del campo **Propietario**. Para ello, arrastre las columnas hasta el formulario o simplemente haga doble clic en los nombres de las columnas:
+6. Seleccione **Columnas de la tabla** en el panel de navegación de la izquierda y agregue los campos siguientes debajo del campo **Propietario**. Para ello, arrastre las columnas hasta el formulario o simplemente haga clic en los nombres de las columnas:
 
     1. **Visitante**
 
