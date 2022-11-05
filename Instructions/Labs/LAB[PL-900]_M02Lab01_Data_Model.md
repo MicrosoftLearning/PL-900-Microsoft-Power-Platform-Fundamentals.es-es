@@ -162,9 +162,7 @@ Nos gustaría asignar a cada visita un número único que el visitante pueda ing
 
 **Objetivo:** En este ejercicio importará datos de ejemplo a la base de datos de Dataverse.
 
-### <a name="task-1-import-the-visitsxlsx-file"></a>Tarea \#1: Importar el archivo Visits.xlsx
-
-En esta tarea, importará los datos de una visita desde un archivo de Excel.
+### <a name="task-11-load-excel-file-to-onedrive"></a>Tarea 1.1: Carga del archivo de Excel en OneDrive
 
 1. Debe tener el archivo **Visits.xlsx** almacenado en su escritorio. Si no es así, descargue el archivo [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx).
 
@@ -172,42 +170,64 @@ En esta tarea, importará los datos de una visita desde un archivo de Excel.
 
 3. Seleccione su ambiente **Práctica [mis iniciales]** en la parte superior derecha, si aún no está seleccionado.
 
-4. Con el panel de navegación de la izquierda, expanda **Dataverse** y seleccione **Tablas**.
+4. Haga clic en el botón con forma de gofre de la esquina superior izquierda para cambiar las aplicaciones y seleccione **OneDrive**. (OneDrive podría tardar un poco en configurarse. Haga clic en "El OneDrive está listo" cuando lo vea en la pantalla).
 
-5. Busque y abra la tabla **Visita** que creó en el ejercicio anterior.
+5. Haga clic en **Cargar** en el menú superior y seleccione **Archivos**.
 
-6. En el menú de la parte superior, seleccione la flecha desplegable al lado de **Importar**, y seleccione **Importar datos desde Excel**.
+6. Busque y seleccione el archivo **Visits.xlsx** y haga clic en **Abrir**.
 
-7. En el menú que aparece, seleccione el botón **Cargar**.
+ **Nota**: Este archivo se encuentra en la carpeta **Todos los archivos** de la máquina.
+ 
+### <a name="task-12-create-a-dataflow"></a>Tarea 1.2: Creación de un flujo de datos
 
-8. Busque y seleccione el archivo **Visits.xlsx** que descargó anteriormente. (Tenga en cuenta que el archivo puede tardar un minuto o dos en cargarse). No se preocupe si recibe un error que le indica que hay errores de asignación, nos encargaremos de eso más adelante).
+1. Si aún no ha iniciado sesión, inicie sesión en [https://make.powerapps.com](https://make.powerapps.com/).
 
-9. Haga clic en **Asignar columnas** (tenga en cuenta que es posible que sea necesario desplazarse a la derecha para ver esta opción).
+2. Seleccione su ambiente **Práctica [mis iniciales]** en la parte superior derecha, si aún no está seleccionado.
 
-10. Asigne las columnas como se indica a continuación:
+3. Con el panel de navegación de la izquierda, expanda **Dataverse** y seleccione **Tablas**.
 
-| Columnas de visitas| Valores de origen |
+4. Busque y abra la tabla **Visita** que creó en el ejercicio anterior.
+
+5. En el menú de la parte superior, seleccione la flecha desplegable al lado de **Importar** y seleccione **Importar datos**.
+
+6. En el cuadro de diálogo **Elegir origen de datos**, seleccione **Libro de Excel**.
+
+7. Seleccione la opción **Vincular a archivo**. Haga clic en **Browse OneDrive** (Examinar OneDrive). Cuando se le solicite, inicie sesión con sus credenciales de Microsoft 365.
+
+8. Seleccione el archivo **Visits.xlsx** que se ha cargado en OneDrive y haga clic en **Seleccionar**.
+
+9. Haga clic en **Next**.
+
+10. En **Elegir datos**, active la casilla situada junto al libro de Excel denominado **Visits**.
+
+11. Haga clic en **Next**. No se vaya de esta página.
+
+12. Haga clic en **Next**.
+
+13. En la sección **Map tables** (Asignar tablas), seleccione **Load to existing table** (Cargar en la tabla existente) en la **configuración de carga**.
+
+14. En el menú desplegable **Tabla de destino**, seleccione el nombre de la tabla que comienza por **crXXX_visit** (donde XXX es un conjunto aleatorio de letras y números).
+
+15. En **Asignación de columnas**, asigne las columnas a sus columnas de destino correspondientes.
+
+| Columnas de destino| Valores de origen |
 | - | - |
-| Finalización real| fin real |
-| Inicio real| inicio real |
-| Código| código |
-| Nombre| name |
-| Final programado| fin programado |
-| Scheduled Start| inicio programado |
+| crxxx_ActualEnd| fin real |
+| crxxx_ActualStart| inicio real |
+| crxxx_Code| código |
+| crxxx_Name| name |
+| crxxx_ScheduledEnd| fin programado |
+| crxxx_ScheduledStart| inicio programado |
 
-11. Deje todos los demás campos en **Sin establecer**.
+16. Haga clic en **Next**.
 
-12. En la esquina superior derecha de la pantalla, haga clic en **Guardar cambios**.
+17. Seleccione **Actualizar manualmente**.
 
-13. En la pantalla **Importar datos**, compruebe que el estado de asignación indica que la asignación se realizó correctamente.
-
-14. Haga clic en **Importar** en la esquina superior derecha para completar la importación de los datos.
+18. Haga clic en **Publicar**.
 
 **Nota:** Los datos pueden tardar unos minutos en importarse en la tabla. No se preocupe si aparecen algunos errores, es normal, y no afectará al resto del curso.
 
-15. Haga clic en **X** para cerrar el panel de importación de datos.
-
-### <a name="task-2-verify-data-import"></a>Tarea \#2: Comprobar la importación de datos
+### <a name="task-3-verify-data-import"></a>Tarea 3: Comprobación de la importación de los datos
 
 1. Una vez importados los datos, use el menú de navegación a la izquierda de la pantalla para seleccionar de nuevo la tabla **Visita**.
 
