@@ -164,7 +164,7 @@ Nos gustaría asignar a cada visita un número único que el visitante pueda ing
 
 ### <a name="task-11-load-excel-file-to-onedrive"></a>Tarea 1.1: Carga del archivo de Excel en OneDrive
 
-1. Debe tener el archivo **Visits.xlsx** almacenado en su escritorio. Si no es así, descargue el archivo [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx).
+1. Debe tener el archivo **Visits.xlsx** almacenado en la máquina virtual en **C:/LabFiles**. Si no es así, descargue el archivo [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx).
 
 2. Si aún no ha iniciado sesión, inicie sesión en [https://make.powerapps.com](https://make.powerapps.com/).
 
