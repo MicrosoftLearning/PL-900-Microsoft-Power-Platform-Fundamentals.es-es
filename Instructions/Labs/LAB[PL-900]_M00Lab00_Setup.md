@@ -34,7 +34,7 @@ En este laboratorio del Módulo 0, adquirirá una prueba de Power Platform y ac
 
 1. No cambie el país.
 
-1. En **Número de teléfono**, escriba 0123456789.
+1. En **Número de teléfono**, escriba 0123456789.
 
 1. Complete la información de la cuenta y seleccione **Comenzar** para suscribirse a la prueba de Power Platform.
 
