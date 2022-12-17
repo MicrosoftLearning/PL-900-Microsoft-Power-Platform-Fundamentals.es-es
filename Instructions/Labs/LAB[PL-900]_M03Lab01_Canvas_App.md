@@ -102,7 +102,7 @@ En esta tarea, personalizará el texto del encabezado en cada una de las tres pa
 
 En esta tarea, probará la nueva aplicación.
 
-1.  Con la aplicación abierta en el Diseñador de aplicaciones, seleccione **Configuración**, en la sección **General** , actualice el nombre de la aplicación a **Aplicación de visitas**, haga clic en la **X** para cerrar la pantalla de configuración y, a continuación, seleccione **Guardar**.
+1.  Con la aplicación abierta en el Diseñador de aplicaciones, seleccione **Configuración**, en la sección **General**, actualice el nombre de la aplicación a **Aplicación de visitas**, haga clic en la **X** para cerrar la pantalla de configuración y, a continuación, seleccione **Guardar**.
 
 2.  Seleccione la flecha **Atrás** para volver a la aplicación.
 
