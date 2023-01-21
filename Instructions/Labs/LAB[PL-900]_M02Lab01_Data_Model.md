@@ -14,7 +14,7 @@ La administración del campus querría modernizar el sistema de registro de visi
 
 A lo largo de este curso, creará aplicaciones y realizará la automatización para permitir que el personal de administración y seguridad de Bellows College administre y controle el acceso a los edificios en el campus.
 
-En este laboratorio, accederá a su ambiente, creará una base de datos de Microsoft Dataverse y creará una solución para seguir los cambios. También creará un modelo de datos que cumpla con los siguiente requisitos:
+En este laboratorio, accederá a su entorno y creará una base de datos de. Microsoft Dataverse. También creará un modelo de datos que cumpla con los siguiente requisitos:
 
 - R1: Hacer un seguimiento de la información de las visitas programadas al campus
 
@@ -23,6 +23,7 @@ En este laboratorio, accederá a su ambiente, creará una base de datos de Micro
 - R3 – Programar, registrar y administrar visitas
 
 Por último, importará los datos de ejemplo en Microsoft Dataverse.
+
 
 ## <a name="high-level-lab-steps"></a>Pasos de alto nivel del laboratorio
 
@@ -40,9 +41,11 @@ Para preparar sus entornos de aprendizaje tendrá que:
 
 - Convenciones de nomenclatura: escriba los nombres con cuidado.
 
+
 ## <a name="exercise-1-create-new-table"></a>Ejercicio 1: Creación de una nueva tabla
 
 **Objetivo:** En este ejercicio, creará una nueva tabla personalizada para las visitas.
+
 
 ### <a name="task-1-create-visit-table-and-columns"></a>Tarea \#1: Crear la tabla y las columnas Visita
 
@@ -170,7 +173,7 @@ Nos gustaría asignar a cada visita un número único que el visitante pueda ing
 
 3. Seleccione su ambiente **Práctica [mis iniciales]** en la parte superior derecha, si aún no está seleccionado.
 
-4. Haga clic en el botón con forma de gofre de la esquina superior izquierda para cambiar las aplicaciones y seleccione **OneDrive**. (OneDrive podría tardar un poco en configurarse. Haga clic en "El OneDrive está listo" cuando lo vea en la pantalla).
+4. Haga clic en el botón con forma de gofre de la esquina superior izquierda para cambiar las aplicaciones y seleccione **OneDrive**. (OneDrive podría tardar un poco en configurarse. Haga clic en **El OneDrive está listo** cuando lo vea en la pantalla.
 
 5. Haga clic en **Cargar** en el menú superior y seleccione **Archivos**.
 
@@ -210,14 +213,14 @@ Nos gustaría asignar a cada visita un número único que el visitante pueda ing
 
 15. En **Asignación de columnas**, asigne las columnas a sus columnas de destino correspondientes.
 
-| Columnas de destino| Valores de origen |
-| - | - |
-| crxxx_ActualEnd| fin real |
-| crxxx_ActualStart| inicio real |
-| crxxx_Code| código |
-| crxxx_Name| name |
-| crxxx_ScheduledEnd| fin programado |
-| crxxx_ScheduledStart| inicio programado |
+| Columnas de destino  | Valores de origen   |
+|:---------------------|:----------------|
+| crxxx_ActualEnd      | fin real      |
+| crxxx_ActualStart    | inicio real    |
+| crxxx_Code           | código            |
+| crxxx_Name           | name            |
+| crxxx_ScheduledEnd   | fin programado   |
+| crxxx_ScheduledStart | inicio programado |
 
 16. Haga clic en **Next**.
 
