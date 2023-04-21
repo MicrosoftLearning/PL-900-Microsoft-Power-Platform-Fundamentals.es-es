@@ -4,9 +4,9 @@ lab:
   module: 'Module 5: Get Started with Power BI'
 ---
 
-## <a name="lab-5-how-to-build-a-simple-dashboard"></a>Laboratorio 5: Procedimientos para crear un panel sencillo
+## Laboratorio 5: Procedimientos para crear un panel sencillo
 
-## <a name="scenario"></a>Escenario
+## Escenario
 
 Bellows College es una institución educativa que tiene un campus con varios edificios. Los visitantes del campus están actualmente registrados en revistas en papel. La información no se recaba de manera uniforme y no hay forma de recopilar y analizar los datos sobre las visitas de todo el campus.
 
@@ -16,7 +16,7 @@ A lo largo de este curso, creará aplicaciones y realizará la automatización p
 
 En este laboratorio, creará un panel y un informe de Power BI que visualiza datos sobre las visitas al campus.
 
-## <a name="high-level-lab-steps"></a>Pasos de alto nivel del laboratorio
+## Pasos de alto nivel del laboratorio
 
 Seguiremos los pasos a continuación para diseñar y crear un panel de control de Power BI:
 
@@ -24,43 +24,46 @@ Seguiremos los pasos a continuación para diseñar y crear un panel de control d
 
 -   Utilice una consulta de lenguaje natural del usuario para crear visualizaciones adicionales
 
-## <a name="prerequisites"></a>Prerrequisitos
+## Prerrequisitos
 
 - Finalización del **Módulo 0 Laboratorio 0: Validación del entorno de laboratorio**
 - Finalización del **Módulo 2 Laboratorio 1: Modelado de datos**
 
-## <a name="things-to-consider-before-you-begin"></a>Cuestiones que tener en cuenta antes de comenzar
+## Cuestiones que tener en cuenta antes de comenzar
 
 -   ¿Quién es la audiencia objetivo del informe?
 -   ¿Cómo consumirá el informe la audiencia? ¿Dispositivo típico? ¿Ubicación?
 -   ¿Tiene suficientes datos para visualizar?
 -   ¿Cuáles son las posibles características que puede usar para analizar datos sobre las visitas?
 
-## <a name="exercise-1-create-power-bi-report"></a>Ejercicio 1: Cree informes de Power BI
+## Ejercicio 1: Cree informes de Power BI
 
 **Objetivo:** En este ejercicio, creará un informe de Power BI basado en los datos de la hoja de cálculo de Excel que hemos aprovechado en un ejercicio anterior.
 
-### <a name="task-1-prepare-power-bi-service"></a>Tarea \#1: Preparar el servicio Power BI
+### Tarea \#1: Preparar el servicio Power BI
 
-1.  Descargue [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) y guárdelo en su equipo.
+1.  Debe tener un archivo visits.pbix almacenado en la máquina virtual en C:/LabFiles. Descargue [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) y guárdelo en el equipo, si aún no está allí.
 
-2.  Vaya a <https://app.powerbi.com/> e inicie sesión si es necesario.
+2.  Abra una nueva pestaña y vaya a <https://app.powerbi.com/> e inicie sesión si es necesario.
 
-3.  En la esquina inferior izquierda de la pantalla, haga clic en **Obtener datos**.
+3.  Seleccione **Mi área de trabajo** en el panel de navegación izquierdo.
 
-4.  Seleccione el botón **Obtener** en **Archivos**, en la sección **Crear contenido**.
+5.  Seleccione **Cargar** y, a continuación, **Examinar**.
 
-5.  Seleccione **Archivo Local**.
+6.  Busque y seleccione el archivo **visits.pbix** que ha descargado anteriormente. 
 
-6.  Busque y seleccione el archivo **visits.pbix** que ha descargado anteriormente.
+7.  Una vez completada la carga de datos, seleccione el informe **visitas**.
 
-7.  Una vez completada la carga de datos, expanda **Mi área de trabajo** y seleccione el informe de **visitas** (observe que el Tipo está establecido en **Informe**).
+    Tenga en cuenta que el tipo está establecido en **Informe**; no seleccione Conjunto de datos.
 
-8.  Haga clic en **Editar**. Si el elemento del menú **Editar** no es visible, haga clic en **...** y luego seleccione **Editar**.
+8.  Seleccione **Editar**. 
+
+    Si el elemento de menú **Editar** no es visible, seleccione los puntos suspensivos en **...** y, a continuación, seleccione **Editar**.
 
 Ahora ya configuró el servicio Power BI para usarlo en sus laboratorios.
 
-### <a name="task-2-create-chart-and-time-visualizations"></a>Tarea \#2: Cree gráficos y visualizaciones de tiempo
+
+### Tarea \#2: Cree gráficos y visualizaciones de tiempo
 
 1.  Presione el icono de **gráfico circular** en el panel **Visualizaciones** para insertar un gráfico.
 
@@ -90,9 +93,9 @@ Ahora ya configuró el servicio Power BI para usarlo en sus laboratorios.
 
 11. Guarde el trabajo en curso presionando **Guardar**.
 
-## <a name="exercise-2-create-power-bi-dashboard"></a>Ejercicio 2: Crear un panel de información de Power BI
+## Ejercicio 2: Crear un panel de información de Power BI
 
-### <a name="task-1-create-power-bi-dashboard"></a>Tarea \#1: Crear un panel de información de Power BI
+### Tarea \#1: Crear un panel de información de Power BI
 
 1.  Debería tener abierto el informe de la tarea anterior.
 
@@ -106,7 +109,7 @@ Ahora ya configuró el servicio Power BI para usarlo en sus laboratorios.
 
 6.  Pruebe la interactividad de los gráficos circulares y de barras que se muestran.
 
-### <a name="task-2-add-visualizations-using-natural-language"></a>Tarea \#2: Agregue visualizaciones usando lenguaje natural
+### Tarea \#2: Agregue visualizaciones usando lenguaje natural
 
 1.  En el panel de información **Administración de campus**, seleccione la barra **Pregunte algo sobre sus datos** en la parte superior.
 
