@@ -4,9 +4,9 @@ lab:
   module: 'Module 2: Introduction to Microsoft Dataverse'
 ---
 
-# <a name="lab-1-data-modeling"></a>Laboratorio 1: Modelado de datos
+# Laboratorio 1: Modelado de datos
 
-## <a name="scenario"></a>Escenario
+## Escenario
 
 Bellows College es una institución educativa que tiene un campus con varios edificios. Actualmente se guarda un registro físico de las visitas al campus. La información no se recaba de manera uniforme y no hay forma de recopilar y analizar los datos sobre las visitas de todo el campus.
 
@@ -25,29 +25,29 @@ En este laboratorio, accederá a su entorno y creará una base de datos de. Micr
 Por último, importará los datos de ejemplo en Microsoft Dataverse.
 
 
-## <a name="high-level-lab-steps"></a>Pasos de alto nivel del laboratorio
+## Pasos de alto nivel del laboratorio
 
 Para preparar sus entornos de aprendizaje tendrá que:
 
 - Consulte la descripción de los metadatos (tablas y relaciones) en el [documento del modelo de datos](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png). Puede mantener presionada la tecla CTRL y hacer clic o hacer clic con el botón derecho en el vínculo para abrir el documento del modelo de datos en una nueva ventana.
-- crear la tabla Visita.
-- importación de datos de visita mediante una hoja de cálculo de Excel
+- Crear la tabla Visita
+- Importación de datos de visita mediante una hoja de cálculo de Excel
 
-## <a name="prerequisites"></a>Prerrequisitos
+## Prerrequisitos
 
 - Finalización del **Módulo 0 Laboratorio 0: Validación del entorno de laboratorio**
 
-## <a name="things-to-consider-before-you-begin"></a>Cuestiones que tener en cuenta antes de comenzar
+## Cuestiones que tener en cuenta antes de comenzar
 
 - Convenciones de nomenclatura: escriba los nombres con cuidado.
 
 
-## <a name="exercise-1-create-new-table"></a>Ejercicio 1: Creación de una nueva tabla
+## Ejercicio 1: Creación de una nueva tabla
 
 **Objetivo:** En este ejercicio, creará una nueva tabla personalizada para las visitas.
 
 
-### <a name="task-1-create-visit-table-and-columns"></a>Tarea \#1: Crear la tabla y las columnas Visita
+### Tarea \#1: Crear la tabla y las columnas Visita
 
 La tabla **Visita** contendrá información sobre las visitas al campus, incluidos el visitante, la hora programada y la hora real de cada visita.
 
@@ -161,11 +161,11 @@ Nos gustaría asignar a cada visita un número único que el visitante pueda ing
 
     - Haga clic en **Guardar**.
 
-## <a name="exercise-2-import-data"></a>Ejercicio 2: Importación de datos
+## Ejercicio 2: Importación de datos
 
 **Objetivo:** En este ejercicio importará datos de ejemplo a la base de datos de Dataverse.
 
-### <a name="task-11-load-excel-file-to-onedrive"></a>Tarea 1.1: Carga del archivo de Excel en OneDrive
+### Tarea 1.1: Carga del archivo de Excel en OneDrive
 
 1. Debe tener el archivo **Visits.xlsx** almacenado en la máquina virtual en **C:/LabFiles**. Si no es así, descargue el archivo [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx).
 
@@ -181,7 +181,7 @@ Nos gustaría asignar a cada visita un número único que el visitante pueda ing
 
  **Nota**: Este archivo se encuentra en la carpeta **Todos los archivos** de la máquina.
  
-### <a name="task-12-create-a-dataflow"></a>Tarea 1.2: Creación de un flujo de datos
+### Tarea 1.2: Creación de un flujo de datos
 
 1. Si aún no ha iniciado sesión, inicie sesión en [https://make.powerapps.com](https://make.powerapps.com/).
 
@@ -230,7 +230,7 @@ Nos gustaría asignar a cada visita un número único que el visitante pueda ing
 
 **Nota:** Los datos pueden tardar unos minutos en importarse en la tabla. No se preocupe si aparecen algunos errores, es normal, y no afectará al resto del curso.
 
-### <a name="task-3-verify-data-import"></a>Tarea 3: Comprobación de la importación de los datos
+### Tarea 3: Comprobación de la importación de los datos
 
 1. Una vez importados los datos, use el menú de navegación a la izquierda de la pantalla para seleccionar de nuevo la tabla **Visita**.
 
