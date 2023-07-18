@@ -4,9 +4,11 @@ lab:
   module: 'Module 4: Get Started with Power Automate'
 ---
 
-# <a name="lab-4-how-to-build-an-automated-solution"></a>Laboratorio 4: Cómo crear una solución automatizada
+# Laboratorio 4: Cómo crear una solución automatizada
 
-## <a name="scenario"></a>Escenario
+**Inquilinos de WWL: términos de uso** Si, como parte de la impartición de un curso dirigido por un instructor, se le proporciona un inquilino, tenga en cuenta que el inquilino está disponible para apoyar los laboratorios prácticos en este tipo de cursos. Los inquilinos no deben compartirse ni usarse para otros fines que no sean los de los laboratorios prácticos. El inquilino usado en este curso es un inquilino de prueba y no se puede usar ni tener acceso a él después de que la clase haya terminado y no sea apto para la extensión. Los inquilinos no se deben convertir a suscripciones de pago. Los inquilinos obtenidos como parte de este curso siguen siendo propiedad de Microsoft Corporation y nos reservamos el derecho de acceso y recuperación en cualquier momento. 
+
+## Escenario
 
 Bellows College es una institución educativa que tiene un campus con varios edificios. Los visitantes del campus están actualmente registrados en revistas en papel. La información no se recaba de manera uniforme y no hay forma de recopilar y analizar los datos sobre las visitas de todo el campus.
 
@@ -16,24 +18,24 @@ A lo largo de este curso, creará aplicaciones y realizará la automatización p
 
 En este laboratorio, creará un flujo de Power Automate para enviar un correo electrónico a un visitante cuando se programe una visita.
 
-## <a name="high-level-lab-steps"></a>Pasos de alto nivel del laboratorio
+## Pasos de alto nivel del laboratorio
 
 Se han identificado las siguientes condiciones como requisitos que debe implementar para completar el proyecto:
 
 - Los contactos deben recibir una notificación por correo electrónico cuando se programe una visita.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## Prerrequisitos
 
 - Finalización del **Módulo 0 Laboratorio 0: Validación del entorno de laboratorio**
 - Finalización del **Módulo 2 Laboratorio 1: Modelado de datos**
 - Finalización del **Módulo 2 Laboratorio 3: Cómo crear una aplicación basada en modelo**
-- Contacto John Doe creado con una dirección de correo electrónico personal
+- Contacto John Doe creado con una dirección de correo electrónico personal.
 
-## <a name="exercise-1-create-visit-notification-flow"></a>Ejercicio 1: Crear flujo de notificación de visita
+## Ejercicio 1: Crear flujo de notificación de visita
 
 **Objetivo:** En este ejercicio, creará un flujo de Power Automate que implementa el requisito. Cuando se crea una visita, el visitante debe recibir un correo electrónico que incluya el código único asignado a la visita.
 
-### <a name="task-1-create-a-flow"></a>Tarea \#1: Creación de un flujo
+### Tarea \#1: Creación de un flujo
 
 1.  Vaya a <https://make.powerapps.com>. Es posible que deba volver a autenticarse: haga clic en **Iniciar sesión** y siga las instrucciones si es necesario.
 
@@ -61,7 +63,7 @@ Se han identificado las siguientes condiciones como requisitos que debe implemen
 
     4.  En la etapa de desencadenamiento, haga clic en los puntos suspensivos ( **...** ) y en **Cambiar el nombre**. Cambie el nombre de este desencadenador a **"Cuando se agrega una visita"** . Esta es una buena manera de que usted y otros editores de flujo puedan comprender el propósito de la etapa sin tener que profundizar en los detalles.
 
-### <a name="task-2-create-a-step-to-get-the-visitor-row"></a>Tarea \#2: Crear un paso para obtener la fila del visitante
+### Tarea \#2: Crear un paso para obtener la fila del visitante
 
 1.  Seleccione **+ New step**(+ Nuevo paso). Esta etapa es necesaria para recuperar la información de los visitantes, incluyendo la dirección de correo electrónico.
 
@@ -78,7 +80,7 @@ Se han identificado las siguientes condiciones como requisitos que debe implemen
 7.  En esta acción, haga clic en los puntos suspensivos ( **...** ) y en **Cambiar nombre**.
         Cambie el nombre de esta acción a **"Obtener visitante"** . Esta es una buena manera de que usted y otros editores de flujo puedan comprender el propósito de la etapa sin tener que profundizar en los detalles.
 
-### <a name="task-3-create-a-step-to-send-an-email-to-the-visitor"></a>Tarea \#3: Crear un paso para enviar un correo electrónico al visitante
+### Tarea \#3: Crear un paso para enviar un correo electrónico al visitante
 
 1.  Haga clic en **+ Nuevo paso**. Este es el paso que enviará un correo electrónico al visitante.
 
@@ -122,7 +124,7 @@ Deje esta pestaña de flujo abierta para la siguiente tarea. El flujo debería t
 
 ![Ejemplo de pasos de flujo.](media/4-Flow.png)
 
-### <a name="task-4-validate-and-test-the-flow"></a>Tarea \#4: Validar y probar el flujo
+### Tarea \#4: Validar y probar el flujo
 
 1.  Abra una pestaña nueva en el explorador y vaya a <https://make.powerapps.com>.
 
@@ -156,6 +158,6 @@ Deje esta pestaña de flujo abierta para la siguiente tarea. El flujo debería t
 
 Después de una pausa breve, debería ver un correo electrónico en la bandeja de entrada, ya que ha rellenado el correo electrónico de John Doe como su correo electrónico personal. Tenga en cuenta que puede ir a la carpeta Correo no deseado.
 
-## <a name="challenges"></a>Desafíos
+## Desafíos
 
-- Juega con el formato del correo electrónico. ¿Cómo puede hacer que parezca más profesional?
+- Juega con el formato del correo electrónico. ¿Cómo darle un aspecto más profesional?
