@@ -4,9 +4,11 @@ lab:
   module: 'Module 3: Get started with Power Apps'
 ---
 
-# <a name="lab-3-how-to-build-a-model-driven-app"></a>Laboratorio 3: Cómo crear una aplicación basada en modelo
+# Laboratorio 3: Cómo crear una aplicación basada en modelo
 
-## <a name="scenario"></a>Escenario
+**Inquilinos de WWL: términos de uso** Si, como parte de la impartición de un curso dirigido por un instructor, se le proporciona un inquilino, tenga en cuenta que el inquilino está disponible para apoyar los laboratorios prácticos en este tipo de cursos. Los inquilinos no deben compartirse ni usarse para otros fines que no sean los de los laboratorios prácticos. El inquilino usado en este curso es un inquilino de prueba y no se puede usar ni tener acceso a él después de que la clase haya terminado y no sea apto para la extensión. Los inquilinos no se deben convertir a suscripciones de pago. Los inquilinos obtenidos como parte de este curso siguen siendo propiedad de Microsoft Corporation y nos reservamos el derecho de acceso y recuperación en cualquier momento. 
+
+## Escenario
 
 Bellows College es una institución educativa que tiene un campus con varios edificios. Los visitantes del campus están actualmente registrados en revistas en papel. La información no se recaba de manera uniforme y no hay forma de recopilar y analizar los datos sobre las visitas de todo el campus.
 
@@ -37,63 +39,64 @@ Ambos se integrarán a la aplicación basada en modelo para una mejor experienci
 Prerrequisitos
 
 - Finalización del **Módulo 0 Laboratorio 0: Validación del entorno de laboratorio**
+
 - Finalización del **Módulo 2 Laboratorio 1: Modelado de datos**
 
 Cuestiones que tener en cuenta antes de comenzar
 
 - ¿Qué cambios debemos hacer para mejorar la experiencia del usuario?
+
 - ¿Qué deberíamos incluir en una aplicación basada en modelo elaborada según el modelo de datos que hemos construido?
+
 - ¿Qué personalizaciones se pueden hacer en el mapa del sitio de una aplicación basada en modelos?
 
-## <a name="exercise-1-customize-views-and-forms"></a>Ejercicio 1: Personalizar las vistas y los formularios
+Ejercicio 1: Personalizar las vistas y los formularios
 
 **Objetivo:** En este ejercicio, personalizará las vistas y formularios de las tablas creadas de manera personalizada que se utilizarán en la aplicación basada en modelo.
 
-### <a name="task-1-edit-visit-form"></a>Tarea \#1: Editar el formulario de visita
+Tarea n.° 1: Editar el formulario de visita
 
 1. Haga clic en [https://make.powerapps.com](https://make.powerapps.com/) si aún no ha iniciado sesión.
 
 2. Seleccione su ambiente **Práctica [mis iniciales]** en la parte superior derecha, si aún no está seleccionado.
 
-3. Con el panel de navegación de la izquierda, expanda **Dataverse**, seleccione **Tablas** y haga clic para abrir la tabla **Visitas**.
+3. Con el panel de navegación izquierdo, seleccione **Tablas** y haga clic para abrir la tabla **Visit**.
 
-   Si no ve la tabla Visita, asegúrese de que se encuentra en el entorno correcto (paso 2).
+Si no ve la tabla Visita, asegúrese de que se encuentra en el entorno correcto (paso 2).
 
-4. En la sección **Experiencias de datos**, seleccione **Formularios** y haga clic para abrir el formulario Información con el tipo de formulario **Principal**.
+4. En la sección **Experiencias de datos**, seleccione **Formularios** y haga clic para abrir el formulario Información con el tipo de formulario **Principal**. (**Importante:** Asegúrese de seleccionar el que tiene el tipo de formato **Main**). 
 
 **IMPORTANTE:** Dado que, de forma predeterminada, todos los formularios se denominan Información, asegúrese de comprobar que el formulario que selecciona sea del tipo de formulario **Principal** y no cualquier otro. El formulario tiene dos campos de forma predeterminada: Nombre y Propietario.
 
-5. En el lado derecho de la pantalla, en el panel Propiedades, seleccione el campo **Nombre para mostrar** y cámbielo a **Información principal**.
+1. En el lado derecho de la pantalla, en el panel Propiedades, seleccione el campo **Nombre para mostrar** y cámbielo a **Información principal**.
 
-6. Seleccione **Columnas de la tabla** en el panel de navegación de la izquierda y agregue los campos siguientes debajo del campo **Propietario**. Para ello, arrastre las columnas hasta el formulario o simplemente haga clic en los nombres de las columnas:
+2. Seleccione **Columnas de la tabla** en el panel de navegación de la izquierda y agregue los campos siguientes debajo del campo **Propietario**. Para ello, arrastre las columnas hasta el formulario o simplemente haga clic en los nombres de las columnas:
 
     1. **Visitante**
 
-    1. **Inicio programado**
+    2. **Inicio programado**
 
-    1. **Final programado**
+    3. **Final programado**
 
-    1. **Inicio real**
+    4. **Inicio real**
 
-    1. **Finalización real**
+    5. **Finalización real**
 
-7. Arrastre la columna **Código** y suéltela en el encabezado del formulario.
+3. Arrastre la columna **Código** y suéltela en el encabezado del formulario.
 
 El encabezado está en la parte superior derecha del formulario. Es posible que deba contraer el panel Propiedades en el lado derecho de la pantalla para ver el campo en el formulario.
 
-8. Con el campo **Código** seleccionado, marque la casilla de verificación **Solo lectura** en el panel Propiedades del lado derecho de la pantalla.
+1. Con el campo **Código** seleccionado, marque la casilla de verificación **Solo lectura** en el panel Propiedades del lado derecho de la pantalla.
 
-9. Seleccione el campo **Propietario**. En el panel Propiedades, cambie la **Etiqueta** a **Host**.
+2. Seleccione el campo **Propietario**. En el panel Propiedades, cambie la **Etiqueta** a **Host**.
 
-10. Haga clic en **Guardar** en la parte superior derecha y espere a que se termine de guardar.
+3. Haga clic en el botón **Guardar y publicar** en la parte superior derecha y espere a que se complete la operación.
 
-11. Haga clic en **Publicar** en la parte superior derecha y espere hasta que se complete la publicación.
+4. Si la vista de edición se abre en una nueva pestaña o ventana del explorador, ciérrela. De lo contrario, haga clic en **Atrás** en la parte superior izquierda de la pantalla. Ahora debe estar de nuevo en Formularios de la tabla Visita.
 
-12. Si la vista de edición se abre en una nueva pestaña o ventana del explorador, ciérrela. De lo contrario, haga clic en **Atrás** en la parte superior izquierda de la pantalla. Ahora debe estar de nuevo en Formularios de la tabla Visita.
+5. Usar las rutas de navegación de la parte superior izquierda (Tablas>Visitar>Formularios). Seleccione **Visitar** para volver a la pantalla principal de la tabla **Visit**.
 
-13. Usar las rutas de navegación de la parte superior izquierda (Tablas>Visitar>Formularios). Seleccione **Visitar** para volver a la pantalla principal de la tabla **Visit**.
-
-### <a name="task-2-edit-active-visits-view"></a>Tarea \#2: Editar la vista de visitas activas
+Tarea n.°2: Editar la vista de visitas activas
 
 En esta tarea, modificaremos la vista predeterminada de Visitas activas y crearemos una nueva vista para las visitas de hoy.
 
@@ -113,7 +116,7 @@ En esta tarea, modificaremos la vista predeterminada de Visitas activas y creare
 
 4. Cambie el tamaño de los anchos de las columnas individuales para que los datos entren.
 
-5. En **Ordenar por ...** seleccione la X para quitar la información de **Nombre** y, en su lugar, seleccione **Inicio programado**.
+5. En **Ordenar por ...** , seleccione la X para quitar la información de **Nombre** y, en su lugar, elija **Inicio programado**.
 
 6. Seleccione **Inicio programado** para cambiar el criterio de ordenación a **Más reciente a anterior**.
 
@@ -121,8 +124,7 @@ En esta tarea, modificaremos la vista predeterminada de Visitas activas y creare
 
 8. Haga clic en **Publicar** y espere a que se complete la publicación.
 
-
-### <a name="task-3-create-new-view-for-todays-visits"></a>Tarea n.° 3: Crear una vista nueva para las visitas de hoy
+Tarea n.° 3: Crear una vista nueva para las visitas de hoy
 
 Ahora clonaremos la vista para crear una nueva vista para las visitas de hoy.
 
@@ -146,62 +148,59 @@ IMPORTANTE: Asegúrese de que no cierra la vista Visitas activas, ya que la apro
 
 **Nota:** Como ya no filtramos el estado de la vista, obtendremos todas las visitas de hoy, incluidas las completadas. Estos campos ayudarán a diferenciar visitas completadas y visitas en curso.
 
-9. Haga clic en **Guardar** y espere hasta que se guarden los cambios.
+1. Haga clic en **Guardar** y espere hasta que se guarden los cambios.
 
-10. Haga clic en **Publicar** y espere a que se complete la publicación.
+2. Haga clic en **Publicar** y espere a que se complete la publicación.
 
-
-## <a name="exercise-2-create-model-driven-app"></a>Ejercicio 2: Crear una aplicación basada en modelo
+Ejercicio 2: Crear una aplicación basada en modelo
 
 **Objetivo:** En este ejercicio, creará una aplicación basada en modelo, personalizará el mapa del sitio y probará la aplicación.
 
 Por motivos de simplicidad y tiempo, no abordaremos algunas de las columnas de visitas de este laboratorio.
 
-
-### <a name="task-1-create-app"></a>Tarea \#1: Crear una aplicación
+Tarea 1: Creación de la aplicación
 
 1. Haga clic en [https://make.powerapps.com](https://make.powerapps.com/) (si aún no ha iniciado sesión).
 
 2. Seleccione su ambiente **Práctica [mis iniciales]** en la parte superior derecha, si aún no está seleccionado.
 
-3.  Si es necesario, haga clic en el icono **Inicio** en el lado izquierdo de la pantalla.
+3. Si es necesario, haga clic en el icono **Inicio** en el lado izquierdo de la pantalla.
 
-3. Cree una aplicación basada en modelos:
+4. Cree una aplicación basada en modelos:
 
     1. Seleccione **Aplicación vacía** en la sección **Iniciar desde** de la pantalla de inicio.
 
-    1. En **Aplicación vacía basada en Dataverse**, seleccione **Crear**.
+    2. En **Aplicación vacía basada en Dataverse**, seleccione **Crear**.
 
-    1. Escriba **Administración del campus de Bellows** en Nombre y seleccione **Crear**.
+    3. Escriba **Administración del campus de Bellows** en Nombre y seleccione **Crear**.
 
-4. Una vez que se cargue la nueva aplicación controlada por modelos, seleccione el botón **+ Agregar página**.
+5. Una vez que se cargue la nueva aplicación controlada por modelos, seleccione el botón **+ Agregar página**.
 
-5. En la pantalla Agregar página, elija **Tabla de Dataverse** y, a continuación, seleccione el botón **Siguiente**.
+6. En la pantalla **Agregar página**, elija **Tabla de Dataverse** y, luego, seleccione el botón **Siguiente**.
 
-6. Agregue las tablas siguientes:
+7. Agregue las tablas siguientes:
 
     1. Visite
 
-    1. Contacto
+    2. Contacto
 
-7. Después de seleccionar las 2 tablas, seleccione **Agregar**.
+8. Después de seleccionar las 2 tablas, seleccione **Agregar**.
 
-8. Con los iconos de navegación del panel izquierdo de la pantalla, seleccione **Navegación**.
+9. Con los iconos de navegación del panel izquierdo de la pantalla, seleccione **Navegación**.
 
-9. En el panel de navegación, seleccione el **Grupo 1** debajo de Barra de navegación. Es posible que tenga que expandir el menú de la izquierda.
+10. En el panel de navegación, seleccione el **Grupo 1** debajo de Barra de navegación. Es posible que tenga que expandir el menú de la izquierda.
 
-10. En el lado derecho de la pantalla, en la sección **Opciones de presentación**, cambie la propiedad **Título** a **Seguridad**.
+11. En el lado derecho de la pantalla, en la sección **Opciones de presentación**, cambie la propiedad **Título** a **Seguridad**.
 
-11. En el panel de navegación, en el grupo Seguridad, seleccione **SubArea1**. 
+12. En el panel de navegación, en el grupo Seguridad, seleccione **SubArea1**.
 
-12. Seleccione los **puntos suspensivos** y, en el menú que aparece, seleccione **Quitar de la navegación**. 
+13. Seleccione los **puntos suspensivos** y, en el menú que aparece, seleccione **Quitar de la navegación**.
 
-13. Seleccione **Guardar** y espere hasta que se guarden los cambios. 
+14. Seleccione **Guardar** y espere hasta que se guarden los cambios.
 
-14. Una vez completada la operación **Guardar**, seleccione el botón **Publicar** para publicar los cambios. 
+15. Una vez completada la operación **Guardar**, seleccione el botón **Publicar** para publicar los cambios.
 
-
-### <a name="task-2-test-app"></a>Tarea 2: Prueba de la aplicación
+Tarea 2: Prueba de la aplicación
 
 1. Inicio de la aplicación
 
@@ -211,37 +210,37 @@ Por motivos de simplicidad y tiempo, no abordaremos algunas de las columnas de v
 
     1. La aplicación debería abrirse en la vista **Mis contactos activos**. Si no es así, seleccione Contactos en el panel de navegación izquierdo.
 
-    1. Haga clic en **+Nuevo** en el menú superior.
+    2. Haga clic en **+Nuevo** en el menú superior.
 
-    1. Proporcione el **Nombre de pila** como Juan y **Apellido** como Pérez.
+    3. Proporcione el **Nombre de pila** como Juan y **Apellido** como Pérez.
 
-    1. Proporcione su correo electrónico personal como **Correo electrónico**. Esto se usará en un laboratorio futuro donde recibirá un correo electrónico.
+    4. Proporcione su correo electrónico personal como **Correo electrónico**. Esto se usará en un laboratorio futuro donde recibirá un correo electrónico.
 
-    1. Haga clic en **Guardar y cerrar**.
+    5. Haga clic en **Guardar y cerrar**.
 
-    1. Ahora, debería ver el contacto creado en la vista **Mis contactos activos**.
+    6. Ahora, debería ver el contacto creado en la vista **Mis contactos activos**.
 
 3. Crear una nueva visita
 
     1. Seleccione **Visitas** en el panel de navegación izquierdo del mapa del sitio.
 
-    1. Haga clic en **+ Nuevo**.
+    2. Haga clic en **+ Nuevo**.
 
-    1. Especifique los campos de la siguiente forma
+    3. Especifique los campos de la siguiente forma
 
         1. **Nombre**: Nueva visita de prueba
 
-        1. **Visitante**: seleccione John Doe
+        2. **Visitante**: seleccione John Doe
 
-        1. **Inicio programado**: seleccione la fecha de mañana y las 02:00 como hora de inicio.
+        3. **Inicio programado**: seleccione la fecha de mañana y las 02:00 como hora de inicio.
 
-        1. **Final programado**: seleccione la fecha de mañana y las 03:30 como hora de finalización.
+        4. **Final programado**: seleccione la fecha de mañana y las 03:30 como hora de finalización.
 
 - Haga clic en **Guardar y cerrar**. Esto creará el registro de la visita y debería poder verlo en la vista Visitas activas.
 
 - Cambie la vista a **Visitas de hoy** con la lista desplegable situada junto a **Visitas activas**. Ya no debería ver la nueva visita en la vista, ya que está programada para mañana.
 
-4. Puede agregar más registros de prueba.
+1. Puede agregar más registros de prueba.
 
 Su aplicación en ejecución debería verse aproximadamente como la siguiente:
 
@@ -249,6 +248,6 @@ Su aplicación en ejecución debería verse aproximadamente como la siguiente:
 
 Felicidades. Ha creado y configurado la primera aplicación basada en modelo.
 
-## <a name="challenges"></a>Desafíos
+## Desafíos
 
 - Seleccione vistas y formularios específicos para Contactos.
