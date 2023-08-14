@@ -44,7 +44,7 @@ Seguiremos los pasos a continuación para diseñar y crear un panel de control d
 
 ### Tarea \#1: Preparar el servicio Power BI
 
-1.  Debe tener un archivo visits.pbix almacenado en la máquina virtual en C:/LabFiles. Descargue [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) y guárdelo en el equipo, si aún no está allí.
+1.  Debe tener un archivo visits.pbix almacenado en la máquina virtual en la carpeta AllFiles del escritorio. Descargue [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) y guárdelo en el equipo, si aún no está allí.
 
 2.  Abra una nueva pestaña y vaya a <https://app.powerbi.com/> e inicie sesión si es necesario.
 
@@ -56,7 +56,7 @@ Seguiremos los pasos a continuación para diseñar y crear un panel de control d
 
 7.  Una vez completada la carga de datos, seleccione el informe **visitas**.
 
-    Tenga en cuenta que el tipo está establecido en **Informe**; no seleccione Conjunto de datos.
+    > **Nota:** El tipo está establecido en **Informe**; no seleccione el conjunto de datos.
 
 8.  Seleccione **Editar**. 
 
@@ -67,33 +67,34 @@ Ahora ya configuró el servicio Power BI para usarlo en sus laboratorios.
 
 ### Tarea \#2: Cree gráficos y visualizaciones de tiempo
 
-1.  Presione el icono de **gráfico circular** en el panel **Visualizaciones** para insertar un gráfico.
+1.  Seleccione el icono de **gráfico circular** en el panel **Visualizaciones** para insertar un gráfico.
 
-2.  Presione la flecha desplegable situada junto **a bc_Visit** en el panel Campos. Arrastre el campo **Edificio** y colóquelo en el cuadro **Leyenda**.
+2.  Expanda **bc_Visit** en el panel **Campos**. Arrastre el campo **Building** y colóquelo en el cuadro **Leyenda**.
 
-3.  Arrastre el campo **Visita** y colóquelo en el cuadro **Valores**.
+3.  Arrastre el campo **Visit** y colóquelo en el cuadro **Valores**.
 
 4.  Cambie el tamaño del gráfico circular utilizando los tiradores de las esquinas para que todos los componentes del gráfico sean visibles.
 
-5.  Haga clic en el informe fuera del gráfico circular para anular la selección y seleccione el gráfico de columnas apiladas en el panel **Visualizaciones**.
+5.  Haga clic en el informe fuera del gráfico circular para anular la selección y seleccione el icono de **gráfico de columnas apiladas** en el panel **Visualizaciones**.
 
-6.  Presione la flecha desplegable situada junto **a bc_Visit** en el panel Campos. Arrastre el campo **Visita** y colóquelo en el cuadro de destino **Eje Y**.
+6.  Expanda **bc_Visit** en el panel **Campos** si aún no está expandido. Arrastre el campo **Visit** y colóquelo en el cuadro **Eje Y**.
 
-7.  Arrastre el campo **Comienzo** y colóquelo en el cuadro de destino **Eje X**.
+7.  Arrastre el campo **Start** y colóquelo en el cuadro **Eje X**.
 
-8.  En el panel Visualizaciones, haga clic en **X** junto a **Año** y **Trimestre** para dejar solo los totales de **Mes** y **Día** para el eje.
+8.  En el panel **Visualizaciones**, seleccione la **x** junto a **Año** y **Trimestre** para dejar solo los totales de **Mes** y **Día** para el eje X.
 
 9.  Cambie el tamaño del gráfico como desee con los identificadores de las esquinas.
 
 10. Pruebe la interactividad del informe:
 
-    1.  Haga clic en varios sectores de creación en el gráfico circular y observe los cambios en el informe de tiempo.
+    1.  Seleccione varios sectores de creación en el gráfico circular y observe los cambios en el gráfico de columnas apiladas.
 
-    2.  Haga clic en el gráfico de columnas. Presione la flecha hacia abajo para activar el modo **Explorar en profundidad** (o haga clic con el botón derecho en el gráfico y seleccione **Explorar en profundidad**) y, a continuación, haga clic en una columna para explorar en profundidad hasta el siguiente nivel (días).
+    2.  Seleccione el gráfico de columnas apiladas. Seleccione la flecha arriba para **Explorar en profundidad**. Seleccione la flecha abajo para activar el modo **Explorar en profundidad** y, luego, elija una columna para explorar en profundidad hasta el siguiente nivel (días).
 
-    3.  Rastree agrupando y desagrupando datos y seleccione varias barras en el gráfico de columnas de tiempo para observar los cambios en el informe circular.
+    3.  Rastree agrupando y desagrupando datos y seleccione varias barras en el gráfico de columnas apiladas para observar los cambios en el informe circular.
 
-11. Guarde el trabajo en curso presionando **Guardar**.
+11. Para guardar el trabajo en curso, seleccione **Guardar este informe**.
+
 
 ## Ejercicio 2: Crear un panel de información de Power BI
 
@@ -101,27 +102,28 @@ Ahora ya configuró el servicio Power BI para usarlo en sus laboratorios.
 
 1.  Debería tener abierto el informe de la tarea anterior.
 
-2.  Seleccione **Anclar a un panel de información** en el menú. Según el diseño, es posible que deba presionar **...** para mostrar los elementos de menú adicionales.
+2.  Seleccione **Anclar a un panel de información** en el menú. Según el diseño, es posible que deba presionar **...** para mostrar más opciones.
 
 3.  Seleccione **Nuevo tablero** en la confirmación de **Anclar al tablero**.
 
-4.  Introduzca **Administración del campus** como un **Nombre del tablero**, presione **Anclar elemento en vivo**.
+4.  Escriba `Campus Management` en **Nombre del panel** y seleccione **Anclar elemento activo**.
 
 5.  Un elemento emergente le pedirá que tenga el panel creado. Seleccione **Ir al panel**.
 
 6.  Pruebe la interactividad de los gráficos circulares y de barras que se muestran.
 
+
 ### Tarea \#2: Agregue visualizaciones usando lenguaje natural
 
 1.  En el panel de información **Administración de campus**, seleccione la barra **Pregunte algo sobre sus datos** en la parte superior.
 
-2.  Introduzca **edificios por número de visitas** en el área de preguntas y respuestas. Se mostrará un gráfico de barras.
+2.  Introduzca `buildings by number of visits` en el área de preguntas y respuestas. Se mostrará un gráfico de barras.
 
 3.  Seleccione **Anclar visualización**.
 
-4.  Seleccione **Panel existente**, seleccione el panel de **Administración del campus**, presione **Anclar**.
+4.  Seleccione **Panel existente**, elija el panel **Campus Management** y seleccione **Anclar**.
 
-5.  Haga clic en **Salir de Preguntas y respuestas**.
+5.  Seleccione **Salir de Preguntas y respuestas**.
 
 El panel de **Administración del campus** debe mostrarse con tres objetos visuales. Es posible que deba desplazarse hacia abajo para ver el nuevo objeto visual Preguntas y respuestas.
 

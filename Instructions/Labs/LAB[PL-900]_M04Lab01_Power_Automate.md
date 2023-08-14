@@ -37,7 +37,7 @@ Se han identificado las siguientes condiciones como requisitos que debe implemen
 
 ### Tarea \#1: Creación de un flujo
 
-1.  Vaya a <https://make.powerapps.com>. Es posible que deba volver a autenticarse: haga clic en **Iniciar sesión** y siga las instrucciones si es necesario.
+1.  Vaya a <https://make.powerapps.com>. Es posible que deba volver a autenticarse: seleccione **Iniciar sesión** y siga las instrucciones si es necesario.
 
 2.  Seleccione su ambiente **Práctica [mis iniciales]** en la parte superior derecha, si aún no está seleccionado.
 
@@ -45,13 +45,13 @@ Se han identificado las siguientes condiciones como requisitos que debe implemen
 
 4.  Si se le solicita, seleccione **Comenzar**.
 
-5.  Haga clic en **Nuevo flujo** y seleccione **Flujo de nube automatizado**.
+5.  Seleccione **+Nuevo flujo** y elija **Flujo de nube automatizado**.
 
-6.  Escriba "Notificación de visita" para **Nombre de flujo**.
+6.  Escriba `Visit Notification` en **Nombre de flujo**.
 
-7.  En **Elija el desencadenador del flujo**, busque **Dataverse**.
+7.  En **Elija el desencadenador del flujo**, busque `Dataverse`.
 
-8.  Seleccione el desencadenador **Cuando se agrega, modifica o elimina una fila** y, luego, haga clic en **Crear**.
+8.  Seleccione el desencadenador **Cuando se agrega, modifica o elimina una fila** y, luego, elija **Crear**.
 
 9.  Rellene las condiciones del desencadenador para el flujo:
 
@@ -61,56 +61,60 @@ Se han identificado las siguientes condiciones como requisitos que debe implemen
 
     3.  Seleccione **Organización** para el **ámbito**.
 
-    4.  En la etapa de desencadenamiento, haga clic en los puntos suspensivos ( **...** ) y en **Cambiar el nombre**. Cambie el nombre de este desencadenador a **"Cuando se agrega una visita"** . Esta es una buena manera de que usted y otros editores de flujo puedan comprender el propósito de la etapa sin tener que profundizar en los detalles.
+    4.  En el paso del desencadenador, haga clic en los puntos suspensivos ( **...** ) y seleccione **Cambiar nombre**. Cambiar el nombre del paso del desencadenador `When a Visit is added` 
+
+        Esta es una buena manera de que usted y otros editores de flujo puedan comprender el propósito de la etapa sin tener que profundizar en los detalles.
+
 
 ### Tarea \#2: Crear un paso para obtener la fila del visitante
 
-1.  Seleccione **+ New step**(+ Nuevo paso). Esta etapa es necesaria para recuperar la información de los visitantes, incluyendo la dirección de correo electrónico.
+1.  Seleccione **+ New step**(+ Nuevo paso). Este paso recuperará la información de los visitantes, incluida la dirección de correo electrónico.
 
-2.  Busque **Dataverse**.
+2.  Busque `Dataverse`.
 
 3.  Seleccione la acción **Obtener una fila por id.** .
 
 4.  Seleccione **Contactos** como **Nombre de tabla**.
 
-5.  Seleccione el campo **Id. de fila**. Observe que se abre una ventana para seleccionar contenido dinámico o expresiones.
+5.  Seleccione el campo **Id. de fila**. Observe que se abre una ventana para seleccionar **Contenido dinámico** o **Expresiones**.
 
-6.  En el campo **id. de fila**, seleccione **Visitante (valor)** de la lista de contenido dinámico. En este paso, busca el contacto para la fila de visita que se creó para desencadenar este flujo. Puesto que la dirección de correo electrónico forma parte de la tabla Contacto, necesitará esta información para enviar el correo electrónico al visitante.
+6.  En el campo **Id. de fila**, seleccione **Visitante (valor)** en la lista **Contenido dinámico**. En este paso, busca el contacto para la fila de visita que se creó para desencadenar este flujo. Puesto que la dirección de correo electrónico forma parte de la tabla Contacto, necesitará esta información para enviar el correo electrónico al visitante.
 
-7.  En esta acción, haga clic en los puntos suspensivos ( **...** ) y en **Cambiar nombre**.
-        Cambie el nombre de esta acción a **"Obtener visitante"** . Esta es una buena manera de que usted y otros editores de flujo puedan comprender el propósito de la etapa sin tener que profundizar en los detalles.
+7.  En la acción **Obtener una fila por identificador**, seleccione los puntos suspensivos ( **...** ) y elija **Cambiar nombre**. Cambiar el nombre de la acción `Get the Visitor`
+ 
+    Esta es una buena manera de que usted y otros editores de flujo puedan comprender el propósito de la etapa sin tener que profundizar en los detalles.
+
 
 ### Tarea \#3: Crear un paso para enviar un correo electrónico al visitante
 
-1.  Haga clic en **+ Nuevo paso**. Este es el paso que enviará un correo electrónico al visitante.
+1.  Seleccione **+ New step**(+ Nuevo paso). Este es el paso que enviará un correo electrónico al visitante.
 
-2.  Busque *correo*, seleccione el conector de **Office 365 Outlook** y la acción **Enviar un correo electrónico (V2)** .
+2.  Busque `mail` y seleccione la acción **Enviar correo electrónico (V2)** en el conector **Office 365 Outlook**.
 
-3.  Si se le solicita que acepte los términos y condiciones para usar esta acción, haga clic en **Aceptar**.
+3.  Si se le solicita que acepte los términos y condiciones para usar esta acción, seleccione **Aceptar**.
 
 4.  Seleccione **Agregar contenido dinámico** en el campo **Para**. 
     
 5.  Seleccione **Correo electrónico** en la lista de contenido dinámico.
-        > Notice that it is beneath the **Get the visitor** header. This means you
-        are selecting the Email that is related to the Visitor that you looked
-        up in the previous step.
 
-6.  Escriba **Su visita programada a Bellows College** en el campo **Asunto**.
+    > Observe que se encuentra debajo del encabezado **Obtener visitante**. Esto significa que está seleccionando el correo electrónico relacionado con el visitante que buscó en la etapa anterior.
 
-7.  Escriba el siguiente texto en el **cuerpo del correo electrónico**:
+7.  En el campo **Asunto**, escriba `Your scheduled visit to Bellows College`.
 
->   El contenido dinámico debe colocarse donde se nombran los campos entre paréntesis. Se recomienda copiar y pegar todo el texto primero y, luego, agregar contenido dinámico en los lugares correctos.
+8.  Escriba el siguiente texto en el **cuerpo del correo electrónico**:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   Dear {First Name},
+    > El contenido dinámico debe colocarse donde se nombran los campos entre paréntesis. Se recomienda copiar y pegar todo el texto primero y, luego, agregar contenido dinámico en los lugares correctos.
 
-   You are currently scheduled to visit Bellows Campus from {Scheduled Start} until {Scheduled End}.
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Dear {First Name},
 
-   Best regards,
+    You are currently scheduled to visit Bellows Campus from {Scheduled Start} until {Scheduled End}.
 
-   Campus Administration
-   Bellows College
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Best regards,
+
+    Campus Administration
+    Bellows College
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 8.  Resalte el texto **{First Name}** . Reemplácelo por el campo **Nombre** del paso **Obtener el visitante**.
 
@@ -118,11 +122,12 @@ Se han identificado las siguientes condiciones como requisitos que debe implemen
 
 10.  Resalte el texto **{Scheduled End}** . Reemplácelo por el campo **Fin programado** del paso **Cuando se agrega una visita**.
 
-11.  Haga clic en **Save**(Guardar).
+11.  Seleccione **Guardar**.
 
 Deje esta pestaña de flujo abierta para la siguiente tarea. El flujo debería tener la siguiente apariencia:
 
 ![Ejemplo de pasos de flujo.](media/4-Flow.png)
+
 
 ### Tarea \#4: Validar y probar el flujo
 
@@ -130,21 +135,21 @@ Deje esta pestaña de flujo abierta para la siguiente tarea. El flujo debería t
 
 2.  Seleccione su ambiente **Práctica [mis iniciales]** en la parte superior derecha, si aún no está seleccionado.
 
-3.  Haga clic en **Aplicaciones** y seleccione la aplicación basada en el modelo **Administración del campus de Bellows** que creó anteriormente.
+3.  Seleccione **Aplicaciones** y abra la aplicación basada en el modelo **Bellows Campus Management** que creó anteriormente.
 
 3.  Deje esta pestaña del explorador abierta y vuelva a la pestaña anterior con el flujo.
 
-4.  En la barra de comandos, haga clic en **Probar**. Seleccione **Manualmente** y haga clic en **Probar**.
+4.  En la barra de comandos, seleccione **Probar**. Seleccione **Manualmente** y, luego, **Probar**.
 
 5.  Vaya a la pestaña del explorador con la aplicación basada en modelo abierta. 
 
-6.  Con el panel de navegación de la izquierda, seleccione **Visitas**.
+6.  Con el panel de navegación del sitio de la izquierda, seleccione **Visitas**.
 
-6. Presione el botón **+ Nuevo** para agregar un nuevo registro de **Visita**.
+6.  Seleccione el botón **+Nuevo** para agregar un nuevo registro de **Visita**.
 
-7. Complete el registro de visita de la siguiente manera:
+7.  Complete el registro de visita de la siguiente manera:
 
-    -   **Nombre**: Visita de prueba
+    -   **Nombre:** `Test Visit`
 
     -   **Visitante:** John Doe
 
@@ -152,12 +157,15 @@ Deje esta pestaña de flujo abierta para la siguiente tarea. El flujo debería t
 
     -   **Finalización programada:** Mañana a las 9:00 a. m.
 
-8. Seleccione el botón **Guardar y cerrar**.
+8.  Seleccione el botón **Guardar y cerrar**.
 
-9. Vaya a la pestaña del explorador con la prueba del flujo en ejecución. Después de un breve retraso, debería ver el flujo en ejecución. Aquí es donde puede detectar cualquier problema en el flujo o confirmar que se ha ejecutado correctamente.
+9.  Vaya a la pestaña del explorador donde se ejecuta la prueba del flujo. Después de un breve retraso, debería ver el flujo en ejecución. Aquí es donde puede detectar cualquier problema en el flujo o confirmar que se ha ejecutado correctamente.
 
-Después de una pausa breve, debería ver un correo electrónico en la bandeja de entrada, ya que ha rellenado el correo electrónico de John Doe como su correo electrónico personal. Tenga en cuenta que puede ir a la carpeta Correo no deseado.
+    Después de una pausa breve, debería ver un correo electrónico en la bandeja de entrada, ya que ha rellenado el correo electrónico de John Doe como su correo electrónico personal. Tenga en cuenta que puede ir a la carpeta Correo no deseado.
 
-## Desafíos
 
-- Juega con el formato del correo electrónico. ¿Cómo darle un aspecto más profesional?
+## Desafío
+
+- Experimente con el formato en el correo electrónico. ¿Cómo darle un aspecto más profesional?
+
+

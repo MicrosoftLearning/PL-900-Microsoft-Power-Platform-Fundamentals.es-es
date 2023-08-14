@@ -174,7 +174,7 @@ Ejercicio 2: Importación de datos
 
 3.  Seleccione su ambiente **Práctica [mis iniciales]** en la parte superior derecha, si aún no está seleccionado.
 
-4.  Seleccione el botón con forma de gofre de la esquina superior izquierda para cambiar las aplicaciones y elija **OneDrive**. (OneDrive podría tardar un poco en configurarse. Haga clic en **El OneDrive está listo** cuando lo vea en la pantalla.
+4.  Seleccione el botón con forma de gofre de la esquina superior izquierda para cambiar las aplicaciones y elija **OneDrive**. (OneDrive podría tardar un poco en configurarse. Seleccione **Su OneDrive está listo** cuando lo vea en la pantalla.
 
 5.  Seleccione **Cargar** en el menú superior y elija **Archivos**.
 
@@ -193,7 +193,7 @@ Ejercicio 2: Importación de datos
 
 4.  Abra la tabla **Visit** que creó en el ejercicio anterior. 
 
-5.  Con el menú de la parte superior, seleccione **Importar** > Importar datos**.
+5.  Con el menú de la parte superior, seleccione **Importar** > **Importar datos**.
 
 6.  En el cuadro de diálogo **Elegir origen de datos**, seleccione **Libro de Excel**.
 
@@ -203,7 +203,7 @@ Ejercicio 2: Importación de datos
 
 9.  Seleccione **Next** (Siguiente). 
 
-10. En **Elegir datos**, active la casilla situada junto al libro de Excel denominado **Visits**. 
+10. En la pantalla **Power Query** > **Elegir datos**, active el libro **Visitas** de Excel. 
 
 11. Seleccione **Next** (Siguiente). No se vaya de esta página.
 
@@ -213,7 +213,7 @@ Ejercicio 2: Importación de datos
 
 14. En el menú desplegable **Tabla de destino**, seleccione la tabla **crXXX_Visit** (donde XXX es un conjunto aleatorio de letras y números).
 
-15. En **Asignación de columnas**, asigne las columnas a sus columnas de destino correspondientes.
+15. En la sección **Asignación de columnas**, asigne las columnas a sus columnas de destino correspondientes:
 
     | Columnas de destino  | Valores de origen   |
     |:---------------------|:----------------|
@@ -240,3 +240,4 @@ Tarea n.° 3: Comprobar la importación de datos
 2.  Compruebe que ve los datos importados en la sección **Visitar columnas y datos**.
 
 Enhorabuena, ha creado una tabla nueva y ha importado datos correctamente.
+
