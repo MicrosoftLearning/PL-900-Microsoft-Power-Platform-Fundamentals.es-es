@@ -25,23 +25,15 @@ Tarea 1: Adquisición del inquilino de prueba de Microsoft Power Platform
 
 1.  Copie sus **Credenciales de Microsoft 365** del proveedor de servicios de hosting del laboratorio autorizado. 
 
-1.  Vaya a <https://powerapps.microsoft.com> y haga clic en **Inicio gratis**.
+1.  Vaya a <https://powerapps.microsoft.com> y seleccione **Comenzar gratis**.
 
 1.  En **Comencemos**, escriba la dirección de correo electrónico proporcionada por el proveedor de servicios de hosting del laboratorio autorizado y seleccione **Iniciar prueba gratuita**. 
 
 1.  Si aparece un mensaje que le indica que ya tiene una cuenta con Microsoft. Seleccione **Iniciar sesión**. 
 
-1.  Escriba la contraseña proporcionada por el proveedor de servicios de hosting del laboratorio autorizado y seleccione **Iniciar sesión**.
+1.  Escriba la contraseña proporcionada por el proveedor de servicios de hosting del laboratorio autorizado y seleccione **Iniciar sesión**. 
 
 1.  Seleccione **Sí** para permanecer conectado. 
-
-1.  No cambie el país. 
-
-1.  En **Número de teléfono**, escriba `0123456789` y seleccione **Enviar**. 
-
-1.  En la pantalla de confirmación, seleccione **Comenzar**. 
-
-1.  Si aparece un mensaje para especificar los detalles de contacto, haga clic en **X** para cerrar la ventana emergente. 
 
 
 Tarea 2: Creación del entorno
@@ -60,14 +52,13 @@ Tarea 2: Creación del entorno
 
     1. Deje el resto de selecciones con el valor predeterminado y haga clic en **Siguiente**. 
 
-    1. Haga clic en el botón **+ Seleccionar** en el encabezado **Grupo de seguridad**.
+    1. En el encabezado **Grupo de seguridad**, use el botón **+Seleccionar**.
 
     1. Active la casilla del elemento **Ninguno** en el encabezado **Abrir acceso** y, luego, seleccione **Listo**.
 
-    1. Deje las opciones restantes en sus valores predeterminados y seleccione **Guardar**.
+    1. Deje las opciones restantes en sus valores predeterminados y seleccione **Guardar**. 
 
 1.  El entorno **Práctica** debería aparecer ahora en la lista de entornos. 
 
     > El aprovisionamiento del entorno podría tardar unos minutos. Si es necesario, actualice la página.
-
 

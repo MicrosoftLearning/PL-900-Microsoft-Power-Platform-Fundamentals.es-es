@@ -46,7 +46,7 @@ Seguiremos el siguiente esquema para diseñar la aplicación de lienzo:
 
 2.  Seleccione su ambiente **Práctica [mis iniciales]** en la parte superior derecha, si aún no está seleccionado.
 
-3.  Si es necesario, seleccione el icono **Inicio** en el lado izquierdo de la pantalla. En la sección **Iniciar desde**, seleccione **Dataverse**.
+3.  Seleccione **+Crear** en el panel de navegación izquierdo de la pantalla. En la sección **Iniciar desde**, seleccione **Dataverse**.
 
 4.  Seleccione la conexión de Dataverse.
 
@@ -54,6 +54,7 @@ Seguiremos el siguiente esquema para diseñar la aplicación de lienzo:
     > - Selección de **+Nueva conexión**
     > - Busque **Microsoft Dataverse**
     > - Seleccione **Crear**
+    > - **Inicie sesión** y seleccione **Permitir acceso**.
 
 5.  Busque y seleccione la tabla **Visitas** que creó en el laboratorio anterior.
 
@@ -61,15 +62,15 @@ Seguiremos el siguiente esquema para diseñar la aplicación de lienzo:
 
 7.  Una vez creada la aplicación, en la pantalla de bienvenida a Power Apps Studio, active la casilla **No volver a mostrar** y, luego, seleccione **Omitir**.
 
-8.  Una vez creada, debería ser similar a la de la imagen siguiente.
+8.  Después de que se ha completado la creación, la aplicación de lienzo debe ser similar a la imagen siguiente:
 
     ![Aplicación de lienzo creada a partir de los datos de visitas.](media/2-canvas-app-from-data.png)
 
-9. En el diseñador de aplicaciones, seleccione el botón **Vista previa de la aplicación** (icono Reproducir) en la barra de comandos. *(También puede obtener una vista previa de la aplicación pulsando F5 en el teclado).* Eche un vistazo para ver el aspecto de su aplicación lista para usar.
+9.  En el diseñador de aplicaciones, seleccione el botón **Vista previa de la aplicación** (icono de reproducción) en la barra de comandos. *(También puede obtener una vista previa de la aplicación pulsando F5).* Eche un vistazo y compruebe el aspecto de su aplicación.
 
 10. Cierre la vista previa de la aplicación seleccionando la **X** de la esquina superior derecha de la pantalla.
 
-Enhorabuena, ha creado correctamente una instancia de Power App a partir de una tabla de Dataverse. El siguiente paso del proceso es adaptar la aplicación para se ajuste a la personalización de marca de la universidad. La siguiente serie de pasos le guiará por el proceso de personalizar un poco más la aplicación.
+Enhorabuena, ha creado correctamente una instancia de Power App a partir de una tabla de Dataverse. El siguiente paso del proceso es adaptar la aplicación para que se ajuste a la personalización de marca de Bellows College. La siguiente serie de pasos le guiará por el proceso de personalizar un poco más la aplicación.
 
 
 ### Tarea \#2: Modificar y aplicar un tema a la nueva aplicación
@@ -80,29 +81,29 @@ En esta tarea, personalizará el texto del encabezado en cada una de las tres pa
 
 1.  En el lado derecho de la pantalla, en la pestaña Propiedades, actualice la propiedad de control **Texto** a `Bellows College Visits`.
 
-1.  En las propiedades, cambie el **tamaño de la fuente** a **24**. 
+1.  En **Propiedades**, cambie el **tamaño de la fuente** a **24**. 
 
-1.  Haga clic en el fondo en blanco de la pantalla para ver el texto actualizado en la pantalla de exploración. 
+1.  Seleccione el fondo en blanco de la pantalla para ver el texto actualizado en la pantalla de exploración. 
 
-1.  Mediante la vista de árbol del panel de navegación izquierdo, seleccione **DetailScreen1**. 
+1.  Mediante la **vista de árbol** del panel de navegación izquierdo, seleccione **DetailScreen1**. 
 
 1.  Seleccione la etiqueta **Visitas** en la pantalla.
 
-1.  En el lado derecho de la pantalla, en la pestaña Propiedades, actualice la propiedad de control **Texto** a `Visit Details`.
+1.  En el lado derecho de la pantalla, en la pestaña **Propiedades**, actualice la propiedad de control **Texto** a `Visit Details`.
 
 1.  Haga clic en el fondo en blanco de la pantalla para ver el texto actualizado en la pantalla de detalles.
 
-1.  Mediante la vista de árbol en el panel de navegación izquierdo, seleccione **EditScreen1** (es posible que tenga que desplazarse hacia abajo para verlo en esa vista).
+1.  Mediante la **vista de árbol** del panel de navegación izquierdo, seleccione **EditScreen1** (es posible que tenga que desplazarse hacia abajo para verlo en esa vista).
 
 1.  Seleccione la etiqueta **Visitas** en la pantalla.
 
-1.  En el lado derecho de la pantalla, en la pestaña Propiedades, reemplace el texto de la propiedad de control **Texto** por `Edit Details`.
+1.  En el lado derecho de la pantalla, en la pestaña **Propiedades**, reemplace el texto de la propiedad de control **Texto** por `Edit Details`.
 
 1.  Haga clic en el fondo en blanco de la pantalla para ver el texto actualizado en la pantalla de edición.
 
-1. Mediante la vista de árbol del panel de navegación izquierdo, seleccione **BrowseScreen1**.
+1.  Mediante la **vista de árbol** del panel de navegación izquierdo, seleccione **BrowseScreen1**.
 
-1. En la barra de herramientas de comandos, seleccione el botón **Tema** y, en la lista que aparece, seleccione el color **rojo** para el tema.
+1.  En la barra de herramientas de comandos, seleccione el botón **Tema** y, en la lista que aparece, elija el color **Rojo** para el tema.
 
 
 ### Tarea \#3: Probar la aplicación de visitas
@@ -111,11 +112,9 @@ En esta tarea, probará la nueva aplicación.
 
 1.  Con la aplicación abierta en el Diseñador de aplicaciones, seleccione **Configuración**, en la sección **General**, actualice el nombre de la aplicación a `Visits App`, seleccione la **X** para cerrar la pantalla de configuración y, luego, elija **Guardar**.
 
-2.  Seleccione la flecha **Atrás** para volver a la aplicación.
+2.  En el panel de navegación izquierdo, seleccione **BrowseScreen1**.
 
-3.  En el panel de navegación izquierdo, seleccione **BrowseScreen1**.
-
-4.  En el diseñador de aplicaciones, seleccione el botón **Vista previa de la aplicación** (icono Reproducir) en la barra de comandos. *(También puede obtener una vista previa de la aplicación pulsando F5 en el teclado).*
+3.  En el diseñador de aplicaciones, seleccione el botón **Vista previa de la aplicación** (icono de reproducción) en la barra de comandos. *(También puede obtener una vista previa de la aplicación presionando F5).*
 
 4.  Una vez que se abra la aplicación, en el campo **Buscar elementos**, escriba el texto `Maria`Maria
      *(observe cómo se filtran los elementos de la galería en función de lo que se escribe en el campo de búsqueda).*
@@ -129,5 +128,4 @@ En esta tarea, probará la nueva aplicación.
 8.  En la parte superior derecha de la pantalla, seleccione el icono de la **X** para cerrar el modo de vista previa y volver al editor de aplicaciones de lienzo.
 
 Felicidades. Ha creado y configurado su primera aplicación de lienzo.
-
 
