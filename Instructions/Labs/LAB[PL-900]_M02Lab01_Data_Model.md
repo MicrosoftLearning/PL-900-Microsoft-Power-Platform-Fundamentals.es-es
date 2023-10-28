@@ -43,11 +43,12 @@ Cuestiones que tener en cuenta antes de comenzar
 
 - Convenciones de nomenclatura: escriba los nombres con cuidado.
 
-Ejercicio 1: Creación de una nueva tabla
+
+# Ejercicio 1: Creación de una nueva tabla
 
 **Objetivo:** En este ejercicio, creará una nueva tabla personalizada para las visitas.
 
-Tarea 1: Creación de la tabla de visitas y las columnas
+## Tarea 1: Creación de la tabla de visitas y las columnas
 
 La tabla **Visita** contendrá información sobre las visitas al campus, incluidos el visitante, la hora programada y la hora real de cada visita.
 
@@ -59,7 +60,7 @@ Nos gustaría asignar a cada visita un número único que el visitante pueda ing
 
 1.  En el panel de navegación de la izquierda, seleccione **Tablas**.
 
-1.  Seleccione **+ Nueva tabla** y elija **+ Nueva tabla**. 
+1.  Seleccione **+ Nueva tabla** y elija **Establecer propiedades avanzadas**. 
 
 1.  En **Nombre para mostrar**, escriba `Visit`.
 
@@ -67,7 +68,8 @@ Nos gustaría asignar a cada visita un número único que el visitante pueda ing
 
 1.  En la sección **Esquema**, seleccione **Columnas**. 
 
-# Crear la columna Inicio programado
+
+## Crear la columna Inicio programado
 
 1.  Seleccione **+ Nueva columna**. 
 
@@ -85,7 +87,8 @@ Nos gustaría asignar a cada visita un número único que el visitante pueda ing
 
 1.  Seleccione **Guardar**. 
 
-# Crear la columna Fin programado
+
+## Crear la columna Fin programado
 
 1.  Seleccione **+ Nueva columna**. 
 
@@ -101,13 +104,14 @@ Nos gustaría asignar a cada visita un número único que el visitante pueda ing
 
 1.  Seleccione **Guardar**. 
 
-# Crear la columna Inicio real
+
+## Crear la columna Inicio real
 
 1.  Seleccione **+ Nueva columna**. 
 
 1.  En **Nombre para mostrar**, escriba `Actual Start`.
 
-1.  Seleccione **Fecha y hora** para **Tipo de datos**.
+1.  En **Tipo de datos**, seleccione **Fecha y hora**.
 
 1.  En el campo **Necesario**, déjelo como **Opcional**.
 
@@ -117,13 +121,14 @@ Nos gustaría asignar a cada visita un número único que el visitante pueda ing
 
 1.  Seleccione **Guardar**. 
 
-# Crear la columna Fin real
+
+## Crear la columna Fin real
 
 1.  Seleccione **+ Nueva columna**.
 
-1.  Escriba **Fin real** para **Nombre para mostrar**.
+1.  En **Nombre para mostrar**, escriba `Actual End`.
 
-1.  Seleccione **Fecha y hora** para **Tipo de datos**.
+1.  En **Tipo de datos**, seleccione **Fecha y hora**.
 
 1.  En el campo **Necesario**, déjelo como **Opcional**.
 
@@ -133,7 +138,8 @@ Nos gustaría asignar a cada visita un número único que el visitante pueda ing
 
 1.  Seleccione **Guardar**.
 
-# Crear la columna Código
+
+## Crear la columna Código
 
 1.  Seleccione **+ Nueva columna**.
 
@@ -145,13 +151,14 @@ Nos gustaría asignar a cada visita un número único que el visitante pueda ing
 
 1.  Seleccione **Guardar**. 
 
-# Crear columna de búsqueda de visitante
+
+## Crear columna de búsqueda de visitante
 
 1.  Seleccione **+ Nueva columna**.
 
 1.  En **Nombre para mostrar**, escriba `Visitor`.
 
-1.  Seleccione **Búsqueda** en **Tipo de datos**. 
+1.  Seleccione **Búsqueda** > **Búsqueda** en **Tipo de datos**. 
 
 1.  Seleccione **Contacto** para la **Tabla relacionada**. 
 
@@ -162,11 +169,11 @@ Nos gustaría asignar a cada visita un número único que el visitante pueda ing
 1.  Seleccione **Guardar**.
 
 
-Ejercicio 2: Importación de datos
+# Ejercicio 2: Importación de datos
 
 **Objetivo:** En este ejercicio importará datos de ejemplo a la base de datos de Dataverse.
 
-### Tarea \#1: Carga del archivo de Excel en OneDrive
+## Tarea \#1: Carga del archivo de Excel en OneDrive
 
 1.  Debe tener el archivo **Visits.xlsx** almacenado en la máquina virtual en **C:/LabFiles**. Si no es así, descargue el archivo [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx).
 
@@ -176,14 +183,14 @@ Ejercicio 2: Importación de datos
 
 4.  Seleccione el botón con forma de gofre de la esquina superior izquierda para cambiar las aplicaciones y elija **OneDrive**. (OneDrive podría tardar un poco en configurarse. Seleccione **Su OneDrive está listo** cuando lo vea en la pantalla.
 
-5.  Seleccione **Cargar** en el menú superior y elija **Archivos**.
+5.  Seleccione **+Agregar nuevo** en el menú y seleccione **Carga de archivos**.
 
 6.  Busque y seleccione el archivo **Visits.xlsx** y elija **Abrir**.
 
-    > **Nota**: Este archivo se encuentra en la carpeta **Todos los archivos** de la máquina.
+    > **Nota:** El archivo debe encontrarse en la carpeta **Escritorio** > **Todos los archivos** de la máquina virtual.
 
 
-### Tarea \#2: Creación de un flujo de datos
+## Tarea \#2: Creación de un flujo de datos
 
 1.  Si aún no ha iniciado sesión, inicie sesión en <https://make.powerapps.com>. 
 
@@ -233,7 +240,7 @@ Ejercicio 2: Importación de datos
     > **Nota:** Los datos pueden tardar unos minutos en importarse en la tabla. No se preocupe si aparecen algunos errores, es normal, y no afectará al resto del curso.
 
 
-Tarea n.° 3: Comprobar la importación de datos
+## Tarea 3: Comprobación de la importación de los datos
 
 1.  Una vez importados los datos, use el menú de navegación a la izquierda de la pantalla para seleccionar **Tablas** y abrir la tabla **Visit**.
 
