@@ -87,7 +87,7 @@ Se han identificado las siguientes condiciones como requisitos que debe implemen
 
 ### Tarea \#3: Crear un paso para enviar un correo electrónico al visitante
 
-1.  Seleccione **+ New step**(+ Nuevo paso). Este es el paso que enviará un correo electrónico al visitante.
+1.  Seleccione **+ Nuevo paso**. Este es el paso que enviará un correo electrónico al visitante.
 
 2.  Busque `mail` y seleccione la acción **Enviar correo electrónico (V2)** en el conector **Office 365 Outlook**.
 
@@ -97,9 +97,9 @@ Se han identificado las siguientes condiciones como requisitos que debe implemen
     
 5.  Seleccione **Correo electrónico** en la lista de contenido dinámico.
 
-    > Observe que se encuentra debajo del encabezado **Obtener visitante**. Esto significa que está seleccionando el correo electrónico relacionado con el visitante que buscó en la etapa anterior.
+    > Observa que está debajo del encabezado **Obtener visitante**. Esto significa que vas a seleccionar el correo electrónico relacionado con el visitante que has buscado en el paso anterior.
 
-7.  En el campo **Asunto**, escriba `Your scheduled visit to Bellows College`.
+7.  En el campo **Asunto**, escriba `Your scheduled visit to Bellows College`
 
 8.  Escriba el siguiente texto en el **cuerpo del correo electrónico**:
 
@@ -149,7 +149,7 @@ Deje esta pestaña de flujo abierta para la siguiente tarea. El flujo debería t
 
 7.  Complete el registro de visita de la siguiente manera:
 
-    -   **Nombre:** `Test Visit`
+    -   **Nombre**: `Test Visit`
 
     -   **Visitante:** John Doe
 

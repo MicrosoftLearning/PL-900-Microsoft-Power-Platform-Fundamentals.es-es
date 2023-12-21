@@ -25,9 +25,11 @@ Tarea 1: Adquisición del inquilino de prueba de Microsoft Power Platform
 
 1.  Copie sus **Credenciales de Microsoft 365** del proveedor de servicios de hosting del laboratorio autorizado. 
 
-1.  Vaya a <https://powerapps.microsoft.com> y seleccione **Comenzar gratis**.
+1.  Vaya a <https://powerapps.microsoft.com> y seleccione **Iniciar prueba gratuita**.
 
 1.  En **Comencemos**, escriba la dirección de correo electrónico proporcionada por el proveedor de servicios de hosting del laboratorio autorizado y seleccione **Iniciar prueba gratuita**. 
+
+1.  Si aparece una página adicional con los botones **Empezar a compilar aplicaciones** y **Empezar a usar aplicaciones**, haz clic en **Empezar a usar aplicaciones**: no empezar a compilar aplicaciones.
 
 1.  Si aparece un mensaje que le indica que ya tiene una cuenta con Microsoft. Seleccione **Iniciar sesión**. 
 
