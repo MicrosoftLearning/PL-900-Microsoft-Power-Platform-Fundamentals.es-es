@@ -117,7 +117,7 @@ Ahora ya configuró el servicio Power BI para usarlo en sus laboratorios.
 
 1.  En el panel de información **Administración de campus**, seleccione la barra **Pregunte algo sobre sus datos** en la parte superior.
 
-2.  Introduzca `buildings by number of visits` en el área de preguntas y respuestas. Se mostrará un gráfico de barras.
+2.  Escribe `buildings by number of visits` en el área de preguntas y respuestas. Se mostrará un gráfico de barras.
 
 3.  Seleccione **Anclar visualización**.
 

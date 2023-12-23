@@ -18,7 +18,7 @@ A lo largo de este curso, creará aplicaciones y realizará la automatización p
 
 En este laboratorio, creará una aplicación impulsada por el modelo de Power Apps para permitir que el personal del campus administrativo administre los registros de visitas en todo el campus.
 
-Pasos de alto nivel del laboratorio
+## Pasos de alto nivel del laboratorio
 
 Como parte de la creación de la aplicación basada en modelo, completará lo siguiente:
 
@@ -36,7 +36,7 @@ Trabajaremos con los siguientes componentes:
 
 Ambos se integrarán a la aplicación basada en modelo para una mejor experiencia de usuario.
 
-Prerrequisitos
+## Prerrequisitos
 
 - Finalización del **Módulo 0 Laboratorio 0: Validación del entorno de laboratorio**
 
@@ -50,13 +50,13 @@ Cuestiones que tener en cuenta antes de comenzar
 
 - ¿Qué personalizaciones se pueden hacer en el mapa del sitio de una aplicación basada en modelos?
 
-Ejercicio 1: Personalizar las vistas y los formularios
+## Ejercicio 1: Personalizar las vistas y los formularios
 
 **Objetivo:** En este ejercicio, personalizará las vistas y formularios de las tablas creadas de manera personalizada que se utilizarán en la aplicación basada en modelo.
 
-Tarea n.° 1: Editar el formulario de visita
+### Tarea n.° 1: Editar el formulario de visita
 
-1.  Haga clic en <https://make.powerapps.com> si no ha iniciado sesión aún.
+1.  Haga clic en <https://make.powerapps.com> si aún no ha iniciado sesión.
 
 2.  Seleccione su ambiente **Práctica [mis iniciales]** en la parte superior derecha, si aún no está seleccionado.
 
@@ -66,7 +66,7 @@ Tarea n.° 1: Editar el formulario de visita
 
 4.  En la sección **Experiencias de datos**, seleccione **Formularios** y abra el formulario **Información** con el tipo de formulario **Principal**. (**Importante:** Asegúrese de seleccionar el formulario que tiene el tipo de formato **Principal**). 
 
-    **IMPORTANTE:** Dado que, de forma predeterminada, todos los formularios se denominan Información, asegúrese de comprobar que el formulario que selecciona sea del tipo de formulario **Principal** y no cualquier otro. El formulario tiene dos campos de forma predeterminada: Nombre y Propietario.
+> **IMPORTANTE:** Dado que, de forma predeterminada, todos los formularios se denominan Información, asegúrese de comprobar que el formulario que selecciona sea del tipo de formulario **Principal** y no cualquier otro. El formulario tiene dos campos de forma predeterminada: Nombre y Propietario.
 
 5.  En el lado derecho de la pantalla, en el panel **Propiedades**, seleccione el campo **Display Name** y cámbielo a `Main Information`.
 
@@ -88,7 +88,7 @@ Tarea n.° 1: Editar el formulario de visita
 
 8.  Con el campo **Código** seleccionado, marque la casilla de verificación **Solo lectura** en el panel Propiedades del lado derecho de la pantalla.
 
-9.  Seleccione el campo **Propietario**. En el panel Propiedades, cambie la **Etiqueta** a `Host`.
+9.  Seleccione el campo **Propietario**. En el panel Propiedades, cambia la **Etiqueta** por `Host`.
 
 10. Seleccione el botón **Guardar y publicar** en la parte superior derecha y espere a que se complete la operación.
 
@@ -97,7 +97,7 @@ Tarea n.° 1: Editar el formulario de visita
 12. Con las rutas de navegación de la parte superior izquierda (**Tablas** > **Visit** > **Forms**), seleccione **Visit** para volver a la pantalla de propiedades de la tabla **Visit**. 
 
 
-Tarea n.°2: Editar la vista de visitas activas
+### Tarea n.°2: Editar la vista de visitas activas
 
 En esta tarea, modificaremos la vista predeterminada de Visitas activas y crearemos una nueva vista para las visitas de hoy.
 
@@ -124,11 +124,11 @@ En esta tarea, modificaremos la vista predeterminada de Visitas activas y creare
 7.  Seleccione el botón **Guardar y publicar** en la parte superior derecha y espere a que se complete la operación.
 
 
-Tarea n.° 3: Crear una vista nueva para las visitas de hoy
+### Tarea n.° 3: Crear una vista nueva para las visitas de hoy
 
 Ahora clonaremos la vista para crear una nueva vista para las visitas de hoy.
 
-IMPORTANTE: Asegúrese de que no cierra la vista Visitas activas, ya que la aprovecharemos para crear la nueva vista de visitas de hoy.
+> **IMPORTANTE:** Asegúrate de no cerrar la vista Visitas activas, ya que la aprovecharemos para crear la nueva vista de visitas de hoy.
 
 1.  Seleccione **Guardar como**.
 
@@ -146,22 +146,22 @@ IMPORTANTE: Asegúrese de que no cierra la vista Visitas activas, ya que la apro
 
 8.  Agregue los campos **Comienzo real** y **Final real** a la vista.
 
-    **Nota:** Como ya no filtramos el estado de la vista, obtendremos todas las visitas de hoy, incluidas las completadas. Estos campos ayudarán a diferenciar visitas completadas y visitas en curso.
+> **NOTA:** Al no realizar filtraciones sobre el estado de la vista, obtendremos todas las visitas de hoy, incluidas las completadas. Estos campos ayudarán a diferenciar visitas completadas y visitas en curso.
 
 9.  Seleccione el botón **Guardar y publicar** en la parte superior derecha y espere a que se complete la operación.
 
 
-Ejercicio 2: Crear una aplicación basada en modelo
+## Ejercicio 2: Crear una aplicación basada en modelo
 
 **Objetivo:** En este ejercicio, creará una aplicación basada en modelo, personalizará el mapa del sitio y probará la aplicación.
 
 Por motivos de simplicidad y tiempo, no abordaremos algunas de las columnas de visitas de este laboratorio.
 
-Tarea 1: Creación de la aplicación
+### Tarea 1: Creación de la aplicación
 
 1.  Inicie sesión en <https://make.powerapps.com>, si aún no lo ha hecho.
 
-2.  Seleccione su ambiente **Práctica [mis iniciales]** en la parte superior derecha, si aún no está seleccionado.
+2.  Selecciona tu entorno **Práctica [mis iniciales]** en la parte superior derecha, si aún no está seleccionado.
 
 3.  Seleccione **+Crear** en el panel de navegación izquierdo.
 
@@ -181,7 +181,7 @@ Tarea 1: Creación de la aplicación
 
     1. Visite
 
-    2. Contacto
+    2. Contact
 
 8.  Después de seleccionar las dos tablas, elija **Agregar**.
 
@@ -196,7 +196,7 @@ Tarea 1: Creación de la aplicación
 13. Una vez completada la operación **Guardar**, seleccione el botón **Publicar** para publicar los cambios.
 
 
-Tarea 2: Prueba de la aplicación
+### Tarea 2: Prueba de la aplicación
 
 Inicio de la aplicación
 
@@ -222,7 +222,7 @@ Creación de una nueva visita
 
 9.  Seleccione **+ Nuevo**.
 
-10. Rellene los campos como sigue:
+10. Especifique los campos de la siguiente manera:
 
     1. **Nombre**: `New test visit`
 

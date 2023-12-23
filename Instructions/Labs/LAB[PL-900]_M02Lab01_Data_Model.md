@@ -43,7 +43,6 @@ Cuestiones que tener en cuenta antes de comenzar
 
 - Convenciones de nomenclatura: escriba los nombres con cuidado.
 
-
 # Ejercicio 1: Creación de una nueva tabla
 
 **Objetivo:** En este ejercicio, creará una nueva tabla personalizada para las visitas.
@@ -208,11 +207,11 @@ Nos gustaría asignar a cada visita un número único que el visitante pueda ing
 
 8.  Seleccione el archivo **Visits.xlsx** que se cargó en OneDrive en la tarea anterior. 
 
-9.  Seleccione **Next** (Siguiente). 
+9.  Seleccione **Siguiente**. 
 
 10. En la pantalla **Power Query** > **Elegir datos**, active el libro **Visitas** de Excel. 
 
-11. Seleccione **Next** (Siguiente). No se vaya de esta página.
+11. Seleccione **Siguiente**. No se vaya de esta página.
 
 12. Seleccione **Next** (Siguiente). 
 
