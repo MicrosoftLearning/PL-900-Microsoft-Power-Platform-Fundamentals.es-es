@@ -56,9 +56,9 @@ Cuestiones que tener en cuenta antes de comenzar
 
 ### Tarea n.° 1: Editar el formulario de visita
 
-1.  Haga clic en <https://make.powerapps.com> si aún no ha iniciado sesión.
+1.  Si aún no lo está, inicie sesión en `https://make.powerapps.com` 
 
-2.  Seleccione su ambiente **Práctica [mis iniciales]** en la parte superior derecha, si aún no está seleccionado.
+2.  Seleccione el entorno **Dev One** en la parte superior derecha si aún no está seleccionado.
 
 3.  Con el panel de navegación izquierdo, seleccione **Tablas** y abra la tabla **Visit**.
 
@@ -66,7 +66,7 @@ Cuestiones que tener en cuenta antes de comenzar
 
 4.  En la sección **Experiencias de datos**, seleccione **Formularios** y abra el formulario **Información** con el tipo de formulario **Principal**. (**Importante:** Asegúrese de seleccionar el formulario que tiene el tipo de formato **Principal**). 
 
-> **IMPORTANTE:** Dado que, de forma predeterminada, todos los formularios se denominan Información, asegúrese de comprobar que el formulario que selecciona sea del tipo de formulario **Principal** y no cualquier otro. El formulario tiene dos campos de forma predeterminada: Nombre y Propietario.
+    > **IMPORTANTE:** Dado que, de forma predeterminada, todos los formularios se denominan Información, asegúrese de comprobar que el formulario que selecciona sea del tipo de formulario **Principal** y no cualquier otro. El formulario tiene dos campos de forma predeterminada: Nombre y Propietario.
 
 5.  En el lado derecho de la pantalla, en el panel **Propiedades**, seleccione el campo **Display Name** y cámbielo a `Main Information`.
 
@@ -159,9 +159,9 @@ Por motivos de simplicidad y tiempo, no abordaremos algunas de las columnas de v
 
 ### Tarea 1: Creación de la aplicación
 
-1.  Inicie sesión en <https://make.powerapps.com>, si aún no lo ha hecho.
+1.  Si aún no lo está, inicie sesión en `https://make.powerapps.com` 
 
-2.  Selecciona tu entorno **Práctica [mis iniciales]** en la parte superior derecha, si aún no está seleccionado.
+2.  Seleccione el entorno **Dev One** en la parte superior derecha si aún no está seleccionado.
 
 3.  Seleccione **+Crear** en el panel de navegación izquierdo.
 
@@ -181,7 +181,7 @@ Por motivos de simplicidad y tiempo, no abordaremos algunas de las columnas de v
 
     1. Visite
 
-    2. Contact
+    2. Contacto
 
 8.  Después de seleccionar las dos tablas, elija **Agregar**.
 
@@ -193,7 +193,7 @@ Por motivos de simplicidad y tiempo, no abordaremos algunas de las columnas de v
 
 12. Seleccione **Guardar** y espere hasta que se guarden los cambios.
 
-13. Una vez completada la operación **Guardar**, seleccione el botón **Publicar** para publicar los cambios.
+13. Una vez completada la operación **Guardar**, seleccione el botón **Publicar** para publicar los cambios. Espere a que se complete la publicación.
 
 
 ### Tarea 2: Prueba de la aplicación

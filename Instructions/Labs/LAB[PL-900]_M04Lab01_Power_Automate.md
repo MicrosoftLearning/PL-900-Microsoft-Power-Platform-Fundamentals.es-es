@@ -37,23 +37,25 @@ Se han identificado las siguientes condiciones como requisitos que debe implemen
 
 ### Tarea \#1: Creación de un flujo
 
-1.  Vaya a <https://make.powerapps.com>. Es posible que deba volver a autenticarse: seleccione **Iniciar sesión** y siga las instrucciones si es necesario.
+1.  Vaya a `https://make.powerapps.com`.
 
-2.  Seleccione su ambiente **Práctica [mis iniciales]** en la parte superior derecha, si aún no está seleccionado.
+2.  Es posible que deba volver a autenticarse: seleccione **Iniciar sesión** y siga las instrucciones si es necesario.
 
-3.  En el panel de navegación izquierdo, seleccione **Flujos**.
+3.  Seleccione el entorno **Dev One** en la parte superior derecha si aún no está seleccionado.
 
-4.  Si se le solicita, seleccione **Comenzar**.
+4.  En el panel de navegación izquierdo, seleccione **Flujos**.
 
-5.  Seleccione **+Nuevo flujo** y elija **Flujo de nube automatizado**.
+5.  Si se le solicita, seleccione **Comenzar**.
 
-6.  Escriba `Visit Notification` en **Nombre de flujo**.
+6.  Seleccione **+Nuevo flujo** y elija **Flujo de nube automatizado**.
 
-7.  En **Elija el desencadenador del flujo**, busque `Dataverse`.
+7.  Escriba `Visit Notification` en **Nombre de flujo**.
 
-8.  Seleccione el desencadenador **Cuando se agrega, modifica o elimina una fila** y, luego, elija **Crear**.
+8.  En **Elija el desencadenador del flujo**, busque `Dataverse`.
 
-9.  Rellene las condiciones del desencadenador para el flujo:
+9.  Seleccione el desencadenador **Cuando se agrega, modifica o elimina una fila** y, luego, elija **Crear**.
+
+10.  Rellene las condiciones del desencadenador para el flujo:
 
     1.  Seleccione **Agregado** **Cambiar tipo**.
 
@@ -87,7 +89,7 @@ Se han identificado las siguientes condiciones como requisitos que debe implemen
 
 ### Tarea \#3: Crear un paso para enviar un correo electrónico al visitante
 
-1.  Seleccione **+ Nuevo paso**. Este es el paso que enviará un correo electrónico al visitante.
+1.  Seleccione **+ New step**(+ Nuevo paso). Este es el paso que enviará un correo electrónico al visitante.
 
 2.  Busque `mail` y seleccione la acción **Enviar correo electrónico (V2)** en el conector **Office 365 Outlook**.
 
@@ -131,9 +133,9 @@ Deje esta pestaña de flujo abierta para la siguiente tarea. El flujo debería t
 
 ### Tarea \#4: Validar y probar el flujo
 
-1.  Abra una pestaña nueva en el explorador y vaya a <https://make.powerapps.com>.
+1.  Abra una nueva pestaña en el explorador y vaya a `https://make.powerapps.com`
 
-2.  Seleccione su ambiente **Práctica [mis iniciales]** en la parte superior derecha, si aún no está seleccionado.
+2.  Seleccione el entorno **Dev One** en la parte superior derecha si aún no está seleccionado.
 
 3.  Seleccione **Aplicaciones** y abra la aplicación basada en el modelo **Bellows Campus Management** que creó anteriormente.
 

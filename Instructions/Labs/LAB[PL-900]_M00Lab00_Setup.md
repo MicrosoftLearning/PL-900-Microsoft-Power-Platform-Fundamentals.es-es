@@ -21,46 +21,21 @@ En este laboratorio del Módulo 0, adquirirá una prueba de Power Platform y ac
 
 ## Ejercicio 1: Configuración
 
-Tarea 1: Adquisición del inquilino de prueba de Microsoft Power Platform
+Tarea 1: Comprobación del inquilino de prueba de Power Platform
 
-1.  Copie sus **Credenciales de Microsoft 365** del proveedor de servicios de hosting del laboratorio autorizado. 
+1.  Compruebe que tiene las **credenciales de Microsoft 365** del host de laboratorio autorizado disponible. 
 
-1.  Vaya a <https://powerapps.microsoft.com> y seleccione **Iniciar prueba gratuita**.
+2.  En una pestaña nueva del explorador, vaya a `https://make.powerapps.com`
 
-1.  En **Comencemos**, escriba la dirección de correo electrónico proporcionada por el proveedor de servicios de hosting del laboratorio autorizado y seleccione **Iniciar prueba gratuita**. 
+3.  Escriba la `email address` proporcionada por el host de laboratorio autorizado. 
 
-1.  Si aparece una página adicional con los botones **Empezar a compilar aplicaciones** y **Empezar a usar aplicaciones**, haz clic en **Empezar a usar aplicaciones**: no empezar a compilar aplicaciones.
+4.  Seleccione **Iniciar sesión**. 
 
-1.  Si aparece un mensaje que le indica que ya tiene una cuenta con Microsoft. Seleccione **Iniciar sesión**. 
+5.  Escriba la `password` proporcionada por el host de laboratorio autorizado. 
 
-1.  Escriba la contraseña proporcionada por el proveedor de servicios de hosting del laboratorio autorizado y seleccione **Iniciar sesión**. 
+6.  Opcionalmente, seleccione **Sí** para mantener la sesión iniciada.
 
-1.  Seleccione **Sí** para permanecer conectado. 
+7.  Si se le solicita, escriba `0123456789` en **Número de teléfono** y seleccione **Enviar**.
 
-
-Tarea 2: Creación del entorno
-
-1.  Vaya a <https://admin.powerplatform.microsoft.com> e inicie sesión con sus credenciales de Microsoft 365 si se le solicita. 
-
-1.  Si aparece un elemento emergente de bienvenida, seleccione **Comenzar**. 
-
-1.  Seleccione **Entornos** y elija **+ Nuevo**.
-
-    1. En **Nombre**, escriba **Práctica de [mis iniciales]** (ejemplo: Práctica de AJ).
-
-    1. En **Tipo**, elija **Prueba** (no seleccione la opción *Prueba (basada en suscripción)* .
-
-    1. Cambie el botón de alternancia **¿Agregar un almacén de datos de Dataverse?** a **Sí**. 
-
-    1. Deje el resto de selecciones con el valor predeterminado y haga clic en **Siguiente**. 
-
-    1. En el encabezado **Grupo de seguridad**, use el botón **+Seleccionar**.
-
-    1. Active la casilla del elemento **Ninguno** en el encabezado **Abrir acceso** y, luego, seleccione **Listo**.
-
-    1. Deje las opciones restantes en sus valores predeterminados y seleccione **Guardar**. 
-
-1.  El entorno **Práctica** debería aparecer ahora en la lista de entornos. 
-
-    > El aprovisionamiento del entorno podría tardar unos minutos. Si es necesario, actualice la página.
+8.  **Actualice** la pestaña y compruebe que el entorno de **Dev One** está seleccionado en **Entorno** en la parte superior derecha. 
 

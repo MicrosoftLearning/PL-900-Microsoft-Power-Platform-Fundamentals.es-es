@@ -42,13 +42,15 @@ Seguiremos el siguiente esquema para diseñar la aplicación de lienzo:
 
 ### Tarea \#1: Crear la aplicación Visitas
 
-1.  Vaya a <https://make.powerapps.com>. Es posible que deba volver a autenticarse: seleccione **Iniciar sesión** y siga las instrucciones si es necesario.
+1.  Vaya a `https://make.powerapps.com`.
 
-2.  Seleccione su ambiente **Práctica [mis iniciales]** en la parte superior derecha, si aún no está seleccionado.
+2.  Es posible que deba volver a autenticarse: seleccione **Iniciar sesión** y siga las instrucciones si es necesario.
 
-3.  Seleccione **+Crear** en el panel de navegación izquierdo de la pantalla. En la sección **Iniciar desde**, seleccione **Dataverse**.
+3.  Seleccione el entorno **Dev One** en la parte superior derecha si aún no está seleccionado.
 
-4.  Seleccione la conexión de Dataverse.
+4.  Seleccione **+Crear** en el panel de navegación izquierdo de la pantalla. En la sección **Iniciar desde**, seleccione **Dataverse**.
+
+5.  Seleccione la conexión de Dataverse.
 
     > **Nota:**  *Si no existe ninguna conexión de Dataverse:*
     > - Selección de **+Nueva conexión**
@@ -56,19 +58,19 @@ Seguiremos el siguiente esquema para diseñar la aplicación de lienzo:
     > - Seleccione **Crear**
     > - **Inicie sesión** y seleccione **Permitir acceso**.
 
-5.  Busque y seleccione la tabla **Visitas** que creó en el laboratorio anterior.
+6.  Busque y seleccione la tabla **Visitas** que creó en el laboratorio anterior.
 
-6.  Seleccione el botón **Conectar** en la esquina inferior derecha.
+7.  Seleccione el botón **Conectar** en la esquina inferior derecha.
 
-7.  Una vez creada la aplicación, en la pantalla de bienvenida a Power Apps Studio, active la casilla **No volver a mostrar** y, luego, seleccione **Omitir**.
+8.  Una vez creada la aplicación, en la pantalla de bienvenida a Power Apps Studio, active la casilla **No volver a mostrar** y, luego, seleccione **Omitir**.
 
-8.  Después de que se ha completado la creación, la aplicación de lienzo debe ser similar a la imagen siguiente:
+9.  Después de que se ha completado la creación, la aplicación de lienzo debe ser similar a la imagen siguiente:
 
     ![Aplicación de lienzo creada a partir de los datos de visitas.](media/2-canvas-app-from-data.png)
 
-9.  En el diseñador de aplicaciones, seleccione el botón **Vista previa de la aplicación** (icono de reproducción) en la barra de comandos. *(También puede obtener una vista previa de la aplicación pulsando F5).* Eche un vistazo y compruebe el aspecto de su aplicación.
+10.  En el diseñador de aplicaciones, seleccione el botón **Vista previa de la aplicación** (icono de reproducción) en la barra de comandos. *(También puede obtener una vista previa de la aplicación pulsando F5).* Eche un vistazo y compruebe el aspecto de su aplicación.
 
-10. Cierre la vista previa de la aplicación seleccionando la **X** de la esquina superior derecha de la pantalla.
+11. Cierre la vista previa de la aplicación seleccionando la **X** de la esquina superior derecha de la pantalla.
 
 Enhorabuena, ha creado correctamente una instancia de Power App a partir de una tabla de Dataverse. El siguiente paso del proceso es adaptar la aplicación para que se ajuste a la personalización de marca de Bellows College. La siguiente serie de pasos le guiará por el proceso de personalizar un poco más la aplicación.
 
