@@ -46,7 +46,7 @@ Seguiremos los pasos a continuación para diseñar y crear un panel de control d
 
 1.  Debe tener un archivo visits.pbix almacenado en la máquina virtual en la carpeta AllFiles del escritorio. Descargue [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) y guárdelo en el equipo, si aún no está allí.
 
-2.  Abra una nueva pestaña y vaya a <https://app.powerbi.com/> e inicie sesión si es necesario.
+2.  Abra una nueva pestaña y vaya a `https://app.powerbi.com` e inicie sesión si es necesario.
 
 3.  Seleccione **Mi área de trabajo** en el panel de navegación izquierdo.
 
@@ -102,7 +102,7 @@ Ahora ya configuró el servicio Power BI para usarlo en sus laboratorios.
 
 1.  Debería tener abierto el informe de la tarea anterior.
 
-2.  Seleccione **Anclar a un panel de información** en el menú. Según el diseño, es posible que deba presionar **...** para mostrar más opciones.
+2.  Seleccione **Anclar a un panel de información** en el menú. Según el diseño, es posible que deba seleccionar el menú de puntos suspensivos **...** para mostrar más opciones.
 
 3.  Seleccione **Nuevo tablero** en la confirmación de **Anclar al tablero**.
 
@@ -130,3 +130,4 @@ El panel de **Administración del campus** debe mostrarse con tres objetos visua
 Su panel de información debería tener un aspecto similar al siguiente:
 
 ![](media/5-powerbi-result.png)
+
