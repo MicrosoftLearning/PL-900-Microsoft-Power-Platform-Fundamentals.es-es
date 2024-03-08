@@ -36,9 +36,9 @@ Trabajaremos con los siguientes componentes:
 
 Ambos se integrarán a la aplicación basada en modelo para una mejor experiencia de usuario.
 
-## Prerrequisitos
+## Requisitos previos
 
-- Finalización del **Módulo 0 Laboratorio 0: Validación del entorno de laboratorio**
+- Finalización del **Módulo 1 Laboratorio 0: Validación del entorno de laboratorio**
 
 - Finalización del **Módulo 2 Laboratorio 1: Modelado de datos**
 
