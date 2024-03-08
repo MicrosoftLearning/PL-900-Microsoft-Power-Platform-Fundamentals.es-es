@@ -26,9 +26,9 @@ Seguiremos los pasos a continuación para diseñar y crear un panel de control d
 
 -   Utilice una consulta de lenguaje natural del usuario para crear visualizaciones adicionales
 
-## Prerrequisitos
+## Requisitos previos
 
-- Finalización del **Módulo 0 Laboratorio 0: Validación del entorno de laboratorio**
+- Finalización del **Módulo 1 Laboratorio 0: Validación del entorno de laboratorio**
 - Finalización del **Módulo 2 Laboratorio 1: Modelado de datos**
 
 ## Cuestiones que tener en cuenta antes de comenzar
