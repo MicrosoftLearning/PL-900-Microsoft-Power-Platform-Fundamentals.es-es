@@ -29,9 +29,9 @@ Seguiremos el siguiente esquema para diseñar la aplicación de lienzo:
 
 - Probar la funcionalidad de la aplicación
 
-## Prerrequisitos
+## Requisitos previos
 
-- Finalización del **Módulo 0 Laboratorio 0: Validación del entorno de laboratorio**
+- Finalización del **Módulo 1 Laboratorio 0: Validación del entorno de laboratorio**
 - Finalización del **Módulo 2 Laboratorio 1: Modelado de datos**
 
 

@@ -35,9 +35,9 @@ Para preparar sus entornos de aprendizaje tendrá que:
 - Importación de datos de visita mediante una hoja de cálculo de Excel
 
 
-## Prerrequisitos
+## Requisitos previos
 
-- Finalización del **Módulo 0 Laboratorio 0: Validación del entorno de laboratorio**
+- Finalización del **Módulo 1 Laboratorio 0: Validación del entorno de laboratorio**
 
 Cuestiones que tener en cuenta antes de comenzar
 
