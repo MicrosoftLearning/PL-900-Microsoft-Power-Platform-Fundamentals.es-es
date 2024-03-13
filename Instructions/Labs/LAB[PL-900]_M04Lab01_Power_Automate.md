@@ -24,9 +24,9 @@ Se han identificado las siguientes condiciones como requisitos que debe implemen
 
 - Los contactos deben recibir una notificación por correo electrónico cuando se programe una visita.
 
-## Prerrequisitos
+## Requisitos previos
 
-- Finalización del **Módulo 0 Laboratorio 0: Validación del entorno de laboratorio**
+- Finalización del **Módulo 1 Laboratorio 0: Validación del entorno de laboratorio**
 - Finalización del **Módulo 2 Laboratorio 1: Modelado de datos**
 - Finalización del **Módulo 2 Laboratorio 3: Cómo crear una aplicación basada en modelo**
 - Contacto John Doe creado con una dirección de correo electrónico personal.
