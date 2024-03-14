@@ -6,168 +6,149 @@ lab:
 
 # Laboratorio 4: Cómo crear una solución automatizada
 
-**Inquilinos de WWL: términos de uso** Si, como parte de la impartición de un curso dirigido por un instructor, se le proporciona un inquilino, tenga en cuenta que el inquilino está disponible para apoyar los laboratorios prácticos en este tipo de cursos. Los inquilinos no deben compartirse ni usarse para otros fines que no sean los de los laboratorios prácticos. El inquilino usado en este curso es un inquilino de prueba y no se puede usar ni tener acceso a él después de que la clase haya terminado y no sea apto para la extensión. Los inquilinos no se deben convertir a suscripciones de pago. Los inquilinos obtenidos como parte de este curso siguen siendo propiedad de Microsoft Corporation y nos reservamos el derecho de acceso y recuperación en cualquier momento. 
+**Inquilinos de WWL: términos de uso** Si, como parte de la impartición de un curso dirigido por un instructor, se le proporciona un inquilino, tenga en cuenta que el inquilino está disponible para apoyar los laboratorios prácticos en este tipo de cursos. Los inquilinos no deben compartirse ni usarse para otros fines que no sean los de los laboratorios prácticos. El inquilino empleado en este curso es uno de prueba y no se puede usar ni tener acceso a él después de que la clase haya terminado y tampoco se puede ampliar su uso. Los inquilinos no se deben convertir a suscripciones de pago. Los inquilinos obtenidos como parte de este curso siguen siendo propiedad de Microsoft Corporation y nos reservamos el derecho de acceso y recuperación en cualquier momento. 
 
 ## Escenario
 
-Bellows College es una institución educativa que tiene un campus con varios edificios. Los visitantes del campus están actualmente registrados en revistas en papel. La información no se recaba de manera uniforme y no hay forma de recopilar y analizar los datos sobre las visitas de todo el campus.
+Bellows College es una organización educativa con varios campus y programas. Muchos de los instructores y administradores de Bellow Colleges necesitan asistir a eventos y comprar artículos. Históricamente, el seguimiento de estos gastos ha sido un problema. 
 
-La administración del campus querría modernizar el sistema de registro de visitantes de los edificios cuyo acceso esté controlado por el personal de seguridad y en los que los anfitriones deban anotar con antelación las visitas y dejar constancia de ellas.
+La administración del campus desea modernizar su sistema de informes de gastos y así proporcionar a los empleados un método digital de notificar los gastos. 
 
-A lo largo de este curso, creará aplicaciones y realizará la automatización para permitir que el personal de administración y seguridad de Bellows College administre y controle el acceso a los edificios en el campus.
+A lo largo de este curso, creará aplicaciones y realizará la automatización para que los empleados de Bellows College puedan administrar los gastos. 
 
-En este laboratorio, creará un flujo de Power Automate para enviar un correo electrónico a un visitante cuando se programe una visita.
+En este laboratorio, creará un flujo de Power Automate para enviar por correo electrónico una copia del informe de gastos al crear un nuevo informe de gastos.
 
 ## Pasos de alto nivel del laboratorio
 
 Se han identificado las siguientes condiciones como requisitos que debe implementar para completar el proyecto:
 
-- Los contactos deben recibir una notificación por correo electrónico cuando se programe una visita.
+- Los empleados deben recibir un correo electrónico cuando se envía un informe de gastos. 
 
-## Requisitos previos
+### Requisitos previos
 
 - Finalización del **Módulo 1 Laboratorio 0: Validación del entorno de laboratorio**
-- Finalización del **Módulo 2 Laboratorio 1: Modelado de datos**
-- Finalización del **Módulo 2 Laboratorio 3: Cómo crear una aplicación basada en modelo**
-- Contacto John Doe creado con una dirección de correo electrónico personal.
 
-## Ejercicio 1: Crear flujo de notificación de visita
+## Ejercicio 1: Creación de un flujo de notificación de informe de gastos
 
-**Objetivo:** En este ejercicio, creará un flujo de Power Automate que implementa el requisito. Cuando se crea una visita, el visitante debe recibir un correo electrónico que incluya el código único asignado a la visita.
+**Objetivo:** En este ejercicio, creará un flujo de Power Automate que implementa el requisito. 
 
-### Tarea \#1: Creación de un flujo
+### Tarea n.° 1: Creación de un flujo
 
-1.  Vaya a `https://make.powerapps.com`.
+1. Vaya a https://make.powerapps.com.
 
-2.  Es posible que deba volver a autenticarse: seleccione **Iniciar sesión** y siga las instrucciones si es necesario.
+1. Es posible que deba volver a autenticarse: seleccione **Iniciar sesión** y siga las instrucciones si es necesario.
 
-3.  Seleccione el entorno **Dev One** en la parte superior derecha si aún no está seleccionado.
+1. Seleccione el entorno **Dev One** en la parte superior derecha si aún no lo ha hecho.
 
-4.  En el panel de navegación izquierdo, seleccione **Flujos**.
+1. En el panel de navegación izquierdo, seleccione **Flujos**.
 
-5.  Si se le solicita, seleccione **Comenzar**.
+1. Si se le solicita, seleccione **Comenzar**.
 
-6.  Seleccione **+Nuevo flujo** y elija **Flujo de nube automatizado**.
+1. Seleccione **+Nuevo flujo** y elija **Flujo de nube automatizado**.
 
-7.  Escriba `Visit Notification` en **Nombre de flujo**.
+1. Escriba Notificación de gastos para el **nombre de flujo**.
 
-8.  En **Elija el desencadenador del flujo**, busque `Dataverse`.
+1. En **Elija el desencadenador del flujo**, busque Dataverse.
 
-9.  Seleccione el desencadenador **Cuando se agrega, modifica o elimina una fila** y, luego, elija **Crear**.
+1. Seleccione el desencadenador **Cuando se agrega, modifica o elimina una fila** y, luego, elija **Crear**.
 
-10.  Rellene las condiciones del desencadenador para el flujo:
+1. Rellene las condiciones del desencadenador para el flujo:
 
-    1.  Seleccione **Agregado** **Cambiar tipo**.
-
-    2.  Seleccione **Visitas** para **Nombre de tabla**.
-
-    3.  Seleccione **Organización** para el **ámbito**.
-
-    4.  En el paso del desencadenador, haga clic en los puntos suspensivos ( **...** ) y seleccione **Cambiar nombre**. Cambiar el nombre del paso del desencadenador `When a Visit is added` 
-
-        Esta es una buena manera de que usted y otros editores de flujo puedan comprender el propósito de la etapa sin tener que profundizar en los detalles.
-
-
-### Tarea \#2: Crear un paso para obtener la fila del visitante
-
-1.  Seleccione **+ New step**(+ Nuevo paso). Este paso recuperará la información de los visitantes, incluida la dirección de correo electrónico.
-
-2.  Busque `Dataverse`.
-
-3.  Seleccione la acción **Obtener una fila por id.** .
-
-4.  Seleccione **Contactos** como **Nombre de tabla**.
-
-5.  Seleccione el campo **Id. de fila**. Observe que se abre una ventana para seleccionar **Contenido dinámico** o **Expresiones**.
-
-6.  En el campo **Id. de fila**, seleccione **Visitante (valor)** en la lista **Contenido dinámico**. En este paso, busca el contacto para la fila de visita que se creó para desencadenar este flujo. Puesto que la dirección de correo electrónico forma parte de la tabla Contacto, necesitará esta información para enviar el correo electrónico al visitante.
-
-7.  En la acción **Obtener una fila por identificador**, seleccione los puntos suspensivos ( **...** ) y elija **Cambiar nombre**. Cambiar el nombre de la acción `Get the Visitor`
- 
-    Esta es una buena manera de que usted y otros editores de flujo puedan comprender el propósito de la etapa sin tener que profundizar en los detalles.
-
-
-### Tarea \#3: Crear un paso para enviar un correo electrónico al visitante
-
-1.  Seleccione **+ New step**(+ Nuevo paso). Este es el paso que enviará un correo electrónico al visitante.
-
-2.  Busque `mail` y seleccione la acción **Enviar correo electrónico (V2)** en el conector **Office 365 Outlook**.
-
-3.  Si se le solicita que acepte los términos y condiciones para usar esta acción, seleccione **Aceptar**.
-
-4.  Seleccione **Agregar contenido dinámico** en el campo **Para**. 
+    1. Seleccione **Agregado** **Cambiar tipo**.
     
-5.  Seleccione **Correo electrónico** en la lista de contenido dinámico.
+    1. Seleccione **Informes de gastos** para **Nombre de tabla**
 
-    > Observa que está debajo del encabezado **Obtener visitante**. Esto significa que vas a seleccionar el correo electrónico relacionado con el visitante que has buscado en el paso anterior.
+    1. Seleccione **Organización** para el **ámbito**.
 
-7.  En el campo **Asunto**, escriba `Your scheduled visit to Bellows College`
+    1. En el paso del desencadenador, haga clic en los puntos suspensivos ( **...** ) y seleccione **Cambiar nombre**. Cambiar el nombre del paso del desencadenador `When an Expense Report is added` 
 
-8.  Escriba el siguiente texto en el **cuerpo del correo electrónico**:
+Esta es una buena manera de que usted y otros editores de flujo puedan comprender el propósito de la etapa sin tener que profundizar en los detalles.
 
-    > El contenido dinámico debe colocarse donde se nombran los campos entre paréntesis. Se recomienda copiar y pegar todo el texto primero y, luego, agregar contenido dinámico en los lugares correctos.
+### Tarea n.°2: Creación de un paso para obtener la fila Informe de gastos
 
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1. Seleccione **+ New step**(+ Nuevo paso). Este paso recuperará la información de los visitantes, incluida la dirección de correo electrónico.
+
+1. Busque Dataverse
+
+1. Seleccione la acción **Obtener una fila por id.** .
+
+1. Seleccione **Usuarios** como **Nombre de tabla**
+
+1. Seleccione el campo **Id. de fila**. Observe que se abre una ventana para seleccionar **Contenido dinámico** o **Expresiones**.
+
+1. En el campo **id. de fila**, seleccione **Propietario (valor)** de la lista de **Contenido dinámico**. En este paso, busca el propietario de la fila Informe de gastos que se creó para desencadenar este flujo. 
+
+1. En la acción **Obtener una fila por identificador**, seleccione los puntos suspensivos ( **...** ) y elija **Cambiar nombre**. Cambio del nombre de esta acción Obtener el propietario
+
+Esta es una buena manera de que usted y otros editores de flujo puedan comprender el propósito de la etapa sin tener que profundizar en los detalles.
+
+### Tarea n.° 3: Crear un paso para enviar un correo electrónico al visitante
+
+1. Seleccione **+ New step**(+ Nuevo paso). Este es el paso que enviará un correo electrónico al visitante.
+
+1. Busque correo, seleccione la acción **Enviar un correo electrónico (V2)** en el conector de **Office 365 Outlook**.
+
+1. Si se le solicita que acepte los términos y condiciones para usar esta acción, seleccione **Aceptar**.
+
+1. Seleccione el campo **Para** y escriba su dirección de correo electrónico personal. (Hay muchas maneras de rellenar dinámicamente una dirección de correo electrónico, pero para este ejercicio vamos a asignarla manualmente).  
+
+1. En el campo **Asunto**, escriba El informe de gastos se envió
+
+1. Escriba el siguiente texto en el **cuerpo del correo electrónico**:
+
+El contenido dinámico debe colocarse donde se nombran los campos entre paréntesis. Se recomienda copiar y pegar todo el texto primero y, luego, agregar contenido dinámico en los lugares correctos.
+
     Dear {First Name},
-
-    You are currently scheduled to visit Bellows Campus from {Scheduled Start} until {Scheduled End}.
-
+    
+    Thank you for submitting your expense report for the total amount of {Report Total Amount} with a due date of {Report Due Date}.
+    
+     
     Best regards,
-
     Campus Administration
-    Bellows College
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Bellows College
 
-8.  Resalte el texto **{First Name}** . Reemplácelo por el campo **Nombre** del paso **Obtener el visitante**.
+1. Resalte el texto **{First Name}** . Reemplácelo por el campo **Nombre** del paso **Obtener el propietario**.
 
-9.  Resalte el texto **{Scheduled Start}** . Reemplácelo por el campo **Inicio programado** del paso **Cuando se agrega una visita**.
+1. Resalte el texto **{Report Total Amount}** (Importe total del informe). Reemplácelo por el campo **Informe de importe total** del paso **Cuando se agrega una visita**.
 
-10.  Resalte el texto **{Scheduled End}** . Reemplácelo por el campo **Fin programado** del paso **Cuando se agrega una visita**.
+1. Resalte el texto **{Report Due Date}** (Fecha de vencimiento del informe). Reemplácelo por el campo **Fecha de vencimiento del informe** del paso **Cuando se agrega una visita**.
 
-11.  Seleccione **Guardar**.
+1. Seleccione **Guardar**.
 
-Deje esta pestaña de flujo abierta para la siguiente tarea. El flujo debería tener la siguiente apariencia:
+Deje esta pestaña de flujo abierta para la siguiente tarea. El flujo debe tener un aspecto similar al siguiente:
 
-![Ejemplo de pasos de flujo.](media/4-Flow.png)
+![Captura de pantalla del flujo que acaba de crear](media/lab-4-create-an-automated-solution-01.png)
 
+### Tarea 4: Validar y probar el flujo
 
-### Tarea \#4: Validar y probar el flujo
+1. Abra una nueva pestaña en el explorador y vaya a https://make.powerapps.com
 
-1.  Abra una nueva pestaña en el explorador y vaya a `https://make.powerapps.com`
+1. Seleccione el entorno **Dev One** en la parte superior derecha si aún no lo ha hecho.
 
-2.  Seleccione el entorno **Dev One** en la parte superior derecha si aún no está seleccionado.
+1. Seleccione **Aplicaciones** y abra la **aplicación de seguimiento de gastos**.
 
-3.  Seleccione **Aplicaciones** y abra la aplicación basada en el modelo **Bellows Campus Management** que creó anteriormente.
+1. Deje esta pestaña del explorador abierta y vuelva a la pestaña anterior con el flujo.
 
-3.  Deje esta pestaña del explorador abierta y vuelva a la pestaña anterior con el flujo.
+1. En la barra de comandos, seleccione **Probar**. Seleccione **Manualmente** y, luego, **Probar**.
 
-4.  En la barra de comandos, seleccione **Probar**. Seleccione **Manualmente** y, luego, **Probar**.
+1. Vaya a la pestaña del explorador con la aplicación basada en modelo abierta.
 
-5.  Vaya a la pestaña del explorador con la aplicación basada en modelo abierta. 
+1. Con el panel de navegación del sitio de la izquierda, seleccione **Informe de gastos**.
 
-6.  Con el panel de navegación del sitio de la izquierda, seleccione **Visitas**.
+1. Seleccione el botón **+Nuevo** para agregar un nuevo registro de **Informe de gastos**.
 
-6.  Seleccione el botón **+Nuevo** para agregar un nuevo registro de **Visita**.
+1. Complete el **registro de Informe de gastos** de la manera siguiente:
 
-7.  Complete el registro de visita de la siguiente manera:
+    - **Nombre del informe:** Informe de prueba
 
-    -   **Nombre**: `Test Visit`
+    - **Importe total del informe:** 750,00 USD
 
-    -   **Visitante:** John Doe
+    - **Fecha de vencimiento del informe:** Mañana 
 
-    -   **Inicio programado:** Mañana a las 8:00 a. m.
+1. Seleccione el botón **Guardar y cerrar**.
 
-    -   **Finalización programada:** Mañana a las 9:00 a. m.
+1. Vaya a la pestaña del explorador donde se ejecuta la prueba del flujo. Después de un breve retraso, debería ver el flujo en ejecución. Aquí es donde puede detectar cualquier problema en el flujo o confirmar que se ha ejecutado correctamente.
 
-8.  Seleccione el botón **Guardar y cerrar**.
+Transcurrido un breve intervalo de tiempo, debería ver un correo electrónico en la bandeja de entrada. 
 
-9.  Vaya a la pestaña del explorador donde se ejecuta la prueba del flujo. Después de un breve retraso, debería ver el flujo en ejecución. Aquí es donde puede detectar cualquier problema en el flujo o confirmar que se ha ejecutado correctamente.
-
-    Después de una pausa breve, debería ver un correo electrónico en la bandeja de entrada, ya que ha rellenado el correo electrónico de John Doe como su correo electrónico personal. Tenga en cuenta que puede ir a la carpeta Correo no deseado.
-
-
-## Desafío
-
-- Experimente con el formato en el correo electrónico. ¿Cómo darle un aspecto más profesional?
-
-
+>**Nota:** Podría ir a la carpeta Correo no deseado.
