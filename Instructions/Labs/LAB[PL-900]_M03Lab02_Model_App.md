@@ -6,7 +6,7 @@ lab:
 
 # Laboratorio 3: Cómo crear una aplicación basada en modelo
 
-**Inquilinos de WWL: términos de uso** Si, como parte de la impartición de un curso dirigido por un instructor, se le proporciona un inquilino, tenga en cuenta que el inquilino está disponible para apoyar los laboratorios prácticos en este tipo de cursos. Los inquilinos no deben compartirse ni usarse para otros fines que no sean los de los laboratorios prácticos. El inquilino usado en este curso es un inquilino de prueba y no se puede usar ni tener acceso a él después de que la clase haya terminado y no sea apto para la extensión. Los inquilinos no se deben convertir a suscripciones de pago. Los inquilinos obtenidos como parte de este curso siguen siendo propiedad de Microsoft Corporation y nos reservamos el derecho de acceso y recuperación en cualquier momento. 
+**Inquilinos de WWL: términos de uso** Si, como parte de la impartición de un curso dirigido por un instructor, se le proporciona un inquilino, tenga en cuenta que el inquilino está disponible para apoyar los laboratorios prácticos en este tipo de cursos. Los inquilinos no deben compartirse ni usarse para otros fines que no sean los de los laboratorios prácticos. El inquilino empleado en este curso es uno de prueba y no se puede usar ni tener acceso a él después de que la clase haya terminado y tampoco se puede ampliar su uso. Los inquilinos no se deben convertir a suscripciones de pago. Los inquilinos obtenidos como parte de este curso siguen siendo propiedad de Microsoft Corporation y nos reservamos el derecho de acceso y recuperación en cualquier momento. 
 
 ## Escenario
 
@@ -22,7 +22,7 @@ En este laboratorio, creará una aplicación impulsada por el modelo de Power Ap
 
 Como parte de la creación de la aplicación basada en modelo, completará lo siguiente:
 
-- Cree una nueva aplicación basada en modelo llamada Administración del campus
+- Cree una nueva aplicación basada en modelo llamada "Gestión de gastos de fuelles".
 
 - Editar la navegación de la aplicación para hacer referencia a las tablas requeridas
 
@@ -36,13 +36,11 @@ Trabajaremos con los siguientes componentes:
 
 Ambos se integrarán a la aplicación basada en modelo para una mejor experiencia de usuario.
 
-## Requisitos previos
+### Requisitos previos
 
 - Finalización del **Módulo 1 Laboratorio 0: Validación del entorno de laboratorio**
 
-- Finalización del **Módulo 2 Laboratorio 1: Modelado de datos**
-
-Cuestiones que tener en cuenta antes de comenzar
+**Cuestiones que tener en cuenta antes de comenzar**
 
 - ¿Qué cambios debemos hacer para mejorar la experiencia del usuario?
 
@@ -54,197 +52,178 @@ Cuestiones que tener en cuenta antes de comenzar
 
 **Objetivo:** En este ejercicio, personalizará las vistas y formularios de las tablas creadas de manera personalizada que se utilizarán en la aplicación basada en modelo.
 
-### Tarea n.° 1: Editar el formulario de visita
+### Tarea n.° 1: Editar formulario de informe de gastos
 
-1.  Si aún no lo está, inicie sesión en `https://make.powerapps.com` 
+1. Si aún no lo está, inicie sesión en https://make.powerapps.com
 
-2.  Seleccione el entorno **Dev One** en la parte superior derecha si aún no está seleccionado.
+1. Seleccione el entorno **Dev One** en la parte superior derecha si aún no lo ha hecho.
 
-3.  Con el panel de navegación izquierdo, seleccione **Tablas** y abra la tabla **Visit**.
+1. Con el panel de navegación izquierdo, seleccione **Tablas** y abra la tabla **Informe de gastos**.
 
-    Si no ve la tabla Visita, asegúrese de que se encuentra en el entorno correcto (paso 2).
+Si no ve la tabla Informe de gastos, asegúrese de que se encuentra en el entorno correcto (paso 2).
 
-4.  En la sección **Experiencias de datos**, seleccione **Formularios** y abra el formulario **Información** con el tipo de formulario **Principal**. (**Importante:** Asegúrese de seleccionar el formulario que tiene el tipo de formato **Principal**). 
+1. En la sección **Experiencias de datos**, seleccione **Formularios** y abra el formulario **Información** con el tipo de formulario **Principal**. (**Importante:** Asegúrese de seleccionar el formulario que tiene el tipo de formato **Principal**).
 
-    > **IMPORTANTE:** Dado que, de forma predeterminada, todos los formularios se denominan Información, asegúrese de comprobar que el formulario que selecciona sea del tipo de formulario **Principal** y no cualquier otro. El formulario tiene dos campos de forma predeterminada: Nombre y Propietario.
+    >**IMPORTANTE:** Dado que, de forma predeterminada, todos los formularios se denominan Información, asegúrese de comprobar que el formulario que selecciona sea del tipo de formulario **Principal** y no cualquier otro. El formulario tiene dos campos de forma predeterminada: Nombre y Propietario.
 
-5.  En el lado derecho de la pantalla, en el panel **Propiedades**, seleccione el campo **Display Name** y cámbielo a `Main Information`.
+1. En el lado derecho de la pantalla, en el panel **Propiedades**, seleccione el campo ** Nombre para mostrar** y cámbielo a Información del informe.
 
-6.  Seleccione **Columnas de tabla** en el panel de navegación izquierdo y agregue los campos siguientes debajo del campo **Owner**. Para ello, arrastre las columnas hasta el formulario o simplemente haga clic en los nombres de las columnas:
+1. Seleccione **Columnas de tabla** en el panel de navegación izquierdo y agregue los campos siguientes debajo del campo **Owner**. Para ello, arrastre las columnas hasta el formulario o simplemente haga clic en los nombres de las columnas:
 
-    1. **Visitante**
+    - **Descripción**
 
-    2. **Inicio programado**
+    - **Propósito del informe**
 
-    3. **Final programado**
+    - **Fecha de vencimiento del informe**
 
-    4. **Inicio real**
+    - **Importe total del informe**
 
-    5. **Finalización real**
+1. Arrastre la columna **Razón para el estado** y suéltela en el encabezado del formulario.
 
-7.  Arrastre la columna **Código** y suéltela en el encabezado del formulario.
+El encabezado está en la parte superior derecha del formulario. Es posible que deba contraer el panel Propiedades en el lado derecho de la pantalla para ver el campo en el formulario.
 
-    El encabezado está en la parte superior derecha del formulario. Es posible que deba contraer el panel Propiedades en el lado derecho de la pantalla para ver el campo en el formulario.
+1. Seleccione el campo **Propietario**. En el panel Propiedades, cambie **Etiqueta** a Solicitante.
 
-8.  Con el campo **Código** seleccionado, marque la casilla de verificación **Solo lectura** en el panel Propiedades del lado derecho de la pantalla.
+1. Seleccione el botón **Guardar y publicar** en la parte superior derecha y espere a que se complete la operación.
 
-9.  Seleccione el campo **Propietario**. En el panel Propiedades, cambia la **Etiqueta** por `Host`.
+1. Si la vista de edición se abre en una nueva pestaña o ventana del explorador, ciérrela. De lo contrario, haga clic en **🡠 Atrás** en la parte superior izquierda de la pantalla. Ahora debería estar de nuevo en los formularios de la tabla **Informe de gastos**.
 
-10. Seleccione el botón **Guardar y publicar** en la parte superior derecha y espere a que se complete la operación.
+1. Con las rutas de navegación de la parte superior izquierda (**Tablas** > **Informe de gastos** > **Formularios**). Seleccione **Informe de gastos** para volver a la pantalla de propiedades de la tabla **Visita**.
 
-11. Si la vista de edición se abre en una nueva pestaña o ventana del explorador, ciérrela. De lo contrario, haga clic en **🡠 Atrás** en la parte superior izquierda de la pantalla. Ahora debería estar de nuevo en los formularios de la tabla **Visit**.
+## Tarea n.°2: Editar la vista de visitas activas
 
-12. Con las rutas de navegación de la parte superior izquierda (**Tablas** > **Visit** > **Forms**), seleccione **Visit** para volver a la pantalla de propiedades de la tabla **Visit**. 
+En esta tarea, modificaremos la vista predeterminada de Informes de gastos activos y crearemos una nueva vista para las visitas de hoy.
 
+1. En la sección **Experiencias de datos**, seleccione **Vistas** y abra la vista **Informes de gastos activos**.
 
-### Tarea n.°2: Editar la vista de visitas activas
+1. Agregue los siguientes campos a la vista haciendo clic o arrastrando y soltando los campos:
 
-En esta tarea, modificaremos la vista predeterminada de Visitas activas y crearemos una nueva vista para las visitas de hoy.
+    - **Propósito del informe**
 
-1.  En la sección **Experiencias de datos**, seleccione **Vistas** y abra la vista **Visitas activas**.
+    - **Fecha de vencimiento del informe**
 
-2.  Agregue los siguientes campos a la vista haciendo clic o arrastrando y soltando los campos:
+    - **Total del informe**
 
-    1. **Código**
+1. Seleccione el menú desplegable de la columna **Se creó el** y elija **Quitar**. El campo **Se creó el** se quitará ahora de la vista.
 
-    2. **Visitante**
+1. Cambie el tamaño de los anchos de columna individuales para que los datos quepan.
 
-    3. **Inicio programado**
+1. En **Ordenar por ...** , Seleccione la X para quitar **Nombre** y, en su lugar, elija **Cantidad total del informe**.
 
-    4. **Final programado**
+1. Seleccione **Cantidad total del informe** para cambiar el criterio de ordenación a **De mayor a menor**.
 
-3.  Seleccione el menú desplegable de la columna **Se creó el** y elija **Quitar**. El campo **Se creó el** se quitará ahora de la vista.
+1. Seleccione el botón **Guardar y publicar** en la parte superior derecha y espere a que se complete la operación.
 
-4.  Cambie el tamaño de los anchos de columna individuales para que los datos quepan.
+### Tarea n.° 3: Creación de una nueva vista para Informes que venza hoy
 
-5.  En **Ordenar por ...** , seleccione la X para quitar la información de **Nombre** y, en su lugar, elija **Inicio programado**.
+Ahora clonaremos la vista para crear otra para las visitas de hoy.
 
-6.  Seleccione **Inicio programado** para cambiar el criterio de ordenación a **Más reciente a anterior**.
+>    **IMPORTANTE:** Asegúrese de que no cierra la vista Informes de gastos activos, ya que la aprovecharemos para crear la nueva vista de informes que vence hoy.
 
-7.  Seleccione el botón **Guardar y publicar** en la parte superior derecha y espere a que se complete la operación.
+1. Seleccione **Guardar como**.
 
+1. Cambie el **Nombre** a Informes de gastos que vencen hoy y seleccione **Guardar**.
 
-### Tarea n.° 3: Crear una vista nueva para las visitas de hoy
+1. Seleccione **Editar campos** en el panel de propiedades
 
-Ahora clonaremos la vista para crear una nueva vista para las visitas de hoy.
+1. Seleccione **+Agregar** y elija **Agregar fila**.
 
-> **IMPORTANTE:** Asegúrate de no cerrar la vista Visitas activas, ya que la aprovecharemos para crear la nueva vista de visitas de hoy.
+1. Seleccione **Fecha de vencimiento del informe** como campo y, luego, cambie **Igual a** por **Hoy** como condición en el menú desplegable.
 
-1.  Seleccione **Guardar como**.
+1. Seleccione **...** **Más comandos** en la fila **Estado** y seleccione **Eliminar** para eliminar esa condición de filtro.
 
-2.  Cambie el valor de **Nombre** por `Today’s Visits` y seleccione **Guardar**.
+1. Seleccione **Aceptar** para guardar la condición. La vista ahora está filtrada para mostrar solo los registros donde la **fecha de vencimiento del informe** sea hoy.
 
-3.  Seleccione **Editar campos** en el panel de propiedades
+1. Agregue el campo **Importe del reembolso** a la vista.
 
-4.  Seleccione **+Agregar** y elija **Agregar fila**.
-
-5.  Seleccione **Inicio programado** como campo y, luego, cambie **Igual a** por **Hoy** como condición en el menú desplegable.
-
-6.  Seleccione **...** **Más comandos** en la fila **Estado** y seleccione **Eliminar** para eliminar esa condición de filtro.
-
-7.  Seleccione **Aceptar** para guardar la condición. La vista ahora está filtrada para mostrar solo los registros donde la fecha de **Inicio programada** es hoy.
-
-8.  Agregue los campos **Comienzo real** y **Final real** a la vista.
-
-> **NOTA:** Al no realizar filtraciones sobre el estado de la vista, obtendremos todas las visitas de hoy, incluidas las completadas. Estos campos ayudarán a diferenciar visitas completadas y visitas en curso.
-
-9.  Seleccione el botón **Guardar y publicar** en la parte superior derecha y espere a que se complete la operación.
-
+1. Seleccione el botón **Guardar y publicar** en la parte superior derecha y espere a que se complete la operación.
 
 ## Ejercicio 2: Crear una aplicación basada en modelo
 
 **Objetivo:** En este ejercicio, creará una aplicación basada en modelo, personalizará el mapa del sitio y probará la aplicación.
 
-Por motivos de simplicidad y tiempo, no abordaremos algunas de las columnas de visitas de este laboratorio.
+Por motivos de simplicidad y tiempo, no abordaremos algunas de las columnas de Informe de gastos de este laboratorio.
 
 ### Tarea 1: Creación de la aplicación
 
-1.  Si aún no lo está, inicie sesión en `https://make.powerapps.com` 
+1. Si aún no lo está, inicie sesión en https://make.powerapps.com
 
-2.  Seleccione el entorno **Dev One** en la parte superior derecha si aún no está seleccionado.
+1. Seleccione el entorno **Dev One** en la parte superior derecha si aún no está seleccionado.
 
-3.  Seleccione **+Crear** en el panel de navegación izquierdo.
+1. Seleccione **+Crear** en el panel de navegación izquierdo.
 
-4.  Cree una aplicación basada en modelos:
+1. Cree una aplicación basada en modelos:
 
-    1. Seleccione **Aplicación en blanco** en la sección **Iniciar a partir de** de la pantalla **Crear la aplicación**.
+    - Seleccione **Aplicación en blanco** en la sección **Iniciar a partir de** de la pantalla **Crear la aplicación**.
 
-    2. En **Aplicación vacía basada en Dataverse**, seleccione **Crear**.
+    - En **Aplicación vacía basada en Dataverse**, seleccione **Crear**.
 
-    3. Escriba `Bellows Campus Management` en **Nombre** y seleccione **Crear**.
+    - Escriba "Administración de gastos de los empleados" en **Nombre** y seleccione **Crear**.
 
-5.  Una vez que se cargue la nueva aplicación controlada por modelos, seleccione el botón **+ Agregar página**.
+1. Una vez que se cargue la nueva aplicación controlada por modelos, seleccione el botón **+ Agregar página**.
 
-6.  En la pantalla **Agregar página**, elija **Tabla de Dataverse** y, luego, seleccione el botón **Siguiente**.
+1. En la pantalla **Agregar página**, elija **Tabla de Dataverse** y, luego, seleccione el botón **Siguiente**.
 
-7.  Seleccione las tablas siguientes:
+1. Seleccione las tablas siguientes:
 
-    1. Visite
+    - Informe de gastos
 
-    2. Contacto
+    - Contacto
 
-8.  Después de seleccionar las dos tablas, elija **Agregar**.
+1. Después de seleccionar las dos tablas, elija **Agregar**.
 
-9.  Con los iconos de navegación del panel izquierdo de la pantalla, seleccione **Navegación**.
+1. Con los iconos de navegación del panel izquierdo de la pantalla, seleccione **Navegación**.
 
-10. En el panel de navegación, seleccione **Nuevo grupo** a continuación, donde dice Navegación. Es posible que tenga que expandir el menú de la izquierda.
+1. En el panel de navegación, seleccione **Nuevo grupo** a continuación, donde dice Navegación. Es posible que tenga que expandir el menú de la izquierda.
 
-11. En el lado derecho de la pantalla, en la sección **Opciones de visualización**, cambie la propiedad **Título** a `Security`.
+1. En el lado derecho de la pantalla, en la sección **Opciones de presentación**, cambie la propiedad **Título** a Informes.
 
-12. Seleccione **Guardar** y espere hasta que se guarden los cambios.
+1. Seleccione **Guardar** y espere hasta que se guarden los cambios.
 
-13. Una vez completada la operación **Guardar**, seleccione el botón **Publicar** para publicar los cambios. Espere a que se complete la publicación.
+1. Una vez completada la operación **Guardar**, seleccione el botón **Publicar** para publicar los cambios. Espere a que se complete la publicación.
 
+## Tarea 2: Prueba de la aplicación
 
-### Tarea 2: Prueba de la aplicación
-
-Inicio de la aplicación
+**Inicio de la aplicación**
 
 1. Seleccione el botón **Reproducir**. La aplicación basada en modelo se cargará en una nueva pestaña.
 
-Creación de un contacto
+**Creación de un contacto**
 
-2.  La aplicación debería abrirse en la vista **Mis contactos activos**. Si no es así, seleccione **Contactos** en el panel de navegación izquierdo.
+1. La aplicación debería abrirse en la vista **Mis contactos activos**. Si no es así, seleccione **Contactos** en el panel de navegación izquierdo.
 
-3.  Seleccione **+Nuevo** en la barra de comandos.
+1. Seleccione **+Nuevo** en la barra de comandos.
 
-4.  En **Nombre**, escriba `John` y, en **Apellido**, escriba `Doe`.
+1. Escriba "John" en **Nombre** y "Doe" en **Apellido**
 
-5.  Proporcione su correo electrónico personal como **Correo electrónico**. Esta información se usará en un laboratorio futuro, donde recibirá un correo electrónico.
+1. Proporcione su correo electrónico personal como **Correo electrónico**. Esta información se usará en un laboratorio futuro, donde recibirá un correo electrónico.
 
-6.  Seleccione **Guardar y cerrar**.
+1. Seleccione **Guardar y cerrar**.
 
-7.  Ahora, debería ver el contacto creado en la vista **Mis contactos activos**.
+1. Ahora, debería ver el contacto creado en la vista **Mis contactos activos**.
 
-Creación de una nueva visita
+**Creación de un informe de gastos**
 
-8.  Seleccione **Visitas** en el panel de navegación izquierdo (también conocido como mapa del sitio).
+1. Seleccione **Informes de gastos** en el panel de navegación izquierdo (también conocido como mapa del sitio).
 
-9.  Seleccione **+ Nuevo**.
+1. Seleccione **+ Nuevo**.
 
-10. Especifique los campos de la siguiente manera:
+1. Especifique los campos de la siguiente manera:
 
-    1. **Nombre**: `New test visit`
+    - **Nombre del informe**: Nuevo informe de prueba
 
-    2. **Visitante**: seleccione **John Doe**.
+    - En **Propósito del informe**, seleccione **Conferencia**.
 
-    3. **Inicio programado**: seleccione la fecha de mañana y las 02:00 como hora de inicio.
+    - **Fecha de vencimiento del informe**: Seleccione la fecha de hoy.
 
-    4. **Final programado**: seleccione la fecha de mañana y las 03:30 como hora de finalización.
+1. Seleccione **Guardar y cerrar**. A continuación, se creará la visita, que verá en la vista **Visitas activas**.
 
-11. Seleccione **Guardar y cerrar**. A continuación, se creará la visita, que verá en la vista **Visitas activas**.
+1. Cambie la vista a **Informes de gastos que vencen hoy** con la lista desplegable situada junto a **Visitas activas**. 
 
-12. Cambie la vista a **Visitas de hoy** con la lista desplegable situada junto a **Visitas activas**. Ya no debería ver la nueva visita en la vista, ya que está programada para mañana.
-
-13. Puede agregar más registros de prueba.
+1. Puede agregar más registros de prueba.
 
 Su aplicación basada en modelo en ejecución debería tener este aspecto:
 
-![](media/3-model-driven-app.png)
+![Captura de pantalla de la aplicación controlada por modelos recién creada.](media/lab-3-create-a-model-app-01.png)
 
 Felicidades. Ha creado y configurado la primera aplicación basada en modelo.
-
-## Desafíos
-
-- Seleccione vistas y formularios específicos para Contactos.
-
