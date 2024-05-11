@@ -66,7 +66,7 @@ Esta es una buena manera de que usted y otros editores de flujo puedan comprende
 
 ### Tarea n.°2: Creación de un paso para obtener la fila Informe de gastos
 
-1. Seleccione **+ New step**(+ Nuevo paso). Este paso recuperará la información de los visitantes, incluida la dirección de correo electrónico.
+1. Seleccione **+ New step**(+ Nuevo paso). Este paso recuperará la información del informe de gastos, incluida la dirección de correo electrónico.
 
 1. Busque Dataverse
 
@@ -82,9 +82,9 @@ Esta es una buena manera de que usted y otros editores de flujo puedan comprende
 
 Esta es una buena manera de que usted y otros editores de flujo puedan comprender el propósito de la etapa sin tener que profundizar en los detalles.
 
-### Tarea n.° 3: Crear un paso para enviar un correo electrónico al visitante
+### Tarea n.° 3: Crear un paso para enviar un correo electrónico para confirmar el envío de un informe de gastos
 
-1. Seleccione **+ New step**(+ Nuevo paso). Este es el paso que enviará un correo electrónico al visitante.
+1. Seleccione **+ New step**(+ Nuevo paso). Este es el paso que enviará un correo electrónico a la persona que envió un informe de gastos.
 
 1. Busque correo, seleccione la acción **Enviar un correo electrónico (V2)** en el conector de **Office 365 Outlook**.
 
@@ -109,9 +109,9 @@ El contenido dinámico debe colocarse donde se nombran los campos entre parénte
 
 1. Resalte el texto **{First Name}** . Reemplácelo por el campo **Nombre** del paso **Obtener el propietario**.
 
-1. Resalte el texto **{Report Total Amount}** (Importe total del informe). Reemplácelo por el campo **Informe de importe total** del paso **Cuando se agrega una visita**.
+1. Resalte el texto **{Report Total Amount}** (Importe total del informe). Reemplácelo por el campo **Informar del importe total** del paso **Cuando se envía un informe de gastos**.
 
-1. Resalte el texto **{Report Due Date}** (Fecha de vencimiento del informe). Reemplácelo por el campo **Fecha de vencimiento del informe** del paso **Cuando se agrega una visita**.
+1. Resalte el texto **{Report Due Date}** (Fecha de vencimiento del informe). Reemplácelo por el campo **Fecha de vencimiento del informe** del paso **Cuando se envía un informe de gastos**.
 
 1. Seleccione **Guardar**.
 
