@@ -16,14 +16,6 @@ La administración del campus desea modernizar su sistema de informes de gastos 
 
 A lo largo de este curso, creará aplicaciones y realizará la automatización para que los empleados de Bellows College puedan administrar los gastos.
 
-En este laboratorio, creará un modelo de datos que cumpla los siguiente requisitos:
-
-- R1: Hacer un seguimiento de la información de las visitas programadas al campus.
-
-- R2: Registrar información básica para identificar los visitantes y hacer un seguimiento de ellos.
-
-- R3: Programar, registrar y administrar visitas.
-
 Por último, importará los datos de ejemplo en Microsoft Dataverse.
 
 ## Pasos de alto nivel del laboratorio
@@ -80,7 +72,7 @@ La tabla **Gastos** contendrá información sobre los gastos que cada empleado p
 
 1. En **Ajuste de zona horaria**, seleccione **Solo fecha**.
 
-    >**Nota:** Se usará el comportamiento de **Solo fecha** para registrar la información de fecha, ya que la fecha de la visita no debe cambiar cuando se ve desde una zona horaria diferente.
+    >**Nota:** Usamos el comportamiento **Solo fecha** para registrar la información de la fecha, porque la fecha de los gastos no debe cambiar cuando se ven desde una zona horaria diferente.
 
 1. Seleccione **Guardar**.
 
