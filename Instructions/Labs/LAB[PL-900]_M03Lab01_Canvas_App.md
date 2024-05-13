@@ -21,9 +21,9 @@ A lo largo de este curso, creará aplicaciones y realizará la automatización p
 
 Seguiremos el siguiente esquema para diseñar la aplicación de lienzo:
 
-- Creación de una aplicación de lienzo a partir de datos en la tabla Visita
+- Creación de una aplicación de lienzo de informes de gastos 
 
-- Configurar cómo se muestran las visitas en la pantalla de exploración
+- Configuración de cómo se muestran los informes de gastos en la pantalla de exploración
 
 - Realizar algunos cambios básicos en la aplicación
 
@@ -107,7 +107,7 @@ En esta tarea, personalizará el texto del encabezado en cada una de las tres pa
 
 En esta tarea, probará la nueva aplicación.
 
-1. Con la aplicación abierta en el Diseñador de aplicaciones, seleccione **Configuración** (es posible que tenga que seleccionar el botón ... para que aparezca el icono de configuración), en la sección **General**, actualice el nombre de la aplicación a Aplicación de visitas y seleccione la **X** para cerrar la pantalla de configuración. A continuación, seleccione **Guardar**.
+1. Con la aplicación abierta en el Diseñador de aplicaciones, seleccione **Configuración** (es posible que tenga que seleccionar el botón ... para que aparezca el icono de configuración), en la sección **General**, actualice el nombre de la aplicación a Aplicación de informe de gastos y seleccione la **X** para cerrar la pantalla de configuración. A continuación, seleccione **Guardar**.
 
 1. En el panel de navegación izquierdo, seleccione **BrowseScreen1**.
 
