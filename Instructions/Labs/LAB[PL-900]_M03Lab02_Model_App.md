@@ -10,13 +10,11 @@ lab:
 
 ## Escenario
 
-Bellows College es una institución educativa que tiene un campus con varios edificios. Los visitantes del campus están actualmente registrados en revistas en papel. La información no se recaba de manera uniforme y no hay forma de recopilar y analizar los datos sobre las visitas de todo el campus.
+Bellows College es una organización educativa con varios campus y programas. Muchos de los instructores y administradores de Bellow Colleges necesitan asistir a eventos y comprar artículos. Históricamente, el seguimiento de estos gastos ha sido un problema.
 
-La administración del campus querría modernizar el sistema de registro de visitantes de los edificios cuyo acceso esté controlado por el personal de seguridad y en los que los anfitriones deban anotar con antelación las visitas y dejar constancia de ellas.
+La administración del campus desea modernizar su sistema de informes de gastos y así proporcionar a los empleados un método digital de notificar los gastos.
 
-A lo largo de este curso, creará aplicaciones y realizará la automatización para permitir que el personal de administración y seguridad de Bellows College administre y controle el acceso a los edificios en el campus.
-
-En este laboratorio, creará una aplicación impulsada por el modelo de Power Apps para permitir que el personal del campus administrativo administre los registros de visitas en todo el campus.
+A lo largo de este curso, creará aplicaciones y realizará la automatización para que los empleados de Bellows College puedan administrar los gastos.
 
 ## Pasos de alto nivel del laboratorio
 
@@ -88,11 +86,11 @@ El encabezado está en la parte superior derecha del formulario. Es posible que 
 
 1. Si la vista de edición se abre en una nueva pestaña o ventana del explorador, ciérrela. De lo contrario, haga clic en **🡠 Atrás** en la parte superior izquierda de la pantalla. Ahora debería estar de nuevo en los formularios de la tabla **Informe de gastos**.
 
-1. Con las rutas de navegación de la parte superior izquierda (**Tablas** > **Informe de gastos** > **Formularios**). Seleccione **Informe de gastos** para volver a la pantalla de propiedades de la tabla **Visita**.
+1. Con las rutas de navegación de la parte superior izquierda (**Tablas** > **Informe de gastos** > **Formularios**). Seleccione **Informe de gastos** para volver a la pantalla de propiedades de la tabla **Informe de gastos**.
 
-## Tarea n.°2: Editar la vista de visitas activas
+## Tarea n.°2: Editar la vista Informes de gastos activos
 
-En esta tarea, modificaremos la vista predeterminada de Informes de gastos activos y crearemos una nueva vista para las visitas de hoy.
+En esta tarea, modificaremos la vista predeterminada de Informes de gastos activos y crearemos una nueva vista para los informes de gastos que vencen hoy.
 
 1. En la sección **Experiencias de datos**, seleccione **Vistas** y abra la vista **Informes de gastos activos**.
 
@@ -210,15 +208,15 @@ Por motivos de simplicidad y tiempo, no abordaremos algunas de las columnas de I
 
 1. Especifique los campos de la siguiente manera:
 
-    - **Nombre del informe**: Nuevo informe de prueba
+    - **Nombre de informe**: nuevo informe de prueba
 
     - En **Propósito del informe**, seleccione **Conferencia**.
 
     - **Fecha de vencimiento del informe**: Seleccione la fecha de hoy.
 
-1. Seleccione **Guardar y cerrar**. A continuación, se creará la visita, que verá en la vista **Visitas activas**.
+1. Seleccione **Guardar y cerrar**. Esto creará el nuevo informe de prueba y debería poder verlo en la vista **Informes de gastos activos**.
 
-1. Cambie la vista a **Informes de gastos que vencen hoy** con la lista desplegable situada junto a **Visitas activas**. 
+1. Cambie la vista a **Informes de gastos que vencen hoy** con la lista desplegable situada junto a **Informes de gastos activos**. 
 
 1. Puede agregar más registros de prueba.
 
