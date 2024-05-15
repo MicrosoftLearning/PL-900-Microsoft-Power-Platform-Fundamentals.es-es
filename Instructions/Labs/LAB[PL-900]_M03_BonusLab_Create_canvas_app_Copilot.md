@@ -30,7 +30,7 @@ Seguiremos el siguiente esquema para diseñar la aplicación de lienzo:
 
 ## Ejercicio 1: Use Copilot para crear una aplicación de visitas a la universidad.
 
-**Objetivo:** En este ejercicio, creará una aplicación de lienzo mediante la conexión a una tabla de informes de gastos.
+**Objetivo:** En este ejercicio, creará una aplicación de lienzo mediante la conexión a una tabla de visitas de Campus.
 
 ### Tarea \#1: Creación de la aplicación inicial
 
