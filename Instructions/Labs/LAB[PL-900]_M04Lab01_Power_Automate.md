@@ -141,8 +141,6 @@ Deje esta pestaña de flujo abierta para la siguiente tarea. El flujo debe tener
 
     - **Nombre del informe:** Informe de prueba
 
-    - **Importe total del informe:** 750,00 USD
-
     - **Fecha de vencimiento del informe:** Mañana 
 
 1. Seleccione el botón **Guardar y cerrar**.
