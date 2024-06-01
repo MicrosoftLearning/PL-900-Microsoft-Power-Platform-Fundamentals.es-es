@@ -1,7 +1,7 @@
 ---
 lab:
   title: "Laboratorio\_4: Cómo crear una solución automatizada"
-  module: 'Module 4: Get Started with Power Automate'
+  module: 'Module 4: Describe building automation with Microsoft Power Automate'
 ---
 
 # Laboratorio 4: Cómo crear una solución automatizada

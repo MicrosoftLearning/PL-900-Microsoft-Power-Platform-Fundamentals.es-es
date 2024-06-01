@@ -1,7 +1,7 @@
 ---
 lab:
   title: 'Laboratorio de bonificación: Compilación de una aplicación de lienzo mediante Copilot'
-  module: 'Module 3: Get started with Power Apps'
+  module: 'Module 3: Describe how to build applications with Microsoft Power Apps'
 ---
 
 # Laboratorio de bonificación: Compilación de una aplicación de lienzo mediante Copilot

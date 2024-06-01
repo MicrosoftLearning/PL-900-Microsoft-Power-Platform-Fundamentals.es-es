@@ -1,7 +1,7 @@
 ---
 lab:
   title: "Laboratorio\_2: Cómo crear una aplicación de lienzo"
-  module: 'Module 3: Get started with Power Apps'
+  module: 'Module 3: Describe how to build applications with Microsoft Power Apps'
 ---
 
 # Laboratorio 2: Cómo crear una aplicación de lienzo
