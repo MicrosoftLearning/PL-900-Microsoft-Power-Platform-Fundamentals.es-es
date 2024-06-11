@@ -1,7 +1,7 @@
 ---
 lab:
   title: "Laboratorio\_4: Cómo crear una solución automatizada"
-  module: 'Module 4: Get Started with Power Automate'
+  module: 'Module 4: Describe building automation with Microsoft Power Automate'
 ---
 
 # Laboratorio 4: Cómo crear una solución automatizada
@@ -140,8 +140,6 @@ Deje esta pestaña de flujo abierta para la siguiente tarea. El flujo debe tener
 1. Complete el **registro de Informe de gastos** de la manera siguiente:
 
     - **Nombre del informe:** Informe de prueba
-
-    - **Importe total del informe:** 750,00 USD
 
     - **Fecha de vencimiento del informe:** Mañana 
 

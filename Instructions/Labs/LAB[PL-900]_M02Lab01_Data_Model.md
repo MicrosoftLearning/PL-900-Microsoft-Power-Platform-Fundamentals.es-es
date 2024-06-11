@@ -1,7 +1,7 @@
 ---
 lab:
   title: "Laboratorio\_1: Modelado de datos"
-  module: 'Module 2: Introduction to Microsoft Dataverse'
+  module: 'Module 2: Identify foundational components of Microsoft Power Platform'
 ---
 
 # Laboratorio 1: Modelado de datos

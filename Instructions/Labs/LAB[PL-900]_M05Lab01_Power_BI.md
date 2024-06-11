@@ -1,7 +1,7 @@
 ---
 lab:
   title: "Laboratorio\_5: Procedimientos para crear un panel sencillo"
-  module: 'Module 5: Get Started with Power BI'
+  module: 'Module 5: Describe the capabilities of Microsoft Power BI'
 ---
 
 ## Laboratorio 5: Procedimientos para crear un panel sencillo
