@@ -45,25 +45,11 @@ Seguiremos el siguiente esquema para diseñar la aplicación de lienzo:
 
 1. Selecciona el entorno **Dev One** en la parte superior derecha si aún no está seleccionado.
 
-1. Selecciona **+Crear** en el panel de navegación izquierdo de la pantalla. En la sección **Iniciar desde**, selecciona **Dataverse**.
+1. Selecciona **Aplicaciones** en el panel de navegación izquierdo de la pantalla. Selecciona **+ Nueva aplicación** y, a después, **Iniciar con una plantilla de aplicación**.
 
-1. Selecciona la conexión de Dataverse.
+1. En **Aplicaciones móviles centradas en datos**, selecciona **Desde Dataverse**.
 
-    >**Nota**: si no existe ninguna conexión de Dataverse:
-
-    >   - Selecciona a **+Nueva conexión**
-
-    >   - Busca **Microsoft Dataverse**
-
-    >   - Selecciona **Crear**
-
-    >   - **Inicie sesión** y selecciona **Permitir acceso**.
-
-1. Busca y selecciona la tabla **Informes de gastos**.
-
-1. Selecciona el botón **Conectar** en la esquina inferior derecha.
-
-1. Una vez creada la aplicación, en la pantalla de bienvenida a Power Apps Studio, activa la casilla **No volver a mostrar** y, luego, selecciona **Omitir**.
+1. Selecciona la tabla **Expense Reports** en la página **Seleccionar los datos de Dataverse de la aplicación** y selecciona **Crear aplicación**.
 
 1. En el diseñador de aplicaciones, selecciona el botón **Vista previa de la aplicación** (icono de reproducción) en la barra de comandos. (También puedes obtener una vista previa de la aplicación pulsando F5). Echa un vistazo y comprueba el aspecto de tu aplicación.
 
@@ -77,29 +63,29 @@ En esta tarea, personalizarás el texto del encabezado en cada una de las tres p
 
 1. Estás en la pantalla Examinar. Selecciona la etiqueta **Informes de gastos** en la pantalla.
 
-1. En el lado derecho de la pantalla, en la pestaña ”Propiedades”, actualiza la propiedad de control **Texto** a ”Mis informes de gastos”.
+1. En el lado derecho de la pantalla, en la pestaña Propiedades, actualiza la propiedad de control **Texto** a `My Expense Reports`.
 
 1. En **Propiedades**, cambia el **tamaño de la fuente** a **24**.
 
 1. Seleccione el fondo en blanco de la pantalla para ver el texto actualizado en la pantalla de exploración.
 
-1. Mediante la **vista de árbol** del panel de navegación izquierdo, seleccione **DetailScreen1**.
+1. Mediante la **vista de árbol** del panel de navegación izquierdo, selecciona **DetailScreen**.
 
-1. Seleccione la etiqueta **Informes de gastos** en la pantalla.
+1. Selecciona la etiqueta **Informes de gastos** en la pantalla.
 
-1. En el lado derecho de la pantalla, en la pestaña **Propiedades**, actualice la propiedad de control **Texto** a "Detalles del informe".
+1. En el lado derecho de la pantalla, en la pestaña **Propiedades**, actualiza la propiedad de control **Texto** a `Report Details`.
 
 1. Haga clic en el fondo en blanco de la pantalla para ver el texto actualizado en la pantalla de detalles.
 
-1. Mediante la **vista de árbol** del panel de navegación izquierdo, seleccione **EditScreen1** (es posible que tenga que desplazarse hacia abajo para verlo en esa vista).
+1. Mediante la **vista de árbol** del panel de navegación izquierdo, selecciona **EditScreen** (es posible que tengas que desplazarte hacia abajo para verlo en esa vista).
 
-1. Seleccione la etiqueta **Informes de gastos** en la pantalla.
+1. Selecciona la etiqueta **Informes de gastos** en la pantalla.
 
-1. En el lado derecho de la pantalla, en la pestaña **Propiedades**, reemplace el texto de la propiedad de control **Texto** por ”Editar detalles”.
+1. En el lado derecho de la pantalla, en la pestaña **Propiedades**, reemplaza el texto de la propiedad de control **Texto** por `Edit Details`.
 
 1. Haga clic en el fondo en blanco de la pantalla para ver el texto actualizado en la pantalla de edición.
 
-1. Mediante la **vista de árbol** del panel de navegación izquierdo, seleccione **BrowseScreen1**.
+1. Mediante la **vista de árbol** del panel de navegación izquierdo, selecciona **BrowseScreen**.
 
 1. En la barra de herramientas de comandos, seleccione el botón **Tema** y, en la lista que aparece, elija el color **Rojo** para el tema.
 
@@ -107,13 +93,13 @@ En esta tarea, personalizarás el texto del encabezado en cada una de las tres p
 
 En esta tarea, probará la nueva aplicación.
 
-1. Con la aplicación abierta en el Diseñador de aplicaciones, seleccione **Configuración** (es posible que tenga que seleccionar el botón ... para que aparezca el icono de configuración), en la sección **General**, actualice el nombre de la aplicación a Aplicación de informe de gastos y seleccione la **X** para cerrar la pantalla de configuración. A continuación, seleccione **Guardar**.
+1. Con la aplicación abierta en el Diseñador de aplicaciones, seleccione **Configuración** (es posible que tenga que seleccionar el botón ... para que aparezca el icono de configuración), en la sección **General**, actualiza el nombre de la aplicación a `Expense Report App` y selecciona la **X** para cerrar la pantalla de configuración. A continuación, selecciona **Guardar**.
 
-1. En el panel de navegación izquierdo, seleccione **BrowseScreen1**.
+1. En el panel de navegación izquierdo, selecciona **BrowseScreen**.
 
 1. En el diseñador de aplicaciones, seleccione el botón **Vista previa de la aplicación** (icono de reproducción) en la barra de comandos. (También puede obtener una vista previa de la aplicación presionando F5).
 
-1. Cuando se abra la aplicación, en el campo **Buscar artículos**, escriba el texto ”Viaje” (observe cómo se filtran los artículos de la galería en función de lo que se escribe en el campo de búsqueda).
+1. Una vez que se abra la aplicación, en el campo **Buscar elementos**, escribe el texto `Trip` (observa cómo se filtran los elementos de la galería en función de lo que se escribe en el campo de búsqueda).
 
 1. Cuando se muestre el registro **Viaje a la conferencia de Power Platform**, seleccione una fila a la que desplazarse y abra la pantalla ”Detalles” de ese gasto.
  

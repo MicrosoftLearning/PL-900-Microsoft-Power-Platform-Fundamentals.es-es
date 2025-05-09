@@ -20,7 +20,7 @@ A lo largo de este curso, crearás aplicaciones y realizarás la automatización
 
 Como parte de la creación de la aplicación basada en modelo, completarás lo siguiente:
 
-- Crear una nueva aplicación basada en modelo llamada "Gestión de gastos de Bellows".
+- Crear una nueva aplicación basada en modelo llamada "Gestión de gastos de empleados".
 
 - Editar la navegación de la aplicación para hacer referencia a las tablas requeridas
 
@@ -64,7 +64,7 @@ Ambos se integrarán a la aplicación basada en modelo para una mejor experienci
 
     >**IMPORTANTE:** dado que, de forma predeterminada, todos los formularios se denominan Información, asegúrate de comprobar que el formulario que seleccionas sea del tipo de formulario **Principal** y no cualquier otro. El formulario tiene dos campos de forma predeterminada: Nombre y Propietario.
 
-1. En el lado derecho de la pantalla, en el panel **Propiedades**, selecciona el campo **Nombre para mostrar** y cámbialo a Información del informe.
+1. En el lado derecho de la pantalla, en el panel **Propiedades**, selecciona el campo **Nombre para mostrar** y cámbialo a `Report Information`.
 
 1. Selecciona **Columnas de tabla** en el panel de navegación izquierdo y agrega los campos siguientes debajo del campo **Owner**. Para ello, arrastra las columnas hasta el formulario o simplemente haz clic en los nombres de las columnas:
 
@@ -80,7 +80,7 @@ Ambos se integrarán a la aplicación basada en modelo para una mejor experienci
 
     >El encabezado está en la parte superior derecha del formulario. Es posible que debas contraer el panel Propiedades en el lado derecho de la pantalla para ver el campo en el formulario.
 
-1. Selecciona el campo **Propietario**. En el panel Propiedades, cambia **Etiqueta** a Solicitante.
+1. Selecciona el campo **Propietario**. En el panel Propiedades, cambia la **etiqueta** por `Requestor`.
 
 1. Selecciona el botón **Guardar y publicar** en la parte superior derecha y espera a que se complete la operación.
 
@@ -120,9 +120,9 @@ Ahora clonaremos la vista para crear otra para las visitas de hoy.
 
 1. Selecciona **Guardar como**.
 
-1. Cambia el **Nombre** a Informes de gastos que vencen hoy y selecciona **Guardar**.
+1. Cambie el valor de **Nombre** por `Expense Reports Due Today` y seleccione **Guardar**.
 
-1. Selecciona **Editar campos** en el panel de propiedades
+1. Seleccione **Editar campos** en el panel de propiedades
 
 1. Selecciona **+Agregar** y elige **Agregar fila**.
 
@@ -148,15 +148,13 @@ Por motivos de simplicidad y tiempo, no abordaremos algunas de las columnas de I
 
 1. Selecciona el entorno **Dev One** en la parte superior derecha si aún no está seleccionado.
 
-1. Selecciona **+Crear** en el panel de navegación izquierdo.
+1. Seleccione **Soluciones** en el panel de navegación izquierdo.
 
-1. Crea una aplicación basada en modelo:
+1. Abre la solución **Gestión de gastos**.
 
-    - Selecciona **Aplicación en blanco** en la sección **Iniciar a partir de** de la pantalla **Crear la aplicación**.
+1. Selecciona **+ Nuevo** y, después, seleccione **APP** y selecciona **Aplicación basada en modelo**.
 
-    - En **Aplicación vacía basada en Dataverse**, selecciona **Crear**.
-
-    - Escribe `Employee Expense Management` en **Nombre** y selecciona **Crear**.
+1. Escribe `Employee Expense Management` en **Nombre** y selecciona **Crear**.
 
 1. Una vez que se cargue la nueva aplicación basada en modelo, selecciona el botón **+ Agregar página**.
 
@@ -174,7 +172,7 @@ Por motivos de simplicidad y tiempo, no abordaremos algunas de las columnas de I
 
 1. En el panel de navegación, selecciona **Nuevo grupo** a continuación, donde dice Navegación. Es posible que tengas que expandir el menú de la izquierda.
 
-1. En el lado derecho de la pantalla, en la sección **Opciones de presentación**, cambia la propiedad **Título** a Informes.
+1. En el lado derecho de la pantalla, en la sección **Opciones de visualización**, cambia la propiedad **Título** a `Reports`.
 
 1. Selecciona **Guardar** y espera hasta que se guarden los cambios.
 
