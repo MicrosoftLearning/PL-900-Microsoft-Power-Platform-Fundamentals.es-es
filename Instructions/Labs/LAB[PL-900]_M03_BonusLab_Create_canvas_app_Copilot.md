@@ -34,58 +34,60 @@ Seguiremos el siguiente esquema para diseñar la aplicación de lienzo:
 
 ### Tarea \#1: Creación de la aplicación inicial
 
-1. Ve a https://make.powerapps.com.
+1. Vaya a `https://make.powerapps.com`.
 
-2. Es posible que deba volver a autenticarse: selecciona **Iniciar sesión** y sigue las instrucciones si es necesario.
+2. Es posible que debas volver a autenticarte: selecciona **Iniciar sesión** y sigue las instrucciones si es necesario.
 
 3. Selecciona el entorno **Dev One** en la parte superior derecha si aún no está seleccionado.
 
-4. En el cuadro **Usar palabras cotidianas para describir lo que la aplicación debe recopilar, rastrear, enumerar o administrar..**, escribe el texto siguiente. `Create an application that logs visits to a college campus`. 
+4. Selecciona **+Crear** en el panel de navegación izquierdo de la pantalla. En la sección **Crear las aplicaciones**, selecciona **Iniciar con Copilot**.
 
-5. Selecciona el botón **Ir**.
+5. En el cuadro **Introducción a Copilot**, escribe el texto siguiente. `Create an application that logs visits to a college campus`. 
+
+6. Selecciona el botón **Generar**.
 
 Copilot comenzará a crear una estructura de tabla para admitir la aplicación. 
 
 > **IMPORTANTE:** al usar la Inteligencia artificial generativa, no siempre obtendrás los mismos resultados exactos. Es posible que la tabla no coincida exactamente con la tabla creada para otro alumno. 
 
-6. En el lado derecho, selecciona la estructura de tabla en la ventana de Copilot y, a continuación, selecciona **Opciones de tabla**.
+7. En el lado derecho, selecciona la estructura de tabla en la ventana de Copilot y, a continuación, selecciona **Opciones de tabla**.
 
-7. Selecciona la opción **Una tabla** y, a continuación, selecciona **Aplicar**.
+8. Selecciona la opción **Una tabla** y, a continuación, selecciona **Aplicar**.
  
     ![Captura de pantalla de la estructura de tabla recién creada](media/bonus-lab-tablestr.png)
 
 
 > Para ver la estructura de la tabla, selecciona la tabla y haz clic en el botón **Ver datos** 
 
-8. En el cuadro **¿Qué deseas hacer a continuación?**, escribe el texto: Agrega dos columnas, Hora de entrada y Hora de salida en la tabla. Ambas deben ser campos de fecha y hora. 
+9. En el cuadro **¿Qué deseas hacer a continuación?**, escribe el texto: Agrega dos columnas, Hora de entrada y Hora de salida en la tabla. Ambas deben ser campos de fecha y hora. 
 
-9. Selecciona el botón **Ir** o presiona **Entrar**. 
+10. Selecciona el botón **Ir** o presiona **Entrar**. 
 
-10. Desplázate hasta el lado de la tabla y comprueba que se han creado las columnas **Hora de entrada** y **Hora de salida**. 
+11. Desplázate hasta el lado de la tabla y comprueba que se han creado las columnas **Hora de entrada** y **Hora de salida**. 
 
 Como se van a registrar las horas de entrada y salida de los visitantes, ya no se necesita ningún otro campo de fecha de visita. 
 
-11. Busca el campo **Fecha de visita** (u otro equivalente) y, en el cuadro **Describir qué cambiar**, escribe el texto: Quita el campo Fecha de visita (u otro equivalente). 
+12. Busca el campo **Fecha de visita** (u otro equivalente) y, en el cuadro **Describir qué cambiar**, escribe el texto: Quita el campo Fecha de visita (u otro equivalente). 
 
 >Si es necesario, actualiza el nombre del campo que se va a quitar del nombre de tabla pertinente.
 
-12. Selecciona el botón **Ir**. 
+13. Selecciona el botón **Ir**. 
 
-13. Quita los campos de fecha adicionales que puedan estar presentes que no sean **Hora de entrada** ni **Hora de salida**. 
+14. Quita los campos de fecha adicionales que puedan estar presentes que no sean **Hora de entrada** ni **Hora de salida**. 
 
 Inicialmente, se ha agregado un campo como **Propósito** con formato de tipo de datos de texto. Haremos que Copilot lo cambie a un menú desplegable (Opción). 
 
-14. En el cuadro **¿Qué deseas hacer a continuación**, escribe el texto siguiente: Cambia el campo Propósito a un menú de opciones con las siguientes opciones: Paseo por el campus, Feria profesional, Reunión con el profesor, Asesoramiento para estudiantes, Otros. 
+15. En el cuadro **¿Qué deseas hacer a continuación**, escribe el texto siguiente: Cambia el campo Propósito a un menú de opciones con las siguientes opciones: Paseo por el campus, Feria profesional, Reunión con el profesor, Asesoramiento para estudiantes, Otros. 
 
-15. Selecciona el botón **Ir**. 
+16. Selecciona el botón **Ir**. 
 
-16. Como también se quiere capturar el número de edificio, en el cuadro **¿Qué deseas hacer a continuación?**, escribe lo siguiente: Agrega una columna de edificio. 
+17. Como también se quiere capturar el número de edificio, en el cuadro **¿Qué deseas hacer a continuación?**, escribe lo siguiente: Agrega una columna de edificio. 
 
-17. Seleccione el botón **Ir**. 
+18. Selecciona el botón **Ir**. 
 
-18. Cuando estés satisfecho con la tabla, selecciona el botón **Guardar y abrir aplicación**. 
+19. Cuando estés satisfecho con la tabla, selecciona el botón **Guardar y abrir aplicación**. 
 
-19. Si es necesario, en la pantalla **¿Has terminado de trabajar?**, selecciona **No volver a preguntarme** y, después, selecciona el botón **Guardar y abrir aplicación**. 
+20. Si es necesario, en la pantalla **¿Has terminado de trabajar?**, selecciona **No volver a preguntarme** y, después, selecciona el botón **Guardar y abrir aplicación**. 
 
 ![Captura de pantalla de la aplicación recién creada](media/bonus-lab-copilot-02.png)
 

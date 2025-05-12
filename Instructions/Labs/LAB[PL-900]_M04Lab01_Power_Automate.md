@@ -78,7 +78,7 @@ Esta es una buena manera de que usted y otros editores de flujo puedan comprende
 
 1. En el campo **id. de fila**, seleccione **Propietario (valor)** de la lista de **Contenido dinámico**. En este paso, busca el propietario de la fila Informe de gastos que se creó para desencadenar este flujo. 
 
-1. En la acción **Obtener una fila por identificador**, seleccione los puntos suspensivos ( **...** ) y elija **Cambiar nombre**. Cambio del nombre de esta acción Obtener el propietario
+1. En la acción **Obtener una fila por identificador**, seleccione los puntos suspensivos ( **...** ) y elija **Cambiar nombre**. Cambia el nombre de la acción `Get the Owner`
 
 Esta es una buena manera de que tú y otros editores de flujo puedan comprender el propósito de la etapa sin tener que profundizar en los detalles.
 
@@ -121,7 +121,7 @@ Deja esta pestaña de flujo abierta para la siguiente tarea. El flujo debe tener
 
 ### Tarea 4: Validación y prueba del flujo
 
-1. Abre una nueva pestaña en el explorador y vaya a https://make.powerapps.com
+1. Abra una pestaña nueva en el explorador y vaya a `https://make.powerapps.com`.
 
 1. Selecciona el entorno **Dev One** en la parte superior derecha si aún no lo has hecho.
 
@@ -139,7 +139,7 @@ Deja esta pestaña de flujo abierta para la siguiente tarea. El flujo debe tener
 
 1. Completa el **registro de Informe de gastos** de la manera siguiente:
 
-    - **Nombre del informe:** Informe de prueba
+    - **Nombre del informe**: `Test Report`
 
     - **Propósito del informe:** Conferencia
 
