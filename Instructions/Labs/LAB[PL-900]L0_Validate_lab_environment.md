@@ -61,10 +61,10 @@ La aplicación de las últimas actualizaciones al explorador evita problemas en 
 ## Ejercicio 2: Descarga de imágenes
 
 1. Abra una ventana del explorador en el inquilino y escriba https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/tree/master/Allfiles.
-2. Verá las imágenes en el recorte de pantalla.
+1. Verá las imágenes en el recorte de pantalla.
 
-![archivos de imagen.](media/images.png)
+    ![archivos de imagen.](media/images.png)
 
-3. Abra cada imagen por separado y seleccione el icono **Descargar** para descargarlas.
+1. Abra cada imagen por separado y seleccione el icono **Descargar** para descargarlas.
 
-![Botón Descargar imagen.](media/download-image.png)
+    ![Botón Descargar imagen.](media/download-image.png)
