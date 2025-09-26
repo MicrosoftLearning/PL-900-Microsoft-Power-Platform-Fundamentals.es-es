@@ -171,7 +171,7 @@ Primero vamos a agregar un par de contactos.
 1.  En el encabezado del formulario, seleccione la flecha hacia abajo situada junto a **Tipo de contacto**.
 1.  Establezca el **Tipo de contacto** en **Ponente**.
 
-    ![Captura de pantalla que muestra cómo establecer el campo Tipo de contacto en un formulario.](media/0860116a9b7df096c14728212b9977b1.png)
+    ![Recorte de pantalla que muestra cómo establecer el campo Tipo de contacto en un formulario.](media/0860116a9b7df096c14728212b9977b1.png)
 
 1.  Seleccione el botón **Guardar** para guardar el contacto y déjelo abierto.
 1. Seleccione el botón **+ Nuevo**.
